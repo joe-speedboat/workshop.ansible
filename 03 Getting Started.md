@@ -65,6 +65,34 @@ ansible -m dnf -e state=latest -e name='*' localhost
 Is a command to manage Ansible roles in shared repositories, the default of which is Ansible Galaxy _https://galaxy.ansible.com_.
 
 Lets see if we can find some content from [uniQconsulting ag](https://www.uniqconsulting.ch)?
+```
+ansible-galaxy search uniqconsulting
+
+	Found 20 roles matching your search:
+	 Name                            Description
+	 ----                            -----------
+	 uniqconsulting.collabora        installation and configuration of collabora CODE with nginx reverse proxy
+	 uniqconsulting.duo              Duo Auth Proxy
+	 uniqconsulting.elasticsearch    Installs and configures a basic single-instanc elasticsearch server
+	 uniqconsulting.firewall         Set's up a firewall with Open-Ports, Port-Forwarding & SNAT
+	 uniqconsulting.graylog          Install graylog and configure single server instance
+	 uniqconsulting.graylog3         Install graylog3 and configure single server instance
+	 uniqconsulting.guacamole        Install and configure Guacamole with Nginx ssl reverse proxy
+	 uniqconsulting.iptables         iptables configuration
+	 uniqconsulting.mariadb          installation and configuration of mariadb (mysql)
+	 uniqconsulting.mongodb          Installs and configures MongoDB
+	 uniqconsulting.network_setup    Network Setup
+	 uniqconsulting.nextcloud        nextcloud installation and configuration
+	 uniqconsulting.nginx            Installs/Configures Nginx for Webserver & Proxy use
+	 uniqconsulting.open_vm_tools    installation of open VMware Tools
+	 uniqconsulting.os_basic         Basic OS Server Setup
+	 uniqconsulting.os_update        Full or Security OS Updates
+	 uniqconsulting.otrs             otrs installation and configuration
+	 uniqconsulting.php              Installs and Configures php-fpm
+	 uniqconsulting.phpipam          phpIPAM
+	 uniqconsulting.veeam_linux_repo installation and configuration of Veeam Repository
+```
+Wow, great. Did you know about this content!
 
 ansible-inventory
 ansible-playbook
@@ -83,6 +111,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzcyMzQ1Niw5Mjc0MzQwNTEsLTIxMT
-U2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbLTExMDUwOTE3MDksOTI3NDM0MDUxLC0yMT
+E1NjYwMzM3LDY4MTM0NzQyMCwyMDM1OTY1NzM4XX0=
 -->
