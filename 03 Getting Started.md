@@ -28,6 +28,8 @@ ansible-doc -l
 ```
 ansible-doc -l | wc -l
 ```
+Oh, about 3400 modules!
+We can do a lot of things with that, but how?
 
 ansible
 ansible-config
@@ -53,5 +55,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU3Mzc4NTVdfQ==
+eyJoaXN0b3J5IjpbLTIwNTUxMjg5MThdfQ==
 -->
