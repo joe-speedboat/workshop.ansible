@@ -50,7 +50,7 @@ Now we do some basic configuration to suite our needs
 
 
     ansibleconfigfile="/etc/ansible/ansible.cfg"
-    test -f $ansibleconfigfile || cp -av $ansibleconfigfile ${ansibleconfigfile}.orig
+    test -f ${ansibleconfigfile}.orig || cp -av $ansibleconfigfile ${ansibleconfigfile}.orig
     sed -i 's|^#inventory .*|inventory      = /etc/ansible/hosts|g' $ansibleconfigfile
     sed -i 's|^#roles_path .*|roles_path    = /etc/ansible/roles|g' $ansibleconfigfile
     sed -i 's|^#remote_user .*|remote_user = root|g' $ansibleconfigfile
@@ -213,6 +213,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODcyMDYxNjcsMTYyMTc2Mjc3NiwtMT
-I3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
+eyJoaXN0b3J5IjpbNTkwODc0MzAwLDE2MjE3NjI3NzYsLTEyNz
+IzMjA0NDQsLTI0MTQ5NDMzN119
 -->
