@@ -33,7 +33,7 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 ## Architecture
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
-### Inventory
+### [Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
 Ansible works against multiple managed nodes or “hosts” in your infrastructure at the same time, using a list or group of lists known as inventory. Once your inventory is defined, you use [patterns](https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html#intro-patterns) to select the hosts or groups you want Ansible to run against.
 
 ### Facts
@@ -44,5 +44,5 @@ Ansible works against multiple managed nodes or “hosts” in your infrastructu
 
 ### Roles
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4NzY4MTVdfQ==
+eyJoaXN0b3J5IjpbMTM0NzE0Nzk0XX0=
 -->
