@@ -120,7 +120,11 @@ vim /etc/ansible/update_localhost.yml
         update_cache: true
 ...
 ```
-Okay, lets start th
+Okay, lets start this one
+
+    ansible-playbook /etc/ansible/update_localhost.yml
+
+
 ansible-test
 ansible-vault
 
@@ -136,7 +140,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODA1NzMzMSwtMjAwNjkzMDAxOSwtMT
+eyJoaXN0b3J5IjpbMTA3NDU2NjY1NSwtMjAwNjkzMDAxOSwtMT
 MwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2
 NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
