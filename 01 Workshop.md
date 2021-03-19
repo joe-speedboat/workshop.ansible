@@ -40,15 +40,17 @@ Log into the vm with ssh as root and install Ansible:
 
     dnf install git epel-release wget curl ansible vim-enhanced nano
 Now we do some basic configuration to suite our needs
-cp -av /etc/ansible/ansible.cfg /etc/ansible/ansible.cfg.orig
-ansibleconfigfile="/etc/ansible/ansible.cfg"
-test -f $ansibleconfigfile || cp -av $ansibleconfigfile ${ansibleconfigfile}.orig
-sed -i 's|^#inventory .*|inventory      = /etc/ansible/hosts|g' $ansibleconfigfile
-sed -i 's|^#roles_path .*|roles_path    = /etc/ansible/roles|g' $ansibleconfigfile
-sed -i 's|^#remote_user .*|remote_user = root|g' $ansibleconfigfile
-sed -i 's|^#log_path .*|log_path = /var/log/ansible.log|g' $ansibleconfigfile
-sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
-sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
+
+    cp -av /etc/ansible/ansible.cfg /etc/ansible/ansible.cfg.orig
+    ansibleconfigfile="/etc/ansible/ansible.cfg"
+    test -f $ansibleconfigfile || cp -av $ansibleconfigfile ${ansibleconfigfile}.orig
+    sed -i 's|^#inventory .*|inventory      = /etc/ansible/hosts|g' $ansibleconfigfile
+    sed -i 's|^#roles_path .*|roles_path    = /etc/ansible/roles|g' $ansibleconfigfile
+    sed -i 's|^#remote_user .*|remote_user = root|g' $ansibleconfigfile
+    sed -i 's|^#log_path .*|log_path = /var/log/ansible.log|g' $ansibleconfigfile
+    sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
+    sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
+Now we look for the changes we made above
 
 
 
@@ -201,6 +203,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM1NTUzNTA3LDE2MjE3NjI3NzYsLTEyNz
-IzMjA0NDQsLTI0MTQ5NDMzN119
+eyJoaXN0b3J5IjpbLTExMzM1MTIwODMsMTYyMTc2Mjc3NiwtMT
+I3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
 -->
