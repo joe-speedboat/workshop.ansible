@@ -99,19 +99,28 @@ But enough for now, let's look into roles later!
 ### ansible-inventory
 We already discussed about inventory. With this command, we can show the content of an inventory in a useful way.
 As an example we can use this comand, but since we did not define an inventory so far, it will not show that much:
-```
+```bash
 ansible-inventory --list --vars --yaml
 ```
 
 ### ansible-playbook
 We know about playbooks, so lets create a first one which is doing exactly the same as ad-hoc comand above did.
-```
+```bash
 vim /etc/ansible/update_localhost.yml
 ```
+```yml
+---
+- name: update a centos 8 system
+  hosts: localhost
+  tasks:
+    - name: update the system with dnf module
+      dnf:
+        name: '*'
+        state: latest
+        update_cache: true
+...
 ```
-
-```
-
+Okay, lets start th
 ansible-test
 ansible-vault
 
@@ -127,7 +136,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDY5MzAwMTksLTEzMDQ0OTEzMjgsLT
-E2NjM3MDIzMTcsOTI3NDM0MDUxLC0yMTE1NjYwMzM3LDY4MTM0
-NzQyMCwyMDM1OTY1NzM4XX0=
+eyJoaXN0b3J5IjpbLTYzODA1NzMzMSwtMjAwNjkzMDAxOSwtMT
+MwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2
+NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
