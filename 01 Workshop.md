@@ -39,7 +39,7 @@ To install Ansible, we need a CentOS 8 or Red Hat Enterprise Linux 8 vm.
 Log into the vm with ssh as root and install Ansible:
 
     dnf -y install epel-release
-    dnf -y install git wget curl ansible vim-enhanced nano
+    dnf -y install git wget curl ansible vim-enhanced nano colordiff
   
    We need some new directories too
 
@@ -213,6 +213,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTI2MzUxLDE2MjE3NjI3NzYsLTEyNz
-IzMjA0NDQsLTI0MTQ5NDMzN119
+eyJoaXN0b3J5IjpbLTExODcyMDYxNjcsMTYyMTc2Mjc3NiwtMT
+I3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
 -->
