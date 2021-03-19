@@ -44,9 +44,13 @@ egrep -v '^$|^#' /etc/ansible/ansible.cfg
 ```
 
 ## inventory
-
+We not what an inventory is, but let us create a first project with a custom inventory in it:
+```
+mkdir /etc/ansible/projects/os_updates
+cd /etc/ansible/projects/os_updates
+echo '# cus
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTc0OTUzMSwtOTE4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbNjQ2OTc4NTc5LC05MTgzOTM2MDldfQ==
 -->
