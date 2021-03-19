@@ -33,8 +33,10 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 ## Architecture
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
+### Facts
 
+### Inventory
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMyOTY5NjNdfQ==
+eyJoaXN0b3J5IjpbNDI1NDkzMTAwXX0=
 -->
