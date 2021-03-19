@@ -19,7 +19,10 @@ ansible --version
 
 ## User ($HOME/.ansible.cfg)
 We don't need that in our labs, but if existing, this would override the system configuration.
+
 ## System (/etc/ansible/ansible.cfg)
+We already created that during the setup.
+Let's check what's configured there:
 
 
 #### Ansible Config File
@@ -29,5 +32,5 @@ We don't need that in our labs, but if existing, this would override the system 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODM5MzYwOV19
+eyJoaXN0b3J5IjpbLTY0OTUwMDI1NCwtOTE4MzkzNjA5XX0=
 -->
