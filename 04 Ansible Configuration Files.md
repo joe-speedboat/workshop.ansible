@@ -1,9 +1,12 @@
 
 # Ansible Files
-With Ansible you can work in three different contexts:
-## User
-## System
-## Project
+With Ansible you can work in three different contexts.
+This depends on where you place your Ansible configuration.
+
+## Project (project_folder/ansible.cfg)
+## User ($HOME/.ansible.cfg)
+## System (/etc/ansible/ansible.cfg)
+
 
 #### Ansible Config File
 
@@ -12,5 +15,5 @@ With Ansible you can work in three different contexts:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTMzMzU5MjNdfQ==
+eyJoaXN0b3J5IjpbMjAyODE5MjI0NF19
 -->
