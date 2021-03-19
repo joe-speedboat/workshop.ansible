@@ -140,22 +140,15 @@ Okay, fine.
 Please note the **changed=0** in the output.
 This means that noting has been changed at all, the system got not modified at all.
 
-ansible-test
+### ansible-test
 ansible-vault
 
 
 
-### Ansible Files
-#### cfg
-#### inventory
-#### playbook
 
 
-
-
-### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0MTE2NzIxLC0yMDA2OTMwMDE5LC0xMz
-A0NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQzNDA1MSwtMjExNTY2
-MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF19
+eyJoaXN0b3J5IjpbMTQyMDc5Nzk5NCwtMjAwNjkzMDAxOSwtMT
+MwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2
+NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
