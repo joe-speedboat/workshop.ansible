@@ -33,7 +33,7 @@ We can do a lot of things with that, but how?
 
 ### ansible
 With the ansible comand, we can define and run a single task 'playbook' against a set of hosts.
-Localhost is a target that is builtin, so we will update the localhosts software with ansible.
+Localhost is a target that is builtin, so we will update the localhosts software with ansible as an example exercise.
 
 
 
@@ -55,5 +55,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTQ0NTkzN119
+eyJoaXN0b3J5IjpbLTUwOTE0NzMyNl19
 -->
