@@ -58,10 +58,10 @@ remote_user = root
 log_path = ./ansible.log
 ' > ansible.cfg
 ```
-```
+```bash
 mkdir ./collections ./roles
 ```
-```
+```bash
 echo '
 [lab]
 vm[01:05]
@@ -93,10 +93,47 @@ graylog
 ' > inventory
 ```
 Not lets check how Ansible looks into that inventory file:
-```
+```bash
 ansible-inventory --graph --vars --yaml
-`
+```
+```
+@all:
+  |--@esxi:
+  |  |--clue3
+  |  |  |--{gather_facts = False}
+  |--@kvm:
+  |  |--clue1
+  |  |  |--{ospatch_reboot = false}
+  |  |--clue2
+  |  |  |--{ospatch_reboot = false}
+  |  |--{ospatch_reboot = false}
+  |--@lab:
+  |  |--vm01
+  |  |--vm02
+  |  |--vm03
+  |  |--vm04
+  |  |--vm05
+  |--@linux:
+  |  |--graylog
+  |  |--install
+  |  |--webgate
+  |  |--workstation1
+  |--@ungrouped:
+  |--@wan:
+  |  |--gate.domain.ch
+  |  |  |--{ansible_ssh_port = 222}
+  |  |--pan.domain.ch
+  |  |  |--{ansible_ssh_port = 22}
+  |  |--rigel.domain.ch
+  |  |  |--{ansible_ssh_port = 50022}
+  |--@windows:
+  |  |--win01
+  |  |--win02
+  |  |--win03
+  |  |--win04
+  |  |--win05
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MDQyNTIxNSwtMTY4NzY4OTE3NywtOT
-E4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbLTE1MjI2MzA1NjMsLTE2ODc2ODkxNzcsLT
+kxODM5MzYwOV19
 -->
