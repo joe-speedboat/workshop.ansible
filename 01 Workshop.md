@@ -1,5 +1,13 @@
 # Ansible HandsOn Workshop
 
+
+
+
+
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/devops.png)
+
+
+
 ## History of Ansible
 * Ansible was written by Michael DeHaan in 20212
 * Acquired by Red Hat in 2015
@@ -167,5 +175,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTQ5NDMzN119
+eyJoaXN0b3J5IjpbLTEyNzIzMjA0NDQsLTI0MTQ5NDMzN119
 -->
