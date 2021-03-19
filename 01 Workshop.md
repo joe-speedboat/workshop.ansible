@@ -2,8 +2,6 @@
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_logo.png)
 
-
-
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/devops.png)
 
 
@@ -175,6 +173,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxODE5NiwtMTI3MjMyMDQ0NCwtMjQxND
-k0MzM3XX0=
+eyJoaXN0b3J5IjpbMTYyMTc2Mjc3NiwtMTI3MjMyMDQ0NCwtMj
+QxNDk0MzM3XX0=
 -->
