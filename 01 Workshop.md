@@ -35,8 +35,12 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
 ### Ansible Setup
+To install Ansible, we need a CentOS 8 or Red Hat Enterprise Linux 8 vm.
+Log into the vm with ssh as root and install Ansible:
 
-dnf install git epel-release wget curl ansible
+    dnf install git epel-release wget curl ansible
+Now we do som
+
 
 ### Ansible Files
 #### cfg
@@ -187,6 +191,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTA0NTczMCwxNjIxNzYyNzc2LC0xMj
-cyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
+eyJoaXN0b3J5IjpbLTE4OTgzNjc0NTIsMTYyMTc2Mjc3NiwtMT
+I3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
 -->
