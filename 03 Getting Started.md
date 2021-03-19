@@ -97,10 +97,11 @@ Did you know about this content?!
 But enough for now, let's look into roles later!
 
 ### ansible-inventory
-We already discussed about inventory. With this command, we can show t
-
+We already discussed about inventory. With this command, we can show the content of an inventory in a useful way.
+As an example we can use this comand, but since we did not define an inventory so far, it will not show that much:
+```
 ansible-inventory --list --vars --yaml
-
+```
 
 ansible-playbook
 ansible-test
@@ -118,7 +119,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2NTIwMTAxLC0xNjYzNzAyMzE3LDkyNz
-QzNDA1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTcz
-OF19
+eyJoaXN0b3J5IjpbLTgwNDMyMjEyNywtMTY2MzcwMjMxNyw5Mj
+c0MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3
+MzhdfQ==
 -->
