@@ -50,7 +50,7 @@ ansible -m ping localhost
 	}
 ```
 ```
-ansible -m dnf -e state=latest -e name='*' localhost
+ansible -m dnf -e state=latest -e name='*' -e update_cache=true localhost
 
 	localhost | SUCCESS => {
 	    "changed": false,
@@ -127,7 +127,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQ0OTEzMjgsLTE2NjM3MDIzMTcsOT
-I3NDM0MDUxLC0yMTE1NjYwMzM3LDY4MTM0NzQyMCwyMDM1OTY1
-NzM4XX0=
+eyJoaXN0b3J5IjpbLTIwMDY5MzAwMTksLTEzMDQ0OTEzMjgsLT
+E2NjM3MDIzMTcsOTI3NDM0MDUxLC0yMTE1NjYwMzM3LDY4MTM0
+NzQyMCwyMDM1OTY1NzM4XX0=
 -->
