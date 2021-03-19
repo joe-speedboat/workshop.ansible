@@ -59,8 +59,12 @@ Now we do some basic configuration to suite our needs
     sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
 
 Now we look for the changes we made above:
-
+* To the directories
+``
     ls -ld /etc/ansible/collections /etc/ansible/projects
+        drwxr-xr-x. 2 root root 6 Mar 19 11:59 /etc/ansible/collections
+        drwx------. 2 root root 6 Mar 19 11:59 /etc/ansible/projects
+
     colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
 
 
@@ -214,6 +218,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcwNTE5NjcyLDU5MDg3NDMwMCwxNjIxNz
-YyNzc2LC0xMjcyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
+eyJoaXN0b3J5IjpbLTEwMzkwNDc2ODQsNTkwODc0MzAwLDE2Mj
+E3NjI3NzYsLTEyNzIzMjA0NDQsLTI0MTQ5NDMzN119
 -->
