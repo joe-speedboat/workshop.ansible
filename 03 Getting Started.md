@@ -32,14 +32,11 @@ Oh, about 3400 modules!
 We can do a lot of things with that, but how?
 
 ansible
-ansible-config
-ansible-connection
-ansible-console
+
 
 ansible-galaxy
 ansible-inventory
 ansible-playbook
-ansible-pull
 ansible-test
 ansible-vault
 
@@ -55,5 +52,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTUxMjg5MThdfQ==
+eyJoaXN0b3J5IjpbMTgzNTYxNzMzMF19
 -->
