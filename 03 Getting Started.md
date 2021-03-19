@@ -142,15 +142,23 @@ This means that noting has been changed at all, the system got not modified at a
 
 ### ansible-vault
 Is an encryption/decryption utility for Ansible data files.
-We need this to protect sensible data like passwords for our 
+We need this to protect sensible data like passwords for our work.
+So lets create our first vault:
+```
+ansible-vault create /etc/ansible/passwords.yml
+	New Vault password: 
+	Confirm New Vault password: 
+```
+```
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY0NDIxNDAsMTQyMDc5Nzk5NCwtMj
-AwNjkzMDAxOSwtMTMwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0
-MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3Mz
-hdfQ==
+eyJoaXN0b3J5IjpbLTIwNzc1MzI2MDcsLTE1MDY0NDIxNDAsMT
+QyMDc5Nzk5NCwtMjAwNjkzMDAxOSwtMTMwNDQ5MTMyOCwtMTY2
+MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3ND
+IwLDIwMzU5NjU3MzhdfQ==
 -->
