@@ -63,19 +63,20 @@ mkdir ./collections ./roles
 ```
 ```
 echo '
-[ansibleserver]
-ansible.office.bitbull.ch
-
-[testserver]
+[lab]
 vm[01:40]
 
 [nextcloud]
 cloud1
+cloud2
+
 
 [kvm]
 clue1
-clue2
-saturn.bitbull.ch ansible_ssh_port=222 ospatch_reboot=false
+clue2 
+saturn.bitbull.ch ansible_ssh_port=222
+[kvm:vars]
+ospatch_reboot=false
 
 [esxi]
 clue3 gather_facts=False
@@ -104,6 +105,6 @@ gate.bitbull.ch ansible_ssh_port=222
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzUxMTcxMSwtMTY4NzY4OTE3NywtOT
+eyJoaXN0b3J5IjpbMTkzOTgxMjM3OCwtMTY4NzY4OTE3NywtOT
 E4MzkzNjA5XX0=
 -->
