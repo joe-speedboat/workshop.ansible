@@ -43,9 +43,10 @@ With Ansible you can retrieve or discover certain variables containing informati
 Ansible uses variables to manage differences between systems. With Ansible, you can execute tasks and playbooks on multiple different systems with a single command. To represent the variations among those different systems, you can create variables with standard YAML syntax, including lists and dictionaries. You can define these variables in your playbooks, in your [inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#intro-inventory), in re-usable [files](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse.html#playbooks-reuse) or [roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#playbooks-reuse-roles), or at the command line. You can also create variables during a playbook run by registering the return value or values of a task as a new variable.
 
 ### [Playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html)
+Ansible Playbooks offer a repeatable, re-usable, simple configuration management and multi-machine deployment system, one that is well suited to deploying complex applications. If you need to execute a task with Ansible more than once, write a playbook and put it under source control. Then you can use the playbook to push out new configuration or confirm the configuration of remote systems. The playbooks in the [ansible-examples repository](https://github.com/ansible/ansible-examples) illustrate many useful techniques.
 
-
-### Roles
+### [Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
+Roles let you automatically load related vars_files, tasks, handlers, and other Ansible artifacts based on a known file structure. Once you group your content in roles, you can easily reuse them and share them with other users.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDY1MjE4MV19
+eyJoaXN0b3J5IjpbLTIxMTQ4MTE0NjEsLTY5NDY1MjE4MV19
 -->
