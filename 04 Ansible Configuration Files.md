@@ -84,16 +84,16 @@ pan.domain.ch ansible_ssh_port=22
 gate.domain.ch ansible_ssh_port=222
 
 [linux]
-[kvm:children]
-[wan:children]
 workstation1
 install
 webgate
 graylog
+[kvm:children]
+[wan:children]
 ' > inventory
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4OTYwMjg3MCwtMTY4NzY4OTE3NywtOT
-E4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbMTQwMjM5NTUwLC0xNjg3Njg5MTc3LC05MT
+gzOTM2MDldfQ==
 -->
