@@ -105,7 +105,12 @@ ansible-inventory --list --vars --yaml
 
 ### ansible-playbook
 We know about playbooks, so lets create a first one which is doing exactly the same as ad-hoc comand above did.
+```
 vim /etc/ansible/update_localhost.yml
+```
+```
+
+```
 
 ansible-test
 ansible-vault
@@ -122,7 +127,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MjAzNTczNCwtMTY2MzcwMjMxNyw5Mj
-c0MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3
-MzhdfQ==
+eyJoaXN0b3J5IjpbLTEzMDQ0OTEzMjgsLTE2NjM3MDIzMTcsOT
+I3NDM0MDUxLC0yMTE1NjYwMzM3LDY4MTM0NzQyMCwyMDM1OTY1
+NzM4XX0=
 -->
