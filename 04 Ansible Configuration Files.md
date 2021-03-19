@@ -135,8 +135,8 @@ ansible-inventory --graph --vars --yaml
   |  |--win04
   |  |--win05
 ```
-Do you understand how vars and children got handled in the inventory
+Do you understand how vars and children got handled in the inventory?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODIxNDg4MTUsLTE2ODc2ODkxNzcsLT
-kxODM5MzYwOV19
+eyJoaXN0b3J5IjpbMTE2MTY2ODk2NCwtMTY4NzY4OTE3NywtOT
+E4MzkzNjA5XX0=
 -->
