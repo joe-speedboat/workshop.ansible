@@ -4,7 +4,7 @@
 * Ansible was written by Michael DeHaan in 20212
 * Acquired by Red Hat in 2015
 
-## Core Concept
+## Design
 * **Minimal in nature**
 Management systems should not impose additional dependencies on the environment.
 
@@ -25,9 +25,10 @@ On/Off buttons of a train's destination sign control panel. Pressing the On butt
 * **Minimal learning required**
 Playbooks use an easy and descriptive language based on YAML and Jinja templates.
 
+## Architecture
 
 
-# Files
+
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -166,5 +167,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NjE3OTE3N119
+eyJoaXN0b3J5IjpbLTI0MTQ5NDMzN119
 -->
