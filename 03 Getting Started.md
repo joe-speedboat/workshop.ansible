@@ -96,7 +96,16 @@ Wow, great.
 Did you know about this content?!
 
 So lets try to do the update again with a role:
-First we need to down
+First we need to download the role for later usage
+```
+ansible-galaxy install uniqconsulting.os_update
+
+	- downloading role 'os_update', owned by uniqconsulting
+	- downloading role from https://github.com/uniQconsulting-ag/ansible.os-update/archive/master.tar.gz
+	- extracting uniqconsulting.os_update to /etc/ansible/roles/uniqconsulting.os_update
+	- uniqconsulting.os_update (master) was installed successfully
+```
+
 
 ansible-inventory
 ansible-playbook
@@ -115,6 +124,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODQwNjE2OSw5Mjc0MzQwNTEsLTIxMT
+eyJoaXN0b3J5IjpbLTMwNTc0NTM1MCw5Mjc0MzQwNTEsLTIxMT
 U2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
