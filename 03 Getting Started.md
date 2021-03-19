@@ -149,6 +149,12 @@ ansible-vault create /etc/ansible/passwords.yml
 	New Vault password: 
 	Confirm New Vault password: 
 ```
+Please remember the password, we need it later on!
+Now lets 
+```
+---
+mypass: superSecret!
+...
 ```
 
 
@@ -156,8 +162,9 @@ ansible-vault create /etc/ansible/passwords.yml
 
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc1MzI2MDcsLTE1MDY0NDIxNDAsMT
+eyJoaXN0b3J5IjpbLTEyNDY3NjM2NzUsLTE1MDY0NDIxNDAsMT
 QyMDc5Nzk5NCwtMjAwNjkzMDAxOSwtMTMwNDQ5MTMyOCwtMTY2
 MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3ND
 IwLDIwMzU5NjU3MzhdfQ==
