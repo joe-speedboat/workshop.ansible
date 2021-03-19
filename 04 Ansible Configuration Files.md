@@ -23,7 +23,10 @@ We don't need that in our labs, but if existing, this would override the system 
 ## System (/etc/ansible/ansible.cfg)
 We already created that during the setup.
 Let's check what's configured there:
+```
+egrep -v '^$|^#' /etc/ansible/ansible.cfg 
 
+```
 
 #### Ansible Config File
 
@@ -32,5 +35,5 @@ Let's check what's configured there:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTUwMDI1NCwtOTE4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbMzI5NDk1NjYwLC05MTgzOTM2MDldfQ==
 -->
