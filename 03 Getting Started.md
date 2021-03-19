@@ -20,8 +20,14 @@ rpm -ql ansible | grep bin/
 ### ansible-doc
 This is the plugin documentation tool. 
 Let's explore what this can do for us:
-* Show all Pl
-
+* Show all plugins
+```
+ansible-doc -l
+```
+* Count the amount of modules a standard Ansible installation provides to us?
+```
+ansible-doc -l | wc -l
+```
 
 ansible
 ansible-config
@@ -47,5 +53,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjM2NDY5MF19
+eyJoaXN0b3J5IjpbLTIwMTU3Mzc4NTVdfQ==
 -->
