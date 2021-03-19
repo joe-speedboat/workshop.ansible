@@ -48,6 +48,7 @@ We not what an inventory is, but let us create a first project with a custom inv
 ```bash
 mkdir /etc/ansible/projects/os_updates
 cd /etc/ansible/projects/os_updates
+
 echo '# custom ansible project configuration
 [defaults]
 inventory      = ./inventory
@@ -55,8 +56,10 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
-' > ansible.cf
+' > ansible.cfg
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MTYzMDE3OCwtOTE4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbNDI0Nzc1ODAxLC05MTgzOTM2MDldfQ==
 -->
