@@ -69,7 +69,6 @@ vm[01:40]
 [kvm]
 clue1
 clue2 
-saturn.bitbull.ch ansible_ssh_port=222
 [kvm:vars]
 ospatch_reboot=false
 
@@ -80,9 +79,9 @@ clue3 gather_facts=False
 win[01:10]
 
 [wan]
-rigel.bitbull.ch ansible_ssh_port=50022
-pan.bitbull.ch ansible_ssh_port=22
-gate.bitbull.ch ansible_ssh_port=222
+rigel.domain.ch ansible_ssh_port=50022
+pan.domain.ch ansible_ssh_port=22
+gate.domain.ch ansible_ssh_port=222
 
 [linux]
 [kvm:children]
@@ -95,6 +94,6 @@ graylog
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2MjgzNTYsLTE2ODc2ODkxNzcsLTkxOD
-M5MzYwOV19
+eyJoaXN0b3J5IjpbLTIxMDE4NTA3NDQsLTE2ODc2ODkxNzcsLT
+kxODM5MzYwOV19
 -->
