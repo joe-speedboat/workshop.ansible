@@ -39,6 +39,9 @@ Localhost is a target that is builtin, so we will update the localhosts software
 ansible-doc dnf
 ```
 * Now we just update the software with an ad-hoc ansible comand:
+First let us check if Ansible can connect the target server
+
+ansible -m ping localhost
 
 
 ansible-galaxy
@@ -59,5 +62,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzg4OTk0MDQsMjAzNTk2NTczOF19
+eyJoaXN0b3J5IjpbLTE5NTUwOTI0NDgsMjAzNTk2NTczOF19
 -->
