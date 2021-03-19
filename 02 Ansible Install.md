@@ -2,6 +2,7 @@
 
 ## CentOS 8 Setup
 To install Ansible, we need a CentOS 8 or Red Hat Enterprise Linux 8 vm.
+### Install
 Log into the vm with ssh as root and install Ansible:
 
     dnf -y install epel-release
@@ -38,5 +39,5 @@ colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzQ4ODM0MV19
+eyJoaXN0b3J5IjpbLTEwMjQ4NDE5ODldfQ==
 -->
