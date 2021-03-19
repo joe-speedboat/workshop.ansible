@@ -38,7 +38,8 @@ Localhost is a target that is builtin, so we will update the localhosts software
 ```
 ansible-doc dnf
 ```
-* Now we j
+* Now we just update the software with an ad-hoc ansible comand:
+
 
 ansible-galaxy
 ansible-inventory
@@ -58,5 +59,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTk2NTczOF19
+eyJoaXN0b3J5IjpbLTE0Mzg4OTk0MDQsMjAzNTk2NTczOF19
 -->
