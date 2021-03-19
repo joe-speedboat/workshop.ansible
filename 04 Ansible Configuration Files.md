@@ -63,6 +63,7 @@ mkdir ./collections ./roles
 ```
 ```
 echo '
+
 [lab]
 vm[01:40]
 
@@ -84,16 +85,14 @@ clue3 gather_facts=False
 [windows]
 win[01:10]
 
-[office]
-vpn
-lts1
+[linux]
+[kvm:children]
+workstation1
 install
-domoticz.office.bitbull.ch
-ogate.office.bitbull.ch
-graylog.office.bitbull.ch
-name.office.bitbull.ch
-sso.office.bitbull.ch
-cloud.office.bitbull.ch
+webgate
+graylog
+sso
+
 
 [wan]
 rigel.bitbull.ch ansible_ssh_port=50022 ospatch_reboot=false
@@ -105,6 +104,6 @@ gate.bitbull.ch ansible_ssh_port=222
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTgxMjM3OCwtMTY4NzY4OTE3NywtOT
-E4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbLTE5OTUyMjkyNTMsLTE2ODc2ODkxNzcsLT
+kxODM5MzYwOV19
 -->
