@@ -136,7 +136,9 @@ PLAY RECAP *********************************************************************
 localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
 ```
-Okay, fie s
+Okay, fine.
+Please note the **changed=0** in the output.
+This means that noting has been changed at all, the system got not modified at all.
 
 ansible-test
 ansible-vault
@@ -153,7 +155,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NzQ2MTAyNSwtMjAwNjkzMDAxOSwtMT
-MwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2
-NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbNjM0MTE2NzIxLC0yMDA2OTMwMDE5LC0xMz
+A0NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQzNDA1MSwtMjExNTY2
+MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF19
 -->
