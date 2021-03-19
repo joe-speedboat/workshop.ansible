@@ -123,7 +123,20 @@ vim /etc/ansible/update_localhost.yml
 Okay, lets start this one
 
     ansible-playbook /etc/ansible/update_localhost.yml
+```
+PLAY [update a centos 8 system] *****************************************************************************************************************************************************************
 
+TASK [Gathering Facts] **************************************************************************************************************************************************************************
+ok: [localhost]
+
+TASK [update the system with dnf module] ********************************************************************************************************************************************************
+ok: [localhost]
+
+PLAY RECAP **************************************************************************************************************************************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+```
+Okay, fie s
 
 ansible-test
 ansible-vault
@@ -140,7 +153,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NDU2NjY1NSwtMjAwNjkzMDAxOSwtMT
+eyJoaXN0b3J5IjpbMTE0NzQ2MTAyNSwtMjAwNjkzMDAxOSwtMT
 MwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2
 NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
