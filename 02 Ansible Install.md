@@ -1,4 +1,6 @@
 # Ansible Install
+
+## CentOS 8 Setup
 To install Ansible, we need a CentOS 8 or Red Hat Enterprise Linux 8 vm.
 Log into the vm with ssh as root and install Ansible:
 
@@ -34,20 +36,7 @@ ls -ld /etc/ansible/collections /etc/ansible/projects
 colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
 ```
 
-### Ansible Comands
-
-
-### Ansible Files
-#### cfg
-#### inventory
-#### playbook
-
-
-
-
-### Ansible Projects
-
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzE3MDY5MjZdfQ==
+eyJoaXN0b3J5IjpbMTEzMzQ4ODM0MV19
 -->
