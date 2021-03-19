@@ -2,7 +2,20 @@
 
 ## Ansible Comands
 
-### ansible-doc
+ansible-doc
+
+ansible
+ansible-config
+ansible-connection
+ansible-console
+
+ansible-galaxy
+ansible-inventory
+ansible-playbook
+ansible-pull
+ansible-test
+ansible-vault
+
 
 
 ### Ansible Files
@@ -15,5 +28,5 @@
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzkzNTAyMDFdfQ==
+eyJoaXN0b3J5IjpbMjQzOTgzMzE2XX0=
 -->
