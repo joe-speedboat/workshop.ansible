@@ -57,9 +57,11 @@ collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
 ' > ansible.cfg
-
-
+```
+```
+mkdir ./collections ./roles
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI0Nzc1ODAxLC05MTgzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbNjg1OTU4NTg4LC05MTgzOTM2MDldfQ==
 -->
