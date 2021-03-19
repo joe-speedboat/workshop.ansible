@@ -46,7 +46,8 @@ ansible -m ping localhost
 
 $\color{red}{your-text-here}$
 
-$\fonttitlebfseries
+
+$\basicstyle{ttfamily}
 
 
 localhost | SUCCESS => {
@@ -76,6 +77,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Nzk2NjU0Niw2ODEzNDc0MjAsMjAzNT
-k2NTczOF19
+eyJoaXN0b3J5IjpbMzc2NjM4MDc1LDY4MTM0NzQyMCwyMDM1OT
+Y1NzM4XX0=
 -->
