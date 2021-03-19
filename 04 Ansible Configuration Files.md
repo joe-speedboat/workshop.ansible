@@ -63,15 +63,45 @@ mkdir ./collections ./roles
 ```
 ```
 echo '
-[defaults]
-inventory      = ./inventory
-roles_path    = ./roles
-collections_paths = ./collections
-remote_user = root
-log_path = ./ansible.log
+[ansibleserver]
+ansible.office.bitbull.ch
+
+[testserver]
+vm[01:40]
+
+[nextcloud]
+cloud1
+
+[kvm]
+clue1
+clue2
+
+[esxi]
+clue3 gather_facts=False
+
+[windows]
+w7
+
+[office]
+vpn
+lts1
+install
+domoticz.office.bitbull.ch
+ogate.office.bitbull.ch
+graylog.office.bitbull.ch
+name.office.bitbull.ch
+sso.office.bitbull.ch
+cloud.office.bitbull.ch
+
+[wan]
+rigel.bitbull.ch ansible_ssh_port=50022 ospatch_reboot=false
+pan.bitbull.ch ansible_ssh_port=22 ospatch_reboot=false
+saturn.bitbull.ch ansible_ssh_port=222 ospatch_reboot=false
+gate.bitbull.ch ansible_ssh_port=222
+
 ' > ansible.cfg
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjE0OTgwNTUsLTkxODM5MzYwOV19
+eyJoaXN0b3J5IjpbLTE2ODc2ODkxNzcsLTkxODM5MzYwOV19
 -->
