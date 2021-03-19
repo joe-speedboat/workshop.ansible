@@ -64,6 +64,8 @@ ansible -m dnf -e state=latest -e name='*' localhost
 ### ansible-galaxy
 Is a command to manage Ansible roles in shared repositories, the default of which is Ansible Galaxy _https://galaxy.ansible.com_.
 
+Lets see if we can find some content from [uniQconsulting ag](https://www.uniqconsulting.ch)?
+
 ansible-inventory
 ansible-playbook
 ansible-test
@@ -81,6 +83,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTI1MjMxOSw5Mjc0MzQwNTEsLTIxMT
+eyJoaXN0b3J5IjpbMTg3MzcyMzQ1Niw5Mjc0MzQwNTEsLTIxMT
 U2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
