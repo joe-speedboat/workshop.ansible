@@ -42,12 +42,14 @@ ansible-doc dnf
 First let us check if Ansible can connect the target server
 ```
 ansible -m ping localhost
+```
+
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
 }
 ```
-<span style="color:green">
+
 ```
 ```
 
@@ -70,5 +72,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMDc1OTQyLDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbLTM4Njg4NTUzMCwyMDM1OTY1NzM4XX0=
 -->
