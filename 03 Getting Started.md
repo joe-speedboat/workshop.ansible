@@ -28,10 +28,12 @@ ansible-doc -l
 ```
 ansible-doc -l | wc -l
 ```
-Oh, about 3400 modules!
+Oh wow, about 3400 modules!
 We can do a lot of things with that, but how?
 
-ansible
+### ansible
+With the ansible comand, we can define and run a single task 'playbook' against a set of hosts
+
 
 
 ansible-galaxy
@@ -52,5 +54,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTYxNzMzMF19
+eyJoaXN0b3J5IjpbMTc5MTY2NjU3M119
 -->
