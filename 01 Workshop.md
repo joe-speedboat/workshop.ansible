@@ -40,10 +40,15 @@ Log into the vm with ssh as root and install Ansible:
 
     dnf -y install epel-release
     dnf -y install git wget curl ansible vim-enhanced nano
+  
+   We need some new directories too
+
+    test -d /etc/ansible/projects || mkdir /etc/ansible/projects ; chmod 700 /etc/ansible/projects
+    test -d /etc/ansible/collections || mkdir /etc/ansible/collections ; chmod 755 /etc/ansible/collections
     
 Now we do some basic configuration to suite our needs
 
-    cp -av /etc/ansible/ansible.cfg /etc/ansible/ansible.cfg.orig
+
     ansibleconfigfile="/etc/ansible/ansible.cfg"
     test -f $ansibleconfigfile || cp -av $ansibleconfigfile ${ansibleconfigfile}.orig
     sed -i 's|^#inventory .*|inventory      = /etc/ansible/hosts|g' $ansibleconfigfile
@@ -52,8 +57,6 @@ Now we do some basic configuration to suite our needs
     sed -i 's|^#log_path .*|log_path = /var/log/ansible.log|g' $ansibleconfigfile
     sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
     sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
-
-
 
 Now we look for the changes we made above:
 ls -ld /etc/ansible/collections /etc/ansible/projects
@@ -210,6 +213,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5MDUyMDkzOSwxNjIxNzYyNzc2LC0xMj
-cyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
+eyJoaXN0b3J5IjpbLTMzOTI2MzUxLDE2MjE3NjI3NzYsLTEyNz
+IzMjA0NDQsLTI0MTQ5NDMzN119
 -->
