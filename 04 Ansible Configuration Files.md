@@ -61,7 +61,17 @@ log_path = ./ansible.log
 ```
 mkdir ./collections ./roles
 ```
+```
+echo '
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+' > ansible.cfg
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1OTU4NTg4LC05MTgzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbLTIwNjE0OTgwNTUsLTkxODM5MzYwOV19
 -->
