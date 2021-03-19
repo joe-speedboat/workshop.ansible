@@ -103,7 +103,10 @@ As an example we can use this comand, but since we did not define an inventory s
 ansible-inventory --list --vars --yaml
 ```
 
-ansible-playbook
+### ansible-playbook
+We know about playbooks, so lets create a first one which is doing exactly the same as ad-hoc comand above did.
+vim /etc/ansible/update_localhost.yml
+
 ansible-test
 ansible-vault
 
@@ -119,7 +122,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDMyMjEyNywtMTY2MzcwMjMxNyw5Mj
+eyJoaXN0b3J5IjpbMTA0MjAzNTczNCwtMTY2MzcwMjMxNyw5Mj
 c0MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3
 MzhdfQ==
 -->
