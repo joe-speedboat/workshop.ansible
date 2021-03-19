@@ -46,6 +46,9 @@ ansible -m ping localhost
 
 $\color{red}{your-text-here}$
 
+$\fonttitlebfseries
+
+
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -73,5 +76,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbMTI4Nzk2NjU0Niw2ODEzNDc0MjAsMjAzNT
+k2NTczOF19
 -->
