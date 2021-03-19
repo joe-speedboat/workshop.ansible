@@ -50,6 +50,10 @@ Now we do some basic configuration to suite our needs
     sed -i 's|^#log_path .*|log_path = /var/log/ansible.log|g' $ansibleconfigfile
     sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
     sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
+    
+    test -d /etc/ansible/projects || mkdir /etc/ansible/projects ; chmod 700 /etc/ansible/projects
+    test -d /etc/ansible/collections || mkdir /etc/ansible/collections ; chmod 755 /etc/ansible/collections
+
 Now we look for the changes we made above
 
 
@@ -203,6 +207,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzM1MTIwODMsMTYyMTc2Mjc3NiwtMT
+eyJoaXN0b3J5IjpbLTEyNjI2ODI0NzgsMTYyMTc2Mjc3NiwtMT
 I3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
 -->
