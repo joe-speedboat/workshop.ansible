@@ -43,14 +43,6 @@ First let us check if Ansible can connect the target server
 ```bash
 ansible -m ping localhost
 ```
-
-$\color{red}{your-text-here}$
-
-$\texttt{cd test \n
-asdfads}$
-$\style{ttfamily}{xxx}$
-
-
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -78,6 +70,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODM1NDE5Myw2ODEzNDc0MjAsMjAzNT
-k2NTczOF19
+eyJoaXN0b3J5IjpbNjYyMDI5OTc0LDY4MTM0NzQyMCwyMDM1OT
+Y1NzM4XX0=
 -->
