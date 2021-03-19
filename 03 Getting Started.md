@@ -61,7 +61,9 @@ ansible -m dnf -e state=latest -e name='*' localhost
 ```
 
 
-ansible-galaxy
+### ansible-galaxy
+
+
 ansible-inventory
 ansible-playbook
 ansible-test
@@ -79,6 +81,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMz
-U5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbNjUxNjY5NTE4LC0yMTE1NjYwMzM3LDY4MT
+M0NzQyMCwyMDM1OTY1NzM4XX0=
 -->
