@@ -1,13 +1,11 @@
 
 ### Ansible Files
-#### cfg
+#### Ansible Config File
+
 #### inventory
-#### playbook
 
 
 
-
-### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTAyNTE0MTJdfQ==
+eyJoaXN0b3J5IjpbMjAwMzkyNTkwMl19
 -->
