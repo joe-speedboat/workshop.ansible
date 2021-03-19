@@ -35,14 +35,14 @@ We can do a lot of things with that, but how?
 With the ansible comand, we can define and run a single task 'playbook' against a set of hosts.
 Localhost is a target that is builtin, so we will update the localhosts software with ansible as an example exercise.
 * First we look at the documentation
-```bash
+```{r, engine='bash'}
 ansible-doc dnf
 ```
 * Now we just update the software with an ad-hoc ansible comand:
 First let us check if Ansible can connect the target server
-```bash
+```{r, engine='bash'}
 ansible -m ping localhost
-```
+
 
 localhost | SUCCESS => {
     "changed": false,
@@ -50,8 +50,7 @@ localhost | SUCCESS => {
 }
 ```
 
-```
-```
+
 
 
 ansible-galaxy
@@ -72,5 +71,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxODkyMjM4LDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbLTE4OTEyMjg3OCwyMDM1OTY1NzM4XX0=
 -->
