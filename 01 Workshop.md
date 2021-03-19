@@ -60,13 +60,17 @@ Now we do some basic configuration to suite our needs
 
 Now we look for the changes we made above:
 * To the directories
-``
-    ls -ld /etc/ansible/collections /etc/ansible/projects
-        drwxr-xr-x. 2 root root 6 Mar 19 11:59 /etc/ansible/collections
-        drwx------. 2 root root 6 Mar 19 11:59 /etc/ansible/projects
+```
+ls -ld /etc/ansible/collections /etc/ansible/projects
+  drwxr-xr-x. 2 root root 6 Mar 19 11:59 /etc/ansible/collections
+  drwx------. 2 root root 6 Mar 19 11:59 /etc/ansible/projects
+```
+* To the config file
+```
+colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
+```
 
-    colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
-
+### Ansible Comands
 
 
 ### Ansible Files
@@ -75,7 +79,7 @@ Now we look for the changes we made above:
 #### playbook
 
 
-### Ansible Comands
+
 
 ### Ansible Projects
 
@@ -218,6 +222,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzkwNDc2ODQsNTkwODc0MzAwLDE2Mj
-E3NjI3NzYsLTEyNzIzMjA0NDQsLTI0MTQ5NDMzN119
+eyJoaXN0b3J5IjpbMTYzMDUyNDA4Miw1OTA4NzQzMDAsMTYyMT
+c2Mjc3NiwtMTI3MjMyMDQ0NCwtMjQxNDk0MzM3XX0=
 -->
