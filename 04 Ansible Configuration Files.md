@@ -90,10 +90,10 @@ workstation1
 install
 webgate
 graylog
-' > ansible.cfg
+' > inventory
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDE4NTA3NDQsLTE2ODc2ODkxNzcsLT
-kxODM5MzYwOV19
+eyJoaXN0b3J5IjpbMTA4OTYwMjg3MCwtMTY4NzY4OTE3NywtOT
+E4MzkzNjA5XX0=
 -->
