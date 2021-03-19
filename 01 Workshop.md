@@ -33,8 +33,10 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 
 ## Architecture
 
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
+### Ansible Comands
 
-
+### Ansible Config Files
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -173,6 +175,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMTc2Mjc3NiwtMTI3MjMyMDQ0NCwtMj
-QxNDk0MzM3XX0=
+eyJoaXN0b3J5IjpbMjgyMjExNTUyLDE2MjE3NjI3NzYsLTEyNz
+IzMjA0NDQsLTI0MTQ5NDMzN119
 -->
