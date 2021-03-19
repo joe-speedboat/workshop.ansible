@@ -38,7 +38,9 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 To install Ansible, we need a CentOS 8 or Red Hat Enterprise Linux 8 vm.
 Log into the vm with ssh as root and install Ansible:
 
-    dnf install git epel-release wget curl ansible vim-enhanced nano
+    dnf -y install epel-release
+    dnf -y install git wget curl ansible vim-enhanced nano
+    
 Now we do some basic configuration to suite our needs
 
     cp -av /etc/ansible/ansible.cfg /etc/ansible/ansible.cfg.orig
@@ -51,10 +53,7 @@ Now we do some basic configuration to suite our needs
     sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
     sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
 
-We need some new directories too
 
-    test -d /etc/ansible/projects || mkdir /etc/ansible/projects ; chmod 700 /etc/ansible/projects
-    test -d /etc/ansible/collections || mkdir /etc/ansible/collections ; chmod 755 /etc/ansible/collections
 
 Now we look for the changes we made above:
 ls -ld /etc/ansible/collections /etc/ansible/projects
@@ -211,6 +210,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjIzMDkyMiwxNjIxNzYyNzc2LC0xMj
+eyJoaXN0b3J5IjpbMTI5MDUyMDkzOSwxNjIxNzYyNzc2LC0xMj
 cyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
 -->
