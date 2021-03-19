@@ -88,8 +88,10 @@ workstation1
 install
 webgate
 graylog
-[kvm:children]
-[wan:children]
+[linux:children]
+kvm
+lab
+wan
 ' > inventory
 ```
 Not lets check how Ansible looks into that inventory file:
@@ -134,6 +136,6 @@ ansible-inventory --graph --vars --yaml
   |  |--win05
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjI2MzA1NjMsLTE2ODc2ODkxNzcsLT
-kxODM5MzYwOV19
+eyJoaXN0b3J5IjpbNTE3MzY2OTc3LC0xNjg3Njg5MTc3LC05MT
+gzOTM2MDldfQ==
 -->
