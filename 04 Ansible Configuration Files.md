@@ -16,6 +16,7 @@ ansible --version
 
 
 ## Project (project_folder/ansible.cfg)
+
 ## User ($HOME/.ansible.cfg)
 We don't need that in our labs, but if existing, this would override the system configuration.
 ## System (/etc/ansible/ansible.cfg)
@@ -28,5 +29,5 @@ We don't need that in our labs, but if existing, this would override the system 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODYyMDg5XX0=
+eyJoaXN0b3J5IjpbLTkxODM5MzYwOV19
 -->
