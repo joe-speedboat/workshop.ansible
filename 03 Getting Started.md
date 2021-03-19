@@ -92,7 +92,11 @@ ansible-galaxy search uniqconsulting
 	 uniqconsulting.phpipam          phpIPAM
 	 uniqconsulting.veeam_linux_repo installation and configuration of Veeam Repository
 ```
-Wow, great. Did you know about this content!
+Wow, great. 
+Did you know about this content?!
+
+So lets try to do the update again with a role:
+First we need to down
 
 ansible-inventory
 ansible-playbook
@@ -111,6 +115,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDUwOTE3MDksOTI3NDM0MDUxLC0yMT
-E1NjYwMzM3LDY4MTM0NzQyMCwyMDM1OTY1NzM4XX0=
+eyJoaXN0b3J5IjpbLTMxODQwNjE2OSw5Mjc0MzQwNTEsLTIxMT
+U2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
