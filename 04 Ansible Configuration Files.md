@@ -64,7 +64,7 @@ mkdir ./collections ./roles
 ```
 echo '
 [lab]
-vm[01:40]
+vm[01:05]
 
 [kvm]
 clue1
@@ -76,7 +76,7 @@ ospatch_reboot=false
 clue3 gather_facts=False
 
 [windows]
-win[01:10]
+win[01:05]
 
 [wan]
 rigel.domain.ch ansible_ssh_port=50022
@@ -92,8 +92,11 @@ graylog
 [wan:children]
 ' > inventory
 ```
-
+Not lets check how Ansible looks into that inventory file:
+```
+ansible-inventory --graph --vars --yaml
+`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjM5NTUwLC0xNjg3Njg5MTc3LC05MT
-gzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbMjA3MDQyNTIxNSwtMTY4NzY4OTE3NywtOT
+E4MzkzNjA5XX0=
 -->
