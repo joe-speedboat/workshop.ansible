@@ -13,12 +13,15 @@ rpm -ql ansible | grep bin/
 	/usr/bin/ansible-pull
 	/usr/bin/ansible-test
 	/usr/bin/ansible-vault
-
-
+```
 
 ## Ansible Comands
 
-ansible-doc
+### ansible-doc
+This is the plugin documentation tool. 
+Let's explore what this can do for us:
+* Show all Pl
+
 
 ansible
 ansible-config
@@ -44,5 +47,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTk2NTc4NDFdfQ==
+eyJoaXN0b3J5IjpbMTc5NjM2NDY5MF19
 -->
