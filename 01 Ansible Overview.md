@@ -39,11 +39,13 @@ Ansible works against multiple managed nodes or “hosts” in your infrastructu
 ### [Facts](https://docs.ansible.com/ansible/latest/user_guide/playbooks_vars_facts.html)
 With Ansible you can retrieve or discover certain variables containing information about your remote systems or about Ansible itself. Variables related to remote systems are called facts. With facts, you can use the behavior or state of one system as configuration on other systems. For example, you can use the IP address of one system as a configuration value on another system. Variables related to Ansible are called magic variables.
 
-### Variables
+### [Variables](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html)
+Ansible uses variables to manage differences between systems. With Ansible, you can execute tasks and playbooks on multiple different systems with a single command. To represent the variations among those different systems, you can create variables with standard YAML syntax, including lists and dictionaries. You can define these variables in your playbooks, in your [inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html#intro-inventory), in re-usable [files](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse.html#playbooks-reuse) or [roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#playbooks-reuse-roles), or at the command line. You can also create variables during a playbook run by registering the return value or values of a task as a new variable.
 
-### Playbooks
+### [Playbooks](https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html)
+
 
 ### Roles
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5MDM5MTU3XX0=
+eyJoaXN0b3J5IjpbLTY5NDY1MjE4MV19
 -->
