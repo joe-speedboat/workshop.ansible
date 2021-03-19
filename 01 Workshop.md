@@ -1,6 +1,6 @@
 # Ansible HandsOn Workshop
 
-
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_logo.png)
 
 
 
@@ -175,5 +175,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzIzMjA0NDQsLTI0MTQ5NDMzN119
+eyJoaXN0b3J5IjpbMTMxODE5NiwtMTI3MjMyMDQ0NCwtMjQxND
+k0MzM3XX0=
 -->
