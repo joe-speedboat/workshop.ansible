@@ -46,8 +46,9 @@ ansible -m ping localhost
 
 $\color{red}{your-text-here}$
 
-
-$\basicstyle{ttfamily}
+$\texttt{cd test \n
+asdfads}$
+$\style{ttfamily}{xxx}$
 
 
 localhost | SUCCESS => {
@@ -77,6 +78,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc2NjM4MDc1LDY4MTM0NzQyMCwyMDM1OT
-Y1NzM4XX0=
+eyJoaXN0b3J5IjpbLTEyODM1NDE5Myw2ODEzNDc0MjAsMjAzNT
+k2NTczOF19
 -->
