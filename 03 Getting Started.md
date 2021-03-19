@@ -141,15 +141,16 @@ Please note the **changed=0** in the output.
 This means that noting has been changed at all, the system got not modified at all.
 
 ### ansible-vault
-
+Is an encryption/decryption utility for Ansible data files.
+We need this to protect sensible data like passwords for our 
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDc2ODMyMSwxNDIwNzk3OTk0LC0yMD
-A2OTMwMDE5LC0xMzA0NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQz
-NDA1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF
-19
+eyJoaXN0b3J5IjpbLTE1MDY0NDIxNDAsMTQyMDc5Nzk5NCwtMj
+AwNjkzMDAxOSwtMTMwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0
+MzQwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3Mz
+hdfQ==
 -->
