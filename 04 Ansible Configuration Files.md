@@ -13,27 +13,40 @@ ansible --version
 	  executable location = /usr/bin/ansible
 	  python version = 3.6.8 (default, Aug 24 2020, 17:57:11) [GCC 8.3.1 20191121 (Red Hat 8.3.1-5)]
 ```
+## Ansible Config File
 
+### Project (project_folder/ansible.cfg)
 
-## Project (project_folder/ansible.cfg)
-
-## User ($HOME/.ansible.cfg)
+### User ($HOME/.ansible.cfg)
 We don't need that in our labs, but if existing, this would override the system configuration.
 
-## System (/etc/ansible/ansible.cfg)
+### System (/etc/ansible/ansible.cfg)
 We already created that during the setup.
 Let's check what's configured there:
 ```
 egrep -v '^$|^#' /etc/ansible/ansible.cfg 
-
+	[defaults]
+	inventory      = /etc/ansible/hosts
+	roles_path    = /etc/ansible/roles
+	collections_paths = /etc/ansible/collections
+	remote_user = root
+	log_path = /var/log/ansible.log
+	nocows = 1
+	[inventory]
+	[privilege_escalation]
+	[paramiko_connection]
+	[ssh_connection]
+	[persistent_connection]
+	[accelerate]
+	[selinux]
+	[colors]
+	[diff]
 ```
 
-#### Ansible Config File
-
-#### inventory
+## inventory
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI5NDk1NjYwLC05MTgzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbMTYwOTc0OTUzMSwtOTE4MzkzNjA5XX0=
 -->
