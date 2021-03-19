@@ -41,7 +41,7 @@ ansible-doc dnf
 
 * Now we just update the software with an ad-hoc ansible comand:
 First let us check if Ansible can connect the target server
-```bash
+```
 ansible -m ping localhost
 
 	localhost | SUCCESS => {
@@ -49,8 +49,16 @@ ansible -m ping localhost
 	    "ping": "pong"
 	}
 ```
+```
+ansible -m dnf -e state=latest -e name='*' localhost
 
-
+	localhost | SUCCESS => {
+	    "changed": false,
+	    "msg": "Nothing to do",
+	    "rc": 0,
+	    "results": []
+	}
+```
 
 
 ansible-galaxy
@@ -71,6 +79,6 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Mzg2MjcyOCw2ODEzNDc0MjAsMjAzNT
-k2NTczOF19
+eyJoaXN0b3J5IjpbLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMz
+U5NjU3MzhdfQ==
 -->
