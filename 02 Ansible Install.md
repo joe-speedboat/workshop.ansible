@@ -8,6 +8,7 @@ Log into the vm with ssh as root and install Ansible:
     dnf -y install epel-release
     dnf -y install git wget curl ansible vim-enhanced nano colordiff
   
+  ### Configure
    We need some new directories too
 
     test -d /etc/ansible/projects || mkdir /etc/ansible/projects ; chmod 700 /etc/ansible/projects
@@ -25,6 +26,7 @@ Now we do some basic configuration to suite our needs
     sed -i 's|^#nocows .*|nocows = 1|g' $ansibleconfigfile
     sed -i "/^roles_path/a\ \n#additional paths to search for collections in, colon separated\ncollections_paths = /etc/ansible/collections" $ansibleconfigfile
 
+### Review
 Now we look for the changes we made above:
 * To the directories
 ```
@@ -36,8 +38,11 @@ ls -ld /etc/ansible/collections /etc/ansible/projects
 ```
 colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
 ```
+### Finish
+Because we use vim for our exercises, we need to teach vim about the behavior we need to edit our yaml files:
 
+    echo 'autocmd Filetype yml setlocal ai sw=2 et' >>$HOME/.vimrc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ4NDE5ODldfQ==
+eyJoaXN0b3J5IjpbLTEzOTI0NjYwMjFdfQ==
 -->
