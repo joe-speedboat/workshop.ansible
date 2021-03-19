@@ -36,6 +36,7 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
 ### Ansible Setup
 
+dnf install git epel-release wget curl ansible
 
 ### Ansible Files
 #### cfg
@@ -186,6 +187,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjYxMjgzNiwxNjIxNzYyNzc2LC0xMj
+eyJoaXN0b3J5IjpbLTI4OTA0NTczMCwxNjIxNzYyNzc2LC0xMj
 cyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
 -->
