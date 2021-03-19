@@ -34,12 +34,16 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 ## Architecture
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
-### Ansible Comands
+### Ansible Setup
+
 
 ### Ansible Files
 #### cfg
 #### inventory
+#### playbook
 
+
+### Ansible Comands
 
 ### Ansible Projects
 
@@ -182,6 +186,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzgxMTQxNSwxNjIxNzYyNzc2LC0xMj
+eyJoaXN0b3J5IjpbMTMwNjYxMjgzNiwxNjIxNzYyNzc2LC0xMj
 cyMzIwNDQ0LC0yNDE0OTQzMzddfQ==
 -->
