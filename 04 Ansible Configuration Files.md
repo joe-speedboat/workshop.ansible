@@ -75,12 +75,13 @@ cloud1
 [kvm]
 clue1
 clue2
+saturn.bitbull.ch ansible_ssh_port=222 ospatch_reboot=false
 
 [esxi]
 clue3 gather_facts=False
 
 [windows]
-w7
+win[01:10]
 
 [office]
 vpn
@@ -96,12 +97,13 @@ cloud.office.bitbull.ch
 [wan]
 rigel.bitbull.ch ansible_ssh_port=50022 ospatch_reboot=false
 pan.bitbull.ch ansible_ssh_port=22 ospatch_reboot=false
-saturn.bitbull.ch ansible_ssh_port=222 ospatch_reboot=false
+
 gate.bitbull.ch ansible_ssh_port=222
 
 ' > ansible.cfg
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc2ODkxNzcsLTkxODM5MzYwOV19
+eyJoaXN0b3J5IjpbLTM1NzUxMTcxMSwtMTY4NzY4OTE3NywtOT
+E4MzkzNjA5XX0=
 -->
