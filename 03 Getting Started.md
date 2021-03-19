@@ -167,14 +167,22 @@ cat /etc/ansible/passwords.yml
 	32303561613933663530353939623835643936393166646366646631633732356531
 ```
 And now let's decrypt the vault:
-
+```
+ansible-vault view /etc/ansible/passwords.yml
+Vault password: 
+```
+```
+---
+password: superSecret!
+...
+```
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDE0MjkwNiwtMTI0Njc2MzY3NSwtMT
+eyJoaXN0b3J5IjpbMTU4NDA2MjI1MiwtMTI0Njc2MzY3NSwtMT
 UwNjQ0MjE0MCwxNDIwNzk3OTk0LC0yMDA2OTMwMDE5LC0xMzA0
 NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQzNDA1MSwtMjExNTY2MD
 MzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF19
