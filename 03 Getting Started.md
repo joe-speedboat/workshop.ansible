@@ -1,4 +1,20 @@
 # Getting Started
+Now we have installed Ansible on the Linux VM, lets see which comands we can use
+```
+rpm -ql ansible | grep bin/
+	/usr/bin/ansible
+	/usr/bin/ansible-config
+	/usr/bin/ansible-connection
+	/usr/bin/ansible-console
+	/usr/bin/ansible-doc
+	/usr/bin/ansible-galaxy
+	/usr/bin/ansible-inventory
+	/usr/bin/ansible-playbook
+	/usr/bin/ansible-pull
+	/usr/bin/ansible-test
+	/usr/bin/ansible-vault
+
+
 
 ## Ansible Comands
 
@@ -28,5 +44,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzOTgzMzE2XX0=
+eyJoaXN0b3J5IjpbLTE4OTk2NTc4NDFdfQ==
 -->
