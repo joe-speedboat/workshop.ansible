@@ -97,7 +97,9 @@ Did you know about this content?!
 But enough for now, let's look into roles later!
 
 ### ansible-inventory
+We already discussed about inventory. With this command, we can show t
 
+ansible-inventory --list --vars --yaml
 
 
 ansible-playbook
@@ -116,6 +118,7 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjM3MDIzMTcsOTI3NDM0MDUxLC0yMT
-E1NjYwMzM3LDY4MTM0NzQyMCwyMDM1OTY1NzM4XX0=
+eyJoaXN0b3J5IjpbNzY2NTIwMTAxLC0xNjYzNzAyMzE3LDkyNz
+QzNDA1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTcz
+OF19
 -->
