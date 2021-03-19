@@ -41,8 +41,9 @@ colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -
 ### Finish
 Because we use vim for our exercises, we need to teach vim about the behavior we need to edit our yaml files:
 
-    echo 'autocmd Filetype yml setlocal ai sw=2 et' >>$HOME/.vimrc
-
+    echo 'autocmd Filetype yml setlocal sw=2 et' >$HOME/.vimrc
+    echo 'set ai' >>$HOME/.vimrc
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTI0NjYwMjFdfQ==
+eyJoaXN0b3J5IjpbLTE4MTI0MzgxOTMsLTEzOTI0NjYwMjFdfQ
+==
 -->
