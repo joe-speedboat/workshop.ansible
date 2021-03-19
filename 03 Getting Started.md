@@ -43,7 +43,9 @@ First let us check if Ansible can connect the target server
 ```bash
 ansible -m ping localhost
 ```
-<span style="color:blue">
+
+$\color{red}{your-text-here}$
+
 localhost | SUCCESS => {
     "changed": false,
     "ping": "pong"
@@ -71,5 +73,5 @@ ansible-vault
 
 ### Ansible Projects
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MTYxNjUwNywyMDM1OTY1NzM4XX0=
+eyJoaXN0b3J5IjpbNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
