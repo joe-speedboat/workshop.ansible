@@ -103,31 +103,31 @@ ansible-inventory --graph --vars --yaml
   |--@esxi:
   |  |--clue3
   |  |  |--{gather_facts = False}
-  |--@kvm:
-  |  |--clue1
-  |  |  |--{ospatch_reboot = false}
-  |  |--clue2
-  |  |  |--{ospatch_reboot = false}
-  |  |--{ospatch_reboot = false}
-  |--@lab:
-  |  |--vm01
-  |  |--vm02
-  |  |--vm03
-  |  |--vm04
-  |  |--vm05
   |--@linux:
+  |  |--@kvm:
+  |  |  |--clue1
+  |  |  |  |--{ospatch_reboot = false}
+  |  |  |--clue2
+  |  |  |  |--{ospatch_reboot = false}
+  |  |  |--{ospatch_reboot = false}
+  |  |--@lab:
+  |  |  |--vm01
+  |  |  |--vm02
+  |  |  |--vm03
+  |  |  |--vm04
+  |  |  |--vm05
+  |  |--@wan:
+  |  |  |--gate.domain.ch
+  |  |  |  |--{ansible_ssh_port = 222}
+  |  |  |--pan.domain.ch
+  |  |  |  |--{ansible_ssh_port = 22}
+  |  |  |--rigel.domain.ch
+  |  |  |  |--{ansible_ssh_port = 50022}
   |  |--graylog
   |  |--install
   |  |--webgate
   |  |--workstation1
   |--@ungrouped:
-  |--@wan:
-  |  |--gate.domain.ch
-  |  |  |--{ansible_ssh_port = 222}
-  |  |--pan.domain.ch
-  |  |  |--{ansible_ssh_port = 22}
-  |  |--rigel.domain.ch
-  |  |  |--{ansible_ssh_port = 50022}
   |--@windows:
   |  |--win01
   |  |--win02
@@ -135,7 +135,8 @@ ansible-inventory --graph --vars --yaml
   |  |--win04
   |  |--win05
 ```
+Do you understand how vars and children got handled in the inventory
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3MzY2OTc3LC0xNjg3Njg5MTc3LC05MT
-gzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbLTE4ODIxNDg4MTUsLTE2ODc2ODkxNzcsLT
+kxODM5MzYwOV19
 -->
