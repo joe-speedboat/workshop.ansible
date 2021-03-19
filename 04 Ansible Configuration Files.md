@@ -63,14 +63,8 @@ mkdir ./collections ./roles
 ```
 ```
 echo '
-
 [lab]
 vm[01:40]
-
-[nextcloud]
-cloud1
-cloud2
-
 
 [kvm]
 clue1
@@ -85,25 +79,22 @@ clue3 gather_facts=False
 [windows]
 win[01:10]
 
+[wan]
+rigel.bitbull.ch ansible_ssh_port=50022
+pan.bitbull.ch ansible_ssh_port=22
+gate.bitbull.ch ansible_ssh_port=222
+
 [linux]
 [kvm:children]
+[wan:children]
 workstation1
 install
 webgate
 graylog
-sso
-
-
-[wan]
-rigel.bitbull.ch ansible_ssh_port=50022 ospatch_reboot=false
-pan.bitbull.ch ansible_ssh_port=22 ospatch_reboot=false
-
-gate.bitbull.ch ansible_ssh_port=222
-
 ' > ansible.cfg
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTUyMjkyNTMsLTE2ODc2ODkxNzcsLT
-kxODM5MzYwOV19
+eyJoaXN0b3J5IjpbMTc2MjgzNTYsLTE2ODc2ODkxNzcsLTkxOD
+M5MzYwOV19
 -->
