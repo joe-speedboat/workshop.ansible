@@ -26,8 +26,10 @@ If all of you have finished the lab, do a review in class and explain each other
 
 
 ### Hints
-* 
+* Perms
+* Group Vars
+* Nested Groups
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDI1Njk3MzYsLTM5MjU3Nzc1MV19
+eyJoaXN0b3J5IjpbLTIzNDAwMzEwOSwtMzkyNTc3NzUxXX0=
 -->
