@@ -13,7 +13,7 @@ Please not that this playbooks use the same modules as vCenter VM targets.
 VMware modules mostly work with pyVim.
 Install it with:
 
-    pip3 install pyVim
+    pip3 install pyVim pyVmomi
 
 ### Project
 ```bash
@@ -154,7 +154,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNTA5MTEsMTAwNDIzOTAxNiwtNjAxMj
-EzMzYxLDIxMTkwMTIyOTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
-
+eyJoaXN0b3J5IjpbMTY2NjI4NjY0NCwxMDA0MjM5MDE2LC02MD
+EyMTMzNjEsMjExOTAxMjI5Niw1OTk1NDgyODgsNzMwOTk4MTE2
+XX0=
 -->
