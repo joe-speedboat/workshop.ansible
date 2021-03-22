@@ -42,8 +42,9 @@ remote_user = root
 log_path = ./ansible.log
 " > $PDIR/ansible.cfg
 ```
-##
+#### Playbook
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4NDA1NTY2OCwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbLTU3OTg3MDUzOSwtMTk4MDU5NDgwOF19
 -->
