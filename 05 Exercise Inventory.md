@@ -14,7 +14,8 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 * Create Host group <code>lin</code>
 	* With two hosts <code>linX</code> (X is the number)
 * The dcX and linX must have the var <code>ntp_srv -> ch.pool.ntp.org</code>
+* The winX host must not have the var <code>ntp_srv</code> assigned
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMzk3MDY3Nl19
+eyJoaXN0b3J5IjpbMjEzMzc0MTRdfQ==
 -->
