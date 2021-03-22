@@ -80,34 +80,25 @@ log_path = ./ansible.log
   hosts: localhost
   vars:
     esxi_host: esxi1
+    vmname: vm1
   tasks:
-  - name: loop virtual machines
-    block:
-      - set_fact:
-          all_guest_names: []
-      - name: Get virtual machine names
-        vmware_vm_info:
-          hostname: "{{ esxi_host }}"
-          username: "{{ esxi_user }}"
-          password: "{{ esxi_password }}"
-          folder: ""
-          validate_certs: no
-        delegate_to: localhost
-        register: vm_info
-      - set_fact:
-          all_guest_names: "{{ all_guest_names + [ item.guest_name ] }}"
-        no_log: true
-        with_items:
-          - "{{ vm_info.virtual_machines | json_query(query) }}"
-        vars:
-          query: "[?guest_name]"
-          
-  - name: print all virtual machine names
-    debug:
-      msg: "{{ all_guest_names }}"
+  - name: Get VM Snapshots
+    vmware_guest_snapshot_info:
+      hostname: "{{ esxi_host }}"
+      username: "{{ esxi_user }}"
+      password: "{{ esxi_password }}"
+      datacenter: ""
+      folder: ""
+      validate_certs: no
+      name: "{{ vmname }}"
+    register: snapshot_info
+    delegate_to: localhost
+  - debug: 
+  var=snapshot_info.guest_snapshots.snapshots
+
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzA0NTQwNjAsMjExOTAxMjI5Niw1OT
-k1NDgyODgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbOTAzMTIzOTQwLDIxMTkwMTIyOTYsNTk5NT
+Q4Mjg4LDczMDk5ODExNl19
 -->
