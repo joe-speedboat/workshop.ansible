@@ -4,9 +4,16 @@ There is a built-in mechanic to protect variable called <code>ansible-vault<code
 You can use it in two ways by default
 ## ansible-vault
 With ansible-vault we can create symetric encrypted files ansible can work with.
-But  let
+But  let's do the learning with an example
 
 ## Setup Vault Project
+```bash
+PNAME="AnsibleVault"
+PDIR="/etc/ansible/projects/vault_demo"
+mkdir -p $PDIR
+chmod 700 $PDIR
+mkdir 
+```
 
 
 ## The ugly way
@@ -15,5 +22,5 @@ But  let
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODI4MTU2MzhdfQ==
+eyJoaXN0b3J5IjpbLTU5MzA0MzExMF19
 -->
