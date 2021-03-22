@@ -9,6 +9,7 @@ So lets look what we can do with VMware Targets:
 
     ansible-doc -l | grep vmware
 
+## Example
 Lets Create an example Playbook that creates a linked clone of a VM:
 
 ```yaml
@@ -28,20 +29,21 @@ Lets Create an example Playbook that creates a linked clone of a VM:
         state: poweredoff
         template: LNX_TEMPLATE
         linked_clone: true
-        snapshot_src: "{{ item.key }}"
+        snapshot_src: snap1
         hardware:
-          memory_mb: "{{ item.value.mem}}"
-          num_cpus: "{{ item.value.cpu}}"
+          memory_mb: "1024
+          num_cpus: 2
           scsi: paravirtual
         networks:
-        - name: "{{ network }}"
+        - name: DMZ
         wait_for_ip_address: no
       delegate_to: localhost
       register: deploy
       ignore_errors: true
-      with_dict: "{{ machines }}"
 ...
 ```
+#
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTExNTA0NDYsMTE2MzE5MTY0MF19
+eyJoaXN0b3J5IjpbLTE4OTYxMjM3NDYsMTE2MzE5MTY0MF19
 -->
