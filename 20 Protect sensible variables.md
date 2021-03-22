@@ -91,7 +91,24 @@ ansible-inventory --vars --list --ask-vault-pass
 Can you imagine why I don't like this way either?
 
 ## The configuration I like
-If you read the documentation carefully, you will find out that inventory
+If you read the documentation carefully, you will find out that inventory and group_vars may be executeables as well.
+Hmm, maybe this is the way it can get nicer!?
+Let's try
+
+### Ansible Config
+<code>$PDIR/ansible.cfg</code>
+```ini
+# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+vault_password_file = ./vault_unlock
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc5OTc2MTFdfQ==
+eyJoaXN0b3J5IjpbLTIwODAyNzEwOV19
 -->
