@@ -7,6 +7,7 @@ For sure you can reach Windows Systems as well.
 ## Minimal Windows Playbook Setup
 ### Prepare Windows VM
 * Setup a current Windows OS
+* Create a Snapshot of the VM
 * Create local admin user
 * Configure WinRM
 	* https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html 
@@ -63,8 +64,7 @@ log_path = ./ansible.log
       - Windows Malicious Software Removal Tool for Windows
       - \d{4}-\d{2} Cumulative Update for Windows Server 2016
       reboot: yes
-      reboot_timeout: 3600
-
+      reboot_timeout: 1800
 ...
 ```
 
@@ -77,6 +77,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjg2NjIyNywyNTM1NjE3MzUsOTgyMT
-kzMjM1LDYxMzIzNTU0OSwxNzUyMDExNTcxXX0=
+eyJoaXN0b3J5IjpbLTg2OTg2MDE5LDI1MzU2MTczNSw5ODIxOT
+MyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
 -->
