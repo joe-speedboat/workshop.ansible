@@ -6,9 +6,11 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 
 # create new project
 * In directory: <code>/etc/my_projects/myinventory</code>
-
+* Create an "ansible config" file for this project
+* Create an inventory with the name: <code>infra</code>
+* Create
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODk4MDU5ODldfQ==
+eyJoaXN0b3J5IjpbLTE3MTQxMzExMTJdfQ==
 -->
