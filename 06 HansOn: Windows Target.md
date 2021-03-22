@@ -48,7 +48,7 @@ remote_user = root
 log_path = ./ansible.log
 ```
 #### Playbook
-* <code>$PDIR/win_update.ym</code>
+* <code>$PDIR/win_update.yml</code>
 ```yaml
 ---
 - name: Run Updates on Windows
@@ -76,6 +76,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAyODQ4MTk3LDk4MjE5MzIzNSw2MTMyMz
+eyJoaXN0b3J5IjpbMjUzNTYxNzM1LDk4MjE5MzIzNSw2MTMyMz
 U1NDksMTc1MjAxMTU3MV19
 -->
