@@ -132,8 +132,9 @@ Now call it and feed the password
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
-* 
+* Reboot the host, LogIn again, call it, what happens?
+Great, but sadly this service is available only for the root user.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMDgxMzEwMSwxNzI4NjQxOTY3LDIzMj
+eyJoaXN0b3J5IjpbLTM2MDkwMDQ1NSwxNzI4NjQxOTY3LDIzMj
 Y0MzgyN119
 -->
