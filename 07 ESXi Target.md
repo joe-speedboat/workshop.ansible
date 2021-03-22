@@ -73,10 +73,10 @@ log_path = ./ansible.log
 ...
 ```
 
-##### <code>$PDIR/esxi_vm_list.yml</code>
+##### <code>$PDIR/esxi_snapshot_list.yml</code>
 ```yaml
 ---
-- name: list all VMs on ESXi host
+- name: list all VM snapshots on ESXi host
   hosts: localhost
   vars:
     esxi_host: esxi1
@@ -108,6 +108,6 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3MzA0Mzc3LDIxMTkwMTIyOTYsNTk5NT
-Q4Mjg4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE1MzA0NTQwNjAsMjExOTAxMjI5Niw1OT
+k1NDgyODgsNzMwOTk4MTE2XX0=
 -->
