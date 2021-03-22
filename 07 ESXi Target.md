@@ -2,21 +2,20 @@
 # Ansible ESXi Targets
 This is an example on how to execute tasks on esxi targets directly.
 
-## Minimal Playbook Setup
-### Prepare ESXi VM
+## Prepare ESXi VM
 * Setup a ESXi
 * Setup a VM in the new ESXi
 
-### Create Ansible Project Files
+## Create Ansible Project Files
 
-#### Project
+### Project
 ```bash
 PNAME="VMware_ESXi"
 PDIR="/etc/ansible/projects/esxi_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
-#### Inventory
+### Inventory
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
@@ -27,7 +26,7 @@ esxi1
 esxi_user=root
 esxi_password=ChangeMe...
 ```
-#### Ansible Config
+### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
 ```ini
 # custom ansible $PNAME configuration
@@ -38,8 +37,8 @@ collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
 ```
-#### Playbooks
-* <code>$PDIR/esxi_vm_list.yml</code>
+### Playbooks
+##### <code>$PDIR/esxi_vm_list.yml</code>
 ```yaml
 ---
 - name: List VMs on ESXi
@@ -75,6 +74,6 @@ log_path = ./ansible.log
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNTg4NzA5NCw1OTk1NDgyODgsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbODA2MDYzOTkwLDU5OTU0ODI4OCw3MzA5OT
+gxMTZdfQ==
 -->
