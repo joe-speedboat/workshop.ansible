@@ -16,7 +16,7 @@ chmod 700 $PDIR
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
-[switch]
+[cisco_switch]
 switch1
 ```
 #### Ansible Config
@@ -34,9 +34,61 @@ log_path = ./ansible.log
 * <code>$PDIR/cisco_switch_backup.yml</code>
 ```yaml
 ---
+- hosts: switch1
+  gather_facts: no
+  connection: local
+  vars:
+    backup_dir: /opt/cisco_backup/backup
+  tasks:
+  - name: save running config to device
+    ios_config:
+      save_when: always
+      provider: "{{ creds }}"
+  - name: get cisco switch config
+    ios_command:
+      commands: 
+      - show running-config
+      provider: "{{ creds }}"
+    register: config
+  - name: ensure backup folder is created
+    file:
+      path: "{{ backup_root }}/"
+      state: directory
+    run_once: yes
+  - name: get timestamp
+    command: date +%Y%m%d
+    register: timestamp
+    run_once: yes
+  - name: save output to {{ backup_root }} 
+    copy: 
+      content: "{{ config.stdout[0] }}"
+      dest: "{{ backup_root }}/show_run_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
+  - name: get device config
+    ios_command:
+      commands:
+      - show vlan brief
+      - show interface status
+      - show ip arp
+      - show cdp neighbors
+      - show version
+      provider: "{{ creds }}"
+    register: config
+  - name: save output to {{ backup_root }}
+    copy:
+      content: |
+        {{ config.stdout[0] }}
+        ----------------------
+        {{ config.stdout[1] }}
+        ----------------------
+        {{ config.stdout[2] }}
+        ----------------------
+        {{ config.stdout[3] }}
+        ----------------------
+        {{ config.stdout[4] }}
+      dest: "{{ backup_root }}/doku_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
 
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTM4NDgyM119
+eyJoaXN0b3J5IjpbMTc4MTM4MzI5N119
 -->
