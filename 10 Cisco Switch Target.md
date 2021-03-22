@@ -16,14 +16,9 @@ chmod 700 $PDIR
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
-[win_hosts]
-vm12
+[switch]
+switch1
 
-[win_hosts:vars]
-ansible_user=loc_adm
-ansible_password=ChangeMe...
-ansible_connection=winrm
-# ansible_winrm_server_cert_validation=ignore
 ```
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -56,5 +51,5 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODU1NDM5Ml19
+eyJoaXN0b3J5IjpbLTk2MzI1ODc2NF19
 -->
