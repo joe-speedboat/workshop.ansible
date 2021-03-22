@@ -20,8 +20,9 @@ mkdir -p $PDIR
 chmod 700 $PDIR
 ```
 #### Inventory
+* <code>$PDIR/inventory</code>
 ```ini
-echo "# ansible demo inventory for $PNAME
+# ansible demo inventory for $PNAME
 [win_hosts]
 vm12
 
@@ -29,18 +30,16 @@ vm12
 ansible_connection: winrm
 ansible_user: loc_adm
 ansible_password: ChangeMe...
-" > $PDIR/inventory
 ```
 #### Ansible Config
-```bash
-echo "# custom ansible $PNAME configuration
+```ini
+# custom ansible $PNAME configuration
 [defaults]
 inventory      = ./inventory
 roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
-" > $PDIR/ansible.cfg
 ```
 #### Playbook
 ```yaml
@@ -62,5 +61,5 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzMzM1NTA4NSwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbMTY3NTg2NjA3MCwtMTk4MDU5NDgwOF19
 -->
