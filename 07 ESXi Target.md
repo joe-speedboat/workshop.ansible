@@ -9,6 +9,12 @@ Please not that this playbooks use the same modules as vCenter VM targets.
 
 ## Create Ansible Project Files
 
+### Install Python Libs
+VMware modules mostly work with pyVim.
+Install it with:
+
+    pip3 install pyVim
+
 ### Project
 ```bash
 PNAME="VMware_ESXi"
@@ -148,6 +154,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDIzOTAxNiwtNjAxMjEzMzYxLDIxMT
-kwMTIyOTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNTcwNTA5MTEsMTAwNDIzOTAxNiwtNjAxMj
+EzMzYxLDIxMTkwMTIyOTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
+
 -->
