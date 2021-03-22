@@ -39,7 +39,7 @@ vault_password_file = ./vault_unlock
 ```
 
 ### Write down the vault handler password
-    echo tryNotToDo > $PDIR/vault_unlock
+    echo hideThis > $PDIR/vault_unlock
 
 ### Create the password vault
 ```bash
@@ -124,5 +124,5 @@ systemd-ask-password --keyname=$(realpath $0) --accept-cached
 Now call it and feed the password
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0MTAyNjQ0NSwyMzI2NDM4MjddfQ==
+eyJoaXN0b3J5IjpbMTcyODY0MTk2NywyMzI2NDM4MjddfQ==
 -->
