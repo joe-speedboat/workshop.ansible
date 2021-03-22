@@ -4,9 +4,14 @@ For sure you can reach Windows Systems as well.
 	* Explain it to the class
 * What prerequisites do we need to cover?
 
-## Typical Windows Playbook
+## Minimal Windows Playbook Setup
+### Prepare Windows VM
+* Setup a current Windows OS
+* Create local admin user
+* Configure WinRM
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODA1OTQ4MDhdfQ==
+eyJoaXN0b3J5IjpbLTE5MzU2MDk5MTQsLTE5ODA1OTQ4MDhdfQ
+==
 -->
