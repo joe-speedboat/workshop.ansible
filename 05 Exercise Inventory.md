@@ -8,9 +8,12 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 * In directory: <code>/etc/my_projects/myinventory</code>
 * Create an "ansible config" file for this project
 * Create an inventory with the name: <code>infra</code>
-* Create
+* Create Host group <code>win1</code>
+	*With five hosts <code>win1 -> win5</code>
+* Create Host group <code>win1</code>
+	*With five hosts <code>win1 -> win5</code>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTQxMzExMTJdfQ==
+eyJoaXN0b3J5IjpbMzYwMzAyMDc2XX0=
 -->
