@@ -12,7 +12,29 @@ PNAME="AnsibleVault"
 PDIR="/etc/ansible/projects/vault_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
-mkdir 
+mkdir $PDIR/group_vars
+```
+### Inventory
+* <code>$PDIR/inventory</code>
+```ini
+# ansible demo inventory for $PNAME
+[vault_demo]
+
+
+[esxi_hosts:vars]
+esxi_user=root
+esxi_password=ChangeMe...
+```
+### Ansible Config
+* <code>$PDIR/ansible.cfg</code>
+```ini
+# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
 ```
 
 
@@ -22,5 +44,5 @@ mkdir
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MzA0MzExMF19
+eyJoaXN0b3J5IjpbMTY3MDkyNjg3NF19
 -->
