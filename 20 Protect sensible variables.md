@@ -21,6 +21,8 @@ mkdir $PDIR/group_vars
 [vault_demo]
 host1
 ```
+
+## The ugly way
 ### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
 ```ini
@@ -31,14 +33,12 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
+vault_password_file = ./vault_password_file
 ```
-
-
-## The ugly way
-
-
+### Write vault handler password
+echo tryNotToDo > 
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTc1MDE0OF19
+eyJoaXN0b3J5IjpbLTIwODQ3ODkwNF19
 -->
