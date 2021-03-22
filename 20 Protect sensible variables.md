@@ -134,7 +134,34 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Reboot the host, LogIn again, call it, what happens?
 Great, but sadly this service is available only for the root user.
+
+### Solution2 (simple var)
+This works for the session until you logout.
+But it is super simple ans works with all users, not only root.
+
+### Replace the vault password with a script
+```
+$PDIR/vault_unlock
+```
+```bash
+#!/bin/bash
+# with keyname as absolute script path we can use it in several projects
+systemd-ask-password --keyname=$(realpath $0) --accept-cached
+```
+Make it executeable
+```
+chmod 700 $PDIR/vault_unlock
+```
+Now call it and feed the password
+```
+    ./vault_unlock
+```
+#### Explore how it works
+* Call it again, what happens?
+* LogOut, LogIn again, call it, what happens?
+* Reboot the host, LogIn again, call it, what happens?
+Great, but sadly this service is available only for the root user.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MDkwMDQ1NSwxNzI4NjQxOTY3LDIzMj
+eyJoaXN0b3J5IjpbLTU1MzY2MDIzMCwxNzI4NjQxOTY3LDIzMj
 Y0MzgyN119
 -->
