@@ -16,14 +16,17 @@ PNAME="Windows_WinRM"
 PDIR="/etc/ansible/projects/win_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
-echo "# ansible demo inventory for  $PNAME
+echo "# ansible demo inventory for $PNAME
 [all:vars]
 ansible_connection: winrm
-ansible_user: administrator
-ansible_password: This-Should-Be-a-Password!
+ansible_user: loc_adm
+ansible_password: ChangeMe...
+
+[win_demo]
+vm12
+" > $PDIR/inventory
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDk5NjM5NTcsLTE5ODA1OTQ4MDhdfQ
-==
+eyJoaXN0b3J5IjpbLTQxOTM5MDc2NCwtMTk4MDU5NDgwOF19
 -->
