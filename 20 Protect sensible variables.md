@@ -13,6 +13,7 @@ PNAME="AnsibleVault"
 PDIR="/etc/ansible/projects/vault_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
+cd $PDIR
 ```
 
 ### Inventory
@@ -57,5 +58,5 @@ ansible-inventory --vars --list
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc1ODIzMTkyXX0=
+eyJoaXN0b3J5IjpbLTEwMDkwMTYzODBdfQ==
 -->
