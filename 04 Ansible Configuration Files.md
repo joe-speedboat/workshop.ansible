@@ -1,5 +1,5 @@
 
-# Ansible Files
+# Ansible Configuration Files
 With Ansible you can work in three different contexts.
 This depends on where you place your Ansible configuration.
 
@@ -137,6 +137,6 @@ ansible-inventory --graph --vars --yaml
 ```
 Do you understand how vars and children got handled in the inventory?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MTY2ODk2NCwtMTY4NzY4OTE3NywtOT
-E4MzkzNjA5XX0=
+eyJoaXN0b3J5IjpbLTY1OTg3NDk4MiwxMTYxNjY4OTY0LC0xNj
+g3Njg5MTc3LC05MTgzOTM2MDldfQ==
 -->
