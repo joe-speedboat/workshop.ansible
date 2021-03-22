@@ -1,0 +1,15 @@
+---
+- name: Update Windows
+  hosts: win1
+  tasks:
+  - name: Exclude updates based on the update title
+    win_updates:
+      category_name:
+      - SecurityUpdates
+      - CriticalUpdates
+      blacklist:
+      - Windows Malicious Software Removal Tool for Windows
+      - \d{4}-\d{2} Cumulative Update for Windows Server 2016
+      reboot: yes
+      reboot_timeout: 3600
+...
