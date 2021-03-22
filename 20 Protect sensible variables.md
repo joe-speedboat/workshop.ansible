@@ -45,9 +45,15 @@ mkdir $PDIR/group_vars
 ```bash
 ansible-vault create $PDIR/group_vars/vault_demo.yml
 ```
+```yaml
+---
+password: superSecretStuff...
+...
+```
+ansible-inventory --vars --list
 
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODc4NTc2MV19
+eyJoaXN0b3J5IjpbMjA1MDY1NTU3Nl19
 -->
