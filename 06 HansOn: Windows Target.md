@@ -32,8 +32,8 @@ chmod 700 $PDIR
 vm12
 
 [win_hosts:vars]
-ansible_user=Administrator
-ansible_password=Hdsshdk112.
+ansible_user=loc_adm
+ansible_password=ChangeMe...
 ansible_connection=winrm
 # ansible_winrm_server_cert_validation=ignore
 ```
@@ -53,7 +53,7 @@ log_path = ./ansible.log
 ```yaml
 ---
 - name: Update with Important Windows Patches
-  hosts: vm12
+  hosts: win_hosts
   tasks:
   - name: Apply Patches
     win_updates:
@@ -77,6 +77,7 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NjMzNTMyOSwyNTM1NjE3MzUsOTgyMT
-kzMjM1LDYxMzIzNTU0OSwxNzUyMDExNTcxXX0=
+eyJoaXN0b3J5IjpbLTIxNDcwNTM5NiwtNzg2MzM1MzI5LDI1Mz
+U2MTczNSw5ODIxOTMyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFd
+fQ==
 -->
