@@ -34,6 +34,7 @@ vm12
 ansible_connection=winrm
 ansible_user=local_admin
 ansible_password=ChangeMe...
+# ansible_winrm_server_cert_validation=ignore
 ```
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -74,6 +75,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYwNDE3NTg0LDk4MjE5MzIzNSw2MTMyMz
+eyJoaXN0b3J5IjpbNjU3OTYyNTE1LDk4MjE5MzIzNSw2MTMyMz
 U1NDksMTc1MjAxMTU3MV19
 -->
