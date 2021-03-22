@@ -94,9 +94,6 @@ Can you imagine why I don't like this way either?
 If you read the documentation carefully, you will find out that inventory and group_vars may be executeables as well.
 Hmm, maybe this is the way it can get nicer!?
 
-### Solution1 (systemd-ask-password as root)
-If you are root, you can access a system service that can store your passwords temporarily until next reboot.
-This is used to encrypt harddisk
 
 ### Ansible Config
 <code>$PDIR/ansible.cfg</code>
@@ -110,10 +107,16 @@ remote_user = root
 log_path = ./ansible.log
 vault_password_file = ./vault_unlock
 ```
-### Replace the vault password with a script
 
-    $PDIR/vault_unlock
+### Solution1 (systemd-ask-password as root)
+If you are root, you can access a system service that can store your passwords temporarily until next reboot.
+This is used too for harddisk decryption during boot-up.
+
+### Replace the vault password with a script
+<code>$PDIR/vault_unlock
+#!/bin/bash
+systemd-ask-password --keyname=$(realpath $0) --accept-cached
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0Mzg2Mzc1LDIzMjY0MzgyN119
+eyJoaXN0b3J5IjpbMjM2MTkyNDUsMjMyNjQzODI3XX0=
 -->
