@@ -135,23 +135,18 @@ log_path = ./ansible.log
     esxi_host: esxi1
     vmname: vm1
   tasks:
-  - name: Revert Snapshot
-    vmware_guest_snapshot:
+  - name: Power on VM
+    vmware_guest_powerstate:
       hostname: "{{ esxi_host }}"
       username: "{{ esxi_user }}"
       password: "{{ esxi_password }}"
-      datacenter: ""
-      folder: ""
       validate_certs: no
       name: "{{ vmname }}"
-      state: revert
-      snapshot_name: "{{ snapname }}"
-      quiesce: yes
-      memory_dump: yes
+      state: powered-on
     delegate_to: localhost
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTM4MzgzLDIxMTkwMTIyOTYsNTk5NT
-Q4Mjg4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTYwMTIxMzM2MSwyMTE5MDEyMjk2LDU5OT
+U0ODI4OCw3MzA5OTgxMTZdfQ==
 -->
