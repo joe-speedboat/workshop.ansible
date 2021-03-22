@@ -13,8 +13,8 @@ Use Ansibles built-in documentation to solve the exercise.
 * Send the playbook to the teacher, he will fire it!
 
 ## Hints
-* ansible-doc -l | grep -i vmware
-* 
+* <code>ansible-doc -l | grep -i vmware</code>
+* <code>ansible-doc pause</code>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MDQwNjQxOV19
+eyJoaXN0b3J5IjpbMTQ2Mzk3NTY5MF19
 -->
