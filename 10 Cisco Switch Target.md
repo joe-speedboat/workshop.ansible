@@ -40,7 +40,11 @@ log_path = ./ansible.log
   vars:
     backup_dir: /etc/ansible/projects/cisco_switch/backup
     creds:
-      
+      host: "{{ inventory_hostname }}"
+      username: admin
+      password: logINPass...
+      auth_pass: enablePass...
+      authorize: yes
   tasks:
   - name: save running config to device
     ios_config:
@@ -88,9 +92,9 @@ log_path = ./ansible.log
         ----------------------
         {{ config.stdout[4] }}
       dest: "{{ backup_root }}/doku_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
-
 ...
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTY5Mjc2NV19
+eyJoaXN0b3J5IjpbLTE3OTExNTI3MjNdfQ==
 -->
