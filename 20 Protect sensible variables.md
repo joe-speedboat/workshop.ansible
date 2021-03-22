@@ -34,11 +34,16 @@ remote_user = root
 log_path = ./ansible.log
 vault_password_file = ./vault_unlock
 ```
-### Write vault handler password
+### Write down the vault handler password
 
     echo tryNotToDo > $PDIR/vault_unlock
 
+### Create the password vault
+```bash
+mkdir $PDIR/group_vars
+ansible-vault create 
+
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxOTM0OTcwNl19
+eyJoaXN0b3J5IjpbLTEwMTMwMzQxNzhdfQ==
 -->
