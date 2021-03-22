@@ -51,19 +51,20 @@ log_path = ./ansible.log
 * <code>$PDIR/win_update.yml</code>
 ```yaml
 ---
-- name: Run Updates on Windows
-  hosts: win_hosts
-  connection: winrm
-
+- name: Update Windows
+  hosts: vm12
   tasks:
+  - name: Exclude updates based on the update title
     win_updates:
-      category_names:
-        - CriticalUpdates
-        - SecurityUpdates
+      category_name:
+      - SecurityUpdates
+      - CriticalUpdates
       blacklist:
-        - Microsoft Silverlight
-    reboot: yes
-    reboot_timeout: 900
+      - Windows Malicious Software Removal Tool for Windows
+      - \d{4}-\d{2} Cumulative Update for Windows Server 2016
+      reboot: yes
+      reboot_timeout: 3600
+
 ...
 ```
 
@@ -76,6 +77,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzNTYxNzM1LDk4MjE5MzIzNSw2MTMyMz
-U1NDksMTc1MjAxMTU3MV19
+eyJoaXN0b3J5IjpbLTMwNjg2NjIyNywyNTM1NjE3MzUsOTgyMT
+kzMjM1LDYxMzIzNTU0OSwxNzUyMDExNTcxXX0=
 -->
