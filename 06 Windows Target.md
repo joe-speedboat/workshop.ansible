@@ -10,12 +10,17 @@ For sure you can reach Windows Systems as well.
 * Create local admin user
 * Configure WinRM
 
-### Create Ansible Project 
+### Create Ansible Project Files
+
+#### Project
 ```bash
 PNAME="Windows_WinRM"
 PDIR="/etc/ansible/projects/win_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
+```
+#### Inventory
+```bash
 echo "# ansible demo inventory for $PNAME
 [all:vars]
 ansible_connection: winrm
@@ -26,7 +31,7 @@ ansible_password: ChangeMe...
 vm12
 " > $PDIR/inventory
 ```
-
+#### Ansible Config
 ```bash
 echo "# custom ansible $PNAME configuration
 [defaults]
@@ -35,10 +40,10 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
-" > ansible.cfg
+" > $PDIR/ansible.cfg
 ```
-
+##
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTcwMzQyMiwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbLTQ4NDA1NTY2OCwtMTk4MDU5NDgwOF19
 -->
