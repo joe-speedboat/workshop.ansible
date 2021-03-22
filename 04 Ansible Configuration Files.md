@@ -111,7 +111,9 @@ ansible-inventory --vars --yaml --host kvm1
 ```
 
 Do you understand how vars and children got handled in the inventory?
+
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_vars.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODY3MDE5MywtNjU5ODc0OTgyLDExNj
-E2Njg5NjQsLTE2ODc2ODkxNzcsLTkxODM5MzYwOV19
+eyJoaXN0b3J5IjpbLTEzOTI5NTgwNDYsLTY1OTg3NDk4MiwxMT
+YxNjY4OTY0LC0xNjg3Njg5MTc3LC05MTgzOTM2MDldfQ==
 -->
