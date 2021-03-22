@@ -19,11 +19,7 @@ mkdir $PDIR/group_vars
 ```ini
 # ansible demo inventory for $PNAME
 [vault_demo]
-
-
-[esxi_hosts:vars]
-esxi_user=root
-esxi_password=ChangeMe...
+host1
 ```
 ### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -44,5 +40,5 @@ log_path = ./ansible.log
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDkyNjg3NF19
+eyJoaXN0b3J5IjpbMTMzMTc1MDE0OF19
 -->
