@@ -20,15 +20,15 @@ mkdir -p $PDIR
 chmod 700 $PDIR
 ```
 #### Inventory
-```bash
+```ini
 echo "# ansible demo inventory for $PNAME
-[all:vars]
+[win_hosts]
+vm12
+
+[win_hosts:vars]
 ansible_connection: winrm
 ansible_user: loc_adm
 ansible_password: ChangeMe...
-
-[win_hosts]
-vm12
 " > $PDIR/inventory
 ```
 #### Ansible Config
@@ -43,8 +43,8 @@ log_path = ./ansible.log
 " > $PDIR/ansible.cfg
 ```
 #### Playbook
-```bash
-echo "---
+```yaml
+---
 - name: Run Updates on Windows Servers
   hosts: win_hosts
   connection: winrm
@@ -58,9 +58,9 @@ echo "---
         - Microsoft Silverlight
     reboot: yes
     reboot_timeout: 900
-...">
+...
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODU1MzYzNiwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbMjEzMzM1NTA4NSwtMTk4MDU5NDgwOF19
 -->
