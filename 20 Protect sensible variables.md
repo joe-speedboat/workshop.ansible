@@ -1,4 +1,4 @@
-# Protect sensible variables
+# Protect variables with vaults
 You can imagine that some of the variables may need some protection.
 There is a built-in mechanic to protect variable called <code>ansible-vault<code>
 You can use it in two ways by default
@@ -137,7 +137,7 @@ Great, but sadly this service is available only for the root user.
 
 ### Solution2 (simple var)
 This works for the session until you logout.
-But it is super simple ans works with all users, not only root.
+But it is super simple and works with all users, not only root on any system.
 
 ### Replace the vault password with a script
 ```
@@ -166,7 +166,8 @@ Now call it and feed the password
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
+* Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5NjIyOTU4LC0zOTQyMDgwODIsLTE4OT
+eyJoaXN0b3J5IjpbNzY3OTAwNDIxLC0zOTQyMDgwODIsLTE4OT
 YzMTI2MDksMTcyODY0MTk2NywyMzI2NDM4MjddfQ==
 -->
