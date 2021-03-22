@@ -107,11 +107,11 @@ Not lets check how Ansible looks into that inventory file:
 ```bash
 ansible-inventory --graph --vars --yaml
 ansible-inventory --list --vars --yaml
-
+ansible-inventory --vars --yaml --host kvm1
 ```
 
 Do you understand how vars and children got handled in the inventory?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Nzk5NDAyOCwtNjU5ODc0OTgyLDExNj
+eyJoaXN0b3J5IjpbMTQ3ODY3MDE5MywtNjU5ODc0OTgyLDExNj
 E2Njg5NjQsLTE2ODc2ODkxNzcsLTkxODM5MzYwOV19
 -->
