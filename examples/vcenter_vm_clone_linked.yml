@@ -1,0 +1,41 @@
+---
+- name: clone linked vm in vCenter
+  hosts: localhost
+  vars:
+    vcenter_host: vcenter1
+    template: ALPINE_TEMPLATE
+    datacenter: BITBULL
+    cluster: LNX
+    vmfolder: /Ansible
+    network: DMZ
+    machines:
+      clone1:
+        cpu: 2
+        mem: 128
+  tasks:
+    - name: Create a linked VM from snapshot
+      vmware_guest:
+        hostname: "{{ vcenter_host }}"
+        username: "{{ vcenter_user }}"
+        password: "{{ vcenter_password }}"
+        validate_certs: no
+        datacenter: "{{ datacenter }}"
+        cluster: "{{ cluster }}"
+        folder: "{{ vmfolder }}"
+        name: "{{ item.key }}"
+        state: poweredoff
+        template: "{{ template }}""
+        linked_clone: true
+        snapshot_src: "{{ item.key }}"
+        hardware:
+          memory_mb: "{{ item.value.mem}}"
+          num_cpus: "{{ item.value.cpu}}"
+          scsi: paravirtual
+        networks:
+        - name: "{{ network }}"
+        wait_for_ip_address: no
+      delegate_to: localhost
+      register: deploy
+      ignore_errors: true
+      with_dict: "{{ machines }}"
+...
