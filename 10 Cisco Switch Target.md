@@ -8,7 +8,7 @@ The only tricky thing is to get a working example config, but lets create one.
 #### Project
 ```bash
 PNAME="Cisco_Switch"
-PDIR="/etc/ansible/projects/cisco_switch"
+PDIR="/etc/ansible/projects/cisco_switch/back"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
@@ -18,7 +18,6 @@ chmod 700 $PDIR
 # ansible demo inventory for $PNAME
 [switch]
 switch1
-
 ```
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -35,21 +34,9 @@ log_path = ./ansible.log
 * <code>$PDIR/win_update.yml</code>
 ```yaml
 ---
-- name: Update with Important Windows Patches
-  hosts: win_hosts
-  tasks:
-  - name: Apply Patches
-    win_updates:
-      category_name:
-      - SecurityUpdates
-      - CriticalUpdates
-      blacklist:
-      - Windows Malicious Software Removal Tool for Windows
-      - \d{4}-\d{2} Cumulative Update for Windows Server 2016
-      reboot: yes
-      reboot_timeout: 1800
+
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MzI1ODc2NF19
+eyJoaXN0b3J5IjpbMjA3NDE2NjAxM119
 -->
