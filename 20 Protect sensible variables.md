@@ -82,7 +82,8 @@ log_path = ./ansible.log
 ansible-inventory --vars --list
 	ERROR! Attempting to decrypt but no vault secrets found
 ```
-Oka
+Okay, that's not what we expected.
+Maybe we did something wrong
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNTM2MTgyMl19
+eyJoaXN0b3J5IjpbLTExMDc5NDAyMTldfQ==
 -->
