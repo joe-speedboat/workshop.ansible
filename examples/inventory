@@ -5,6 +5,13 @@ esxi1
 esxi_user=root
 esxi_password=ChangeMe...
 
+[vcenter_hosts]
+vcenter1
+
+[vcenter_hosts:vars]
+vcenter_user="administrator@vsphere.local"
+vcenter_password=ChangeMe...
+
 [win_hosts]
 win1
 
