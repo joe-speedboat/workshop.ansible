@@ -22,15 +22,15 @@ chmod 700 $PDIR
 ```
 #### Inventory
 * <code>$PDIR/inventory</code>
-```yaml
+```ini
 # ansible demo inventory for $PNAME
 [win_hosts]
 vm12
 
 [win_hosts:vars]
-ansible_connection: winrm
-ansible_user: loc_adm
-ansible_password: ChangeMe...
+ansible_connection=winrm
+ansible_user=local_admin
+ansible_password=ChangeMe...
 ```
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -46,7 +46,7 @@ log_path = ./ansible.log
 #### Playbook
 ```yaml
 ---
-- name: Run Updates on Windows Servers
+- name: Run Updates on Windows
   hosts: win_hosts
   connection: winrm
 
@@ -71,5 +71,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
+eyJoaXN0b3J5IjpbOTgyMTkzMjM1LDYxMzIzNTU0OSwxNzUyMD
+ExNTcxXX0=
 -->
