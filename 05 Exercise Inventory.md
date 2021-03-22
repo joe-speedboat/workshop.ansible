@@ -17,9 +17,9 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 * The winX host must not have the var <code>ntp_srv</code> assigned
 
 * Think before declaring about what you want to declare!
-* Ask if someht
+* Ask if something is unclear
 * Use commands you have seen before to verify then inventory content
 * Declare the inventory as minimal and lean as possible
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NDM3NTgxMF19
+eyJoaXN0b3J5IjpbLTEzNjAwODg2MzRdfQ==
 -->
