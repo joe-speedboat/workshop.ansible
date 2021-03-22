@@ -11,12 +11,12 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 * Create Host group <code>win</code>
 	* With two hosts <code>winX</code> (X is the number)
 	* With two hosts <code>dcX</code> (X is the number)
-* Create host group called </code> dnswith <>
+* Create host group called </code>dns</code> with two hosts <code>dcX</code> (X is the number)
 * Create host group <code>lin</code>
 	* With two hosts <code>linX</code> (X is the number)
 * The dcX and linX must have the var <code>ntp_srv -> ch.pool.ntp.org</code>
 * The winX host must not have the var <code>ntp_srv</code> assigned
-
+* Use the a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI2MzAyNzQ3XX0=
+eyJoaXN0b3J5IjpbLTE0MDcwOTQxNTRdfQ==
 -->
