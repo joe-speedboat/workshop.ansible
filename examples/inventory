@@ -1,0 +1,15 @@
+[esxi_hosts]
+esxi1
+
+[esxi_hosts:vars]
+esxi_user=root
+esxi_password=ChangeMe...
+
+[win_hosts]
+win1
+
+[win_hosts:vars]
+ansible_user=loc_adm
+ansible_password=ChangeMe...
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
