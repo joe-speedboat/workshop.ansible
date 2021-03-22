@@ -43,14 +43,38 @@ log_path = ./ansible.log
 ```yaml
 ---
 - name: List VMs on ESXi
-  hosts: esxiX
+- hosts: localhost
   tasks:
+  - name: loop virtual machines
+    block:
+      - set_fact:
+          all_guest_names: []
+      - name: Get virtual machine names
+        vmware_vm_info:
+          hostname: clue3.office.bitbull.ch
+          username: root
+          password: "{{ clue3_root }}"
+          folder: ""
+          validate_certs: no
+        delegate_to: localhost
+        register: vm_info
+      - set_fact:
+          all_guest_names: "{{ all_guest_names + [ item.guest_name ] }}"
+        no_log: true
+        with_items:
+          - "{{ vm_info.virtual_machines | json_query(query) }}"
+        vars:
+          query: "[?guest_name]"
+
+  - name: print all virtual machine names
+    debug:
+      msg: "{{ all_guest_names }}"
 
 ...
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDY0MjU1OTksNTk5NTQ4Mjg4LDczMD
-k5ODExNl19
+eyJoaXN0b3J5IjpbMTQzNTg4NzA5NCw1OTk1NDgyODgsNzMwOT
+k4MTE2XX0=
 -->
