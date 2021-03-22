@@ -21,13 +21,11 @@ chmod 700 $PDIR
 ```ini
 # ansible demo inventory for $PNAME
 [esxi_hosts]
-clue3
+esxi1
 
 [win_hosts:vars]
-ansible_user=root
-ansible_password=ChangeMe...
-ansible_connection=winrm
-# ansible_winrm_server_cert_validation=ignore
+esxi_user=root
+esxi_password=ChangeMe...
 ```
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -69,5 +67,5 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5NzU1MjEzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzMTg5ODA2NjEsNzMwOTk4MTE2XX0=
 -->
