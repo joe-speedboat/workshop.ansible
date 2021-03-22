@@ -118,9 +118,11 @@ $PDIR/vault_unlock
 ```
 ```bash
 #!/bin/bash
-# with keyname as absolute script
+# with keyname as absolute script path we can use it in several projects
 systemd-ask-password --keyname=$(realpath $0) --accept-cached
 ```
+Now call it and feed the password
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNTYxNDM3MSwyMzI2NDM4MjddfQ==
+eyJoaXN0b3J5IjpbMTg0MTAyNjQ0NSwyMzI2NDM4MjddfQ==
 -->
