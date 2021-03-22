@@ -10,10 +10,11 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 * Create an inventory file with the name: <code>infra</code>
 * Create Host group <code>win</code>
 	* With two hosts <code>winX</code> (X is the number)
+	* With two hosts <code>dcX</code> (X is the number)
 * Create Host group <code>lin</code>
 	* With two hosts <code>linX</code> (X is the number)
-
+* The dcX and linX must se
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyNzY3NzIwXX0=
+eyJoaXN0b3J5IjpbODEzMDg4NDg1XX0=
 -->
