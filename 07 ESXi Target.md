@@ -1,6 +1,7 @@
 
 # Ansible ESXi Targets
 This is an example on how to execute tasks on esxi targets directly.
+Please not that this playbooks use the same modules as vCenter VM targets.
 
 ## Prepare ESXi VM
 * Setup a ESXi
@@ -147,6 +148,6 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMTIxMzM2MSwyMTE5MDEyMjk2LDU5OT
-U0ODI4OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTAwNDIzOTAxNiwtNjAxMjEzMzYxLDIxMT
+kwMTIyOTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
 -->
