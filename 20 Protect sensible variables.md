@@ -84,6 +84,11 @@ ansible-inventory --vars --list
 ```
 Okay, that's not what we expected.
 Maybe we did something wrong
+```bash
+ansible-inventory --help
+ansible-inventory --vars --list --ask-vault-pass
+```
+Can you imagine
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc5NDAyMTldfQ==
+eyJoaXN0b3J5IjpbLTQ5MTQ1Mjc3XX0=
 -->
