@@ -43,11 +43,11 @@ Lets Create an example Playbook that creates a linked clone of a VM:
 ...
 ```
 ## Exercise
-* promt for clone name when playbook starts
-* create snapshot of themplate with cloned vm name
-* create linked clone from snapshot of template
-* move vars away from pl
+* promt for "vm to clone name" when playbook starts
+* create snapshot of themplate with "cloned vm" name
+* create linked "cloned vm" from snapshot of template
+* move vars away from module definition
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzgyMjg1NiwxMTYzMTkxNjQwXX0=
+eyJoaXN0b3J5IjpbMTM3NzU2MjU2LDExNjMxOTE2NDBdfQ==
 -->
