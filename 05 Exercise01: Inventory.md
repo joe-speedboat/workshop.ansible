@@ -25,8 +25,9 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 If all of you have finished the lab, do a review in class and explain each other what and why you did to solve the exercise.
 
 
-<span style="color:blue">some *blue* text</span>.
+### Hints
+* 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNzY5NTUwOCwtMzkyNTc3NzUxXX0=
+eyJoaXN0b3J5IjpbLTIxNDI1Njk3MzYsLTM5MjU3Nzc1MV19
 -->
