@@ -62,81 +62,56 @@ log_path = ./ansible.log
 mkdir ./collections ./roles
 ```
 ```bash
-echo '
-[lab]
-vm[01:05]
+echo "
+[all]
+[all:vars]
+ntp_srv='pool.ntp.org'
 
-[kvm]
-clue1
-clue2 
-[kvm:vars]
+[grp_ch_kvm]
+kvm1
+kvm2 
+[grp_ch_kvm:vars]
 ospatch_reboot=false
 
-[esxi]
-clue3 gather_facts=False
+[grp_ch_win]
+win[01:02]
 
-[windows]
-win[01:05]
-
-[wan]
-rigel.domain.ch ansible_ssh_port=50022
-pan.domain.ch ansible_ssh_port=22
-gate.domain.ch ansible_ssh_port=222
-
-[linux]
-workstation1
-install
-webgate
+[grp_ch_lin]
 graylog
-[linux:children]
-kvm
-lab
-wan
-' > inventory
+nfs1
+lin[01:02]
+
+[grp_os_lin]
+[grp_os_lin:children]
+grp_ch_lin
+grp_ch_kvm
+
+[grp_os_win]
+[grp_os_win:children]
+grp_ch_win
+
+[loc_ch]
+[loc_ch:children]
+grp_ch_win
+grp_ch_lin
+grp_ch_kvm
+
+[loc_ch:vars]
+dns_srv=['192.168.100.254', '192.168.100.253']
+domain='ch.domain.com'
+ntp_srv='ch.pool.ntp.org'
+syslog_srv='syslog.domain.com'
+" > inventory
 ```
 Not lets check how Ansible looks into that inventory file:
 ```bash
 ansible-inventory --graph --vars --yaml
+ansible-inventory --list --vars --yaml
+
 ```
-```
-@all:
-  |--@esxi:
-  |  |--clue3
-  |  |  |--{gather_facts = False}
-  |--@linux:
-  |  |--@kvm:
-  |  |  |--clue1
-  |  |  |  |--{ospatch_reboot = false}
-  |  |  |--clue2
-  |  |  |  |--{ospatch_reboot = false}
-  |  |  |--{ospatch_reboot = false}
-  |  |--@lab:
-  |  |  |--vm01
-  |  |  |--vm02
-  |  |  |--vm03
-  |  |  |--vm04
-  |  |  |--vm05
-  |  |--@wan:
-  |  |  |--gate.domain.ch
-  |  |  |  |--{ansible_ssh_port = 222}
-  |  |  |--pan.domain.ch
-  |  |  |  |--{ansible_ssh_port = 22}
-  |  |  |--rigel.domain.ch
-  |  |  |  |--{ansible_ssh_port = 50022}
-  |  |--graylog
-  |  |--install
-  |  |--webgate
-  |  |--workstation1
-  |--@ungrouped:
-  |--@windows:
-  |  |--win01
-  |  |--win02
-  |  |--win03
-  |  |--win04
-  |  |--win05
-```
+
 Do you understand how vars and children got handled in the inventory?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTg3NDk4MiwxMTYxNjY4OTY0LC0xNj
-g3Njg5MTc3LC05MTgzOTM2MDldfQ==
+eyJoaXN0b3J5IjpbLTg4Nzk5NDAyOCwtNjU5ODc0OTgyLDExNj
+E2Njg5NjQsLTE2ODc2ODkxNzcsLTkxODM5MzYwOV19
 -->
