@@ -12,7 +12,7 @@ This is an example on how to execute tasks on esxi targets directly.
 #### Project
 ```bash
 PNAME="VMware_ESXi"
-PDIR="/etc/ansible/projects/win_demo"
+PDIR="/etc/ansible/projects/esxi_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
@@ -20,12 +20,12 @@ chmod 700 $PDIR
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
-[win_hosts]
-vm12
+[esxi_hosts]
+clue3
 
 [win_hosts:vars]
-ansible_user=Administrator
-ansible_password=Hdsshdk112.
+ansible_user=root
+ansible_password=ChangeMe...
 ansible_connection=winrm
 # ansible_winrm_server_cert_validation=ignore
 ```
@@ -69,5 +69,5 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDU3MjQwNyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjk5NzU1MjEzLDczMDk5ODExNl19
 -->
