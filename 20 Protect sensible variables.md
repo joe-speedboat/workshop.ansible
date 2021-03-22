@@ -73,8 +73,13 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
-vault_password_file = ./vault_unlock
+# vault_password_file = ./vault_unlock
 ```
+
+## Try it out
+ansible-inventory --vars --list
+ERROR! Attempting to decrypt but no vault secrets found
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjY4ODAzMV19
+eyJoaXN0b3J5IjpbLTIwMTc4NjE4NF19
 -->
