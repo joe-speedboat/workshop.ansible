@@ -65,6 +65,11 @@ log_path = ./ansible.log
 #### Run the Update
 Just do it and look what happens on the Windows Hosts Console.
 
+### Hints
+* Shell Ping?
+* WinRM?
+* Ansible Ping?
+* Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjAxMTU3MV19
+eyJoaXN0b3J5IjpbNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
 -->
