@@ -21,7 +21,7 @@ chmod 700 $PDIR
 ```
 #### Inventory
 * <code>$PDIR/inventory</code>
-```ini
+```yaml
 # ansible demo inventory for $PNAME
 [win_hosts]
 vm12
@@ -32,6 +32,7 @@ ansible_user: loc_adm
 ansible_password: ChangeMe...
 ```
 #### Ansible Config
+* <code>$PDIR/ansible.cfg</code>
 ```ini
 # custom ansible $PNAME configuration
 [defaults]
@@ -61,5 +62,6 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTg2NjA3MCwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbLTIwNTM5ODU2MjYsLTE5ODA1OTQ4MDhdfQ
+==
 -->
