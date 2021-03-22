@@ -52,7 +52,7 @@ log_path = ./ansible.log
 * <code>$PDIR/win_update.yml</code>
 ```yaml
 ---
-- name: Update Windows
+- name:  Windows
   hosts: vm12
   tasks:
   - name: Exclude updates based on the update title
@@ -77,6 +77,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTg2MDE5LDI1MzU2MTczNSw5ODIxOT
-MyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
+eyJoaXN0b3J5IjpbLTIwNTc4OTgzOTQsMjUzNTYxNzM1LDk4Mj
+E5MzIzNSw2MTMyMzU1NDksMTc1MjAxMTU3MV19
 -->
