@@ -41,62 +41,40 @@ log_path = ./ansible.log
 ##### <code>$PDIR/esxi_vm_list.yml</code>
 ```yaml
 ---
-- name: list all VMs on esxi host
+- name: list all VMs on ESXi host
   hosts: localhost
   vars:
     esxi_host: esxi1
   tasks:
   - name: loop virtual machines
+    block:
+      - set_fact:
+          all_guest_names: []
+      - name: Get virtual machine names
+        vmware_vm_info:
+          hostname: "{{ esxi_host }}"
+          username: "{{ esxi_user }}"
+          password: "{{ esxi_password }}"
+          folder: ""
+          validate_certs: no
+        delegate_to: localhost
+        register: vm_info
+      - set_fact:
+          all_guest_names: "{{ all_guest_names + [ item.guest_name ] }}"
+        no_log: true
+        with_items:
+          - "{{ vm_info.virtual_machines | json_query(query) }}"
+        vars:
+          query: "[?guest_name]"
 
-block:
+  - name: print all virtual machine names
+    debug:
+      msg: "{{ all_guest_names }}"
 
-- set_fact:
-
-all_guest_names: []
-
-- name: Get virtual machine names
-
-vmware_vm_info:
-
-hostname: "{{ esxi_host }}"
-
-username: "{{ esxi_user }}"
-
-password: "{{ esxi_password }}"
-
-folder: ""
-
-validate_certs: no
-
-delegate_to: localhost
-
-register: vm_info
-
-- set_fact:
-
-all_guest_names: "{{ all_guest_names + [ item.guest_name ] }}"
-
-no_log: true
-
-with_items:
-
-- "{{ vm_info.virtual_machines | json_query(query) }}"
-
-vars:
-
-query: "[?guest_name]"
-
-  
-
-- name: print all virtual machine names
-
-debug:
-
-msg: "{{ all_guest_names }}"...
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDE1OTIxMCwyMTE5MDEyMjk2LDU5OT
+eyJoaXN0b3J5IjpbLTI4NTc1OTc4MCwyMTE5MDEyMjk2LDU5OT
 U0ODI4OCw3MzA5OTgxMTZdfQ==
 -->
