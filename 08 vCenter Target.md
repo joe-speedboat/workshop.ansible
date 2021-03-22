@@ -10,7 +10,7 @@ So lets look what we can do with VMware Targets:
     ansible-doc -l | grep vmware
 
 ## Example
-Lets Create an example Playbook that creates a linked clone of a VM:
+Lets Create an example Playbook that creates a clone of a VM Template:
 
 ```yaml
 - name: clone VM in vCenter
@@ -44,6 +44,6 @@ Lets Create an example Playbook that creates a linked clone of a VM:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjExMzc5ODAsMTM3NzU2MjU2LDExNj
-MxOTE2NDBdfQ==
+eyJoaXN0b3J5IjpbLTEwMjM5NDM5ODcsLTE0NjExMzc5ODAsMT
+M3NzU2MjU2LDExNjMxOTE2NDBdfQ==
 -->
