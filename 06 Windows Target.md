@@ -9,6 +9,7 @@ For sure you can reach Windows Systems as well.
 * Setup a current Windows OS
 * Create local admin user
 * Configure WinRM
+	* https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html 
 
 ### Create Ansible Project Files
 
@@ -62,6 +63,6 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTM5ODU2MjYsLTE5ODA1OTQ4MDhdfQ
+eyJoaXN0b3J5IjpbLTE5MTk0NzEwNTYsLTE5ODA1OTQ4MDhdfQ
 ==
 -->
