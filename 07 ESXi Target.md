@@ -23,7 +23,7 @@ chmod 700 $PDIR
 [esxi_hosts]
 esxi1
 
-[win_hosts:vars]
+[esxi_hosts:vars]
 esxi_user=root
 esxi_password=ChangeMe...
 ```
@@ -67,5 +67,5 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTg5ODA2NjEsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNTk5NTQ4Mjg4LDczMDk5ODExNl19
 -->
