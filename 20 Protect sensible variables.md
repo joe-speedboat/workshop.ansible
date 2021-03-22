@@ -77,7 +77,7 @@ log_path = ./ansible.log
 # vault_password_file = ./vault_unlock
 ```
 
-## Try it out
+### Try it out
 ```bash
 ansible-inventory --vars --list
 	ERROR! Attempting to decrypt but no vault secrets found
@@ -88,7 +88,10 @@ Maybe we did something wrong
 ansible-inventory --help
 ansible-inventory --vars --list --ask-vault-pass
 ```
-Can you imagine
+Can you imagine why I don't like this way either?
+
+## The configuration I like
+If you read the documentation carefully, you will find out that inventory
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MTQ1Mjc3XX0=
+eyJoaXN0b3J5IjpbLTE0Mzc5OTc2MTFdfQ==
 -->
