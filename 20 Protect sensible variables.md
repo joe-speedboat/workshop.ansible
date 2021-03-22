@@ -56,12 +56,25 @@ password: superSecretStuff...
 
 ### Explore how it works
 ```bash
-cat 
+cat vault_unlock
 cat group_vars/vault_demo.yml
 ansible-inventory --vars --list
-
+```
+Do you understand why I call it the ugly way?
+Explain it to me!
 
 ## The uncomfortable way
+* <code>$PDIR/ansible.cfg</code>
+```ini
+# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+vault_password_file = ./vault_unlock
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODA1NDI4Nl19
+eyJoaXN0b3J5IjpbLTMyNjY4ODAzMV19
 -->
