@@ -8,7 +8,7 @@ The only tricky thing is to get a working example config, but lets create one.
 #### Project
 ```bash
 PNAME="Cisco_Switch"
-PDIR="/etc/ansible/projects/cisco_switch/back"
+PDIR="/etc/ansible/projects/cisco_switch/backup"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
@@ -31,12 +31,12 @@ remote_user = root
 log_path = ./ansible.log
 ```
 #### Playbook
-* <code>$PDIR/win_update.yml</code>
+* <code>$PDIR/cisco_switch_backup.yml</code>
 ```yaml
 ---
 
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDE2NjAxM119
+eyJoaXN0b3J5IjpbLTQ5MTM4NDgyM119
 -->
