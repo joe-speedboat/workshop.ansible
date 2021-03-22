@@ -1,24 +1,14 @@
 
 # Cisco Switch Targets
 Since Ansible can configure lot of target types, we look at Cisco devices now.
-The only tricky thing is to get a working example config, but lets 
-## Minimal Windows Playbook Setup
-### Prepare Windows VM
-* Setup a current Windows OS
-* Create a Snapshot of the VM
-* Create local admin user
-* Configure WinRM
-	* https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html 
-
-### Prepare Control Node
-* https://www.ansible.com/blog/connecting-to-a-windows-host
+The only tricky thing is to get a working example config, but lets create one.
 
 ### Create Ansible Project Files
 
 #### Project
 ```bash
-PNAME="Windows_WinRM"
-PDIR="/etc/ansible/projects/win_demo"
+PNAME="Cisco_Switch"
+PDIR="/etc/ansible/projects/cisco_switch"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
@@ -66,5 +56,5 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjgxNDI1MTZdfQ==
+eyJoaXN0b3J5IjpbMjAxODU1NDM5Ml19
 -->
