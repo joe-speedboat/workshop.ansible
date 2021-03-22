@@ -41,9 +41,13 @@ vault_password_file = ./vault_unlock
 ### Create the password vault
 ```bash
 mkdir $PDIR/group_vars
-ansible-vault create 
+```
+```bash
+ansible-vault create $PDIR/group_vars/vault_demo.yml
+```
+
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTMwMzQxNzhdfQ==
+eyJoaXN0b3J5IjpbMTgwODc4NTc2MV19
 -->
