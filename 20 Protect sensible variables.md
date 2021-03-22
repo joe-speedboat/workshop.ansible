@@ -144,7 +144,16 @@ But it is super simple ans works with all users, not only root.
 $PDIR/vault_unlock
 ```
 ```bash
-
+#!/bin/bash
+if [ "x" == "x$VAULT_PASS" ]
+then
+   echo "Variable VAULT_PASS is not set, please feed it with:"
+   echo
+   echo "read -s -p 'Feed vault password: ' VAULT_PASS ; export VAULT_PASS=\$VAULT_PASS"
+   echo
+   exit
+fi
+echo $VAULT_PASS
 ```
 Make it executeable
 ```
@@ -157,9 +166,7 @@ Now call it and feed the password
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
-* Reboot the host, LogIn again, call it, what happens?
-Great, but sadly this service is available only for the root user.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTYzMTI2MDksMTcyODY0MTk2NywyMz
-I2NDM4MjddfQ==
+eyJoaXN0b3J5IjpbLTM5NDIwODA4MiwtMTg5NjMxMjYwOSwxNz
+I4NjQxOTY3LDIzMjY0MzgyN119
 -->
