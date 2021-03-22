@@ -38,7 +38,7 @@ collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
 ```
-#### Playbook
+#### Playbooks
 * <code>$PDIR/win_update.yml</code>
 ```yaml
 ---
@@ -67,5 +67,6 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5NTQ4Mjg4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTgxNDg5MDQzLDU5OTU0ODI4OCw3MzA5OT
+gxMTZdfQ==
 -->
