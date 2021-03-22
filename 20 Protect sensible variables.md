@@ -12,7 +12,6 @@ PNAME="AnsibleVault"
 PDIR="/etc/ansible/projects/vault_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
-mkdir $PDIR/group_vars
 ```
 ### Inventory
 * <code>$PDIR/inventory</code>
@@ -33,12 +32,13 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
-vault_password_file = ./vault_password_file
+vault_password_file = ./vault_unlock
 ```
 ### Write vault handler password
-echo tryNotToDo > 
+
+    echo tryNotToDo > $PDIR/vault_unlock
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQ3ODkwNF19
+eyJoaXN0b3J5IjpbMTUxOTM0OTcwNl19
 -->
