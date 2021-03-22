@@ -9,8 +9,12 @@ Use Ansibles built-in documentation to solve the exercise.
 * Write the following tasks into a single playbook.
 * Promt for "vm clone name" when playbook starts
 * Create snapshot of themplate with "cloned vm" name
-* create linked "cloned vm" from snapshot of template
+* Create linked "cloned vm" from snapshot of template
+* Send the playbook to the teacher, he will fire it!
 
+## Hints
+* ansible-doc -l | grep -i vmware
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MTUzMjExNl19
+eyJoaXN0b3J5IjpbLTM1MDQwNjQxOV19
 -->
