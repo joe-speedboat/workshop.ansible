@@ -53,10 +53,15 @@ ansible-vault create $PDIR/group_vars/vault_demo.yml
 password: superSecretStuff...
 ...
 ```
+
+### Explore how it works
+```bash
+cat 
+cat group_vars/vault_demo.yml
 ansible-inventory --vars --list
 
 
 ## The uncomfortable way
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDkwMTYzODBdfQ==
+eyJoaXN0b3J5IjpbLTg0ODA1NDI4Nl19
 -->
