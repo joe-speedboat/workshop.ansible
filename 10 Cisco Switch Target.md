@@ -3,23 +3,25 @@
 Since Ansible can configure lot of target types, we look at Cisco devices now.
 The only tricky thing is to get a working example config, but lets create one.
 
-### Create Ansible Project Files
+## Create Ansible Project Files
 
-#### Project
+### Project
 ```bash
 PNAME="Cisco_Switch"
-PDIR="/etc/ansible/projects/cisco_switch"
+PDIR="/etc/ansible/projects/cisco_switch/group_vars"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
-#### Inventory
+
+### Inventory
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
 [cisco_switch]
 switch1
 ```
-#### Ansible Config
+
+### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
 ```ini
 # custom ansible $PNAME configuration
@@ -29,8 +31,14 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
+host_key_checking = False
 ```
-#### Playbook
+
+### Group Vars
+* <code>$PDIR/group_vars/cisco_switch.yml</code>
+
+
+### Playbook
 * <code>$PDIR/cisco_switch_backup.yml</code>
 ```yaml
 ---
@@ -96,5 +104,5 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTExNTI3MjNdfQ==
+eyJoaXN0b3J5IjpbMTgzNjI1OTU5MiwtMTc5MTE1MjcyM119
 -->
