@@ -90,7 +90,7 @@ ansible-inventory --vars --list --ask-vault-pass
 ```
 Can you imagine why I don't like this way either?
 
-## The configuration I like
+## Solutions 
 If you read the documentation carefully, you will find out that inventory and group_vars may be executeables as well.
 Hmm, maybe this is the way it can get nicer!?
 Let's try
@@ -112,5 +112,5 @@ vault_password_file = ./vault_unlock
     $PDIR/vault_unlock
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMyNjQzODI3XX0=
+eyJoaXN0b3J5IjpbLTE0NTQ0MDUwNzAsMjMyNjQzODI3XX0=
 -->
