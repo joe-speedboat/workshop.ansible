@@ -144,9 +144,7 @@ But it is super simple ans works with all users, not only root.
 $PDIR/vault_unlock
 ```
 ```bash
-#!/bin/bash
-# with keyname as absolute script path we can use it in several projects
-systemd-ask-password --keyname=$(realpath $0) --accept-cached
+
 ```
 Make it executeable
 ```
@@ -162,6 +160,6 @@ Now call it and feed the password
 * Reboot the host, LogIn again, call it, what happens?
 Great, but sadly this service is available only for the root user.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MzY2MDIzMCwxNzI4NjQxOTY3LDIzMj
-Y0MzgyN119
+eyJoaXN0b3J5IjpbLTE4OTYzMTI2MDksMTcyODY0MTk2NywyMz
+I2NDM4MjddfQ==
 -->
