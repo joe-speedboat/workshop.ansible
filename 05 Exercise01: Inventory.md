@@ -23,6 +23,8 @@ Okay, enough theory for now, lets check if we understood how inventories, config
 
 ## Solution
 If all of you have finished the lab, do a review in class and explain each other what and why you did to solve the exercise.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MjU3Nzc1MV19
+eyJoaXN0b3J5IjpbLTYyMzQ5MDY4MywtMzkyNTc3NzUxXX0=
 -->
