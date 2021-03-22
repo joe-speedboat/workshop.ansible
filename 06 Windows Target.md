@@ -27,6 +27,18 @@ vm12
 " > $PDIR/inventory
 ```
 
+```bash
+echo "# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+" > ansible.cfg
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxOTM5MDc2NCwtMTk4MDU5NDgwOF19
+eyJoaXN0b3J5IjpbLTIzOTcwMzQyMiwtMTk4MDU5NDgwOF19
 -->
