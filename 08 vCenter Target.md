@@ -13,10 +13,10 @@ So lets look what we can do with VMware Targets:
 Lets Create an example Playbook that creates a linked clone of a VM:
 
 ```yaml
-- name: clone linked vm in vCenter
+- name: clone VM in vCenter
   hosts: localhost
   tasks:
-    - name: Create a linked VM from snapshot
+    - name: Create a VM from Template
       vmware_guest:
         hostname: vcenter1
         username: administrator@vsphere.local
@@ -28,8 +28,6 @@ Lets Create an example Playbook that creates a linked clone of a VM:
         name: clone1
         state: poweredoff
         template: LNX_TEMPLATE
-        linked_clone: true
-        snapshot_src: snap1
         hardware:
           memory_mb: "1024
           num_cpus: 2
@@ -46,6 +44,6 @@ Lets Create an example Playbook that creates a linked clone of a VM:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0OTgxMjk2MywxMzc3NTYyNTYsMTE2Mz
-E5MTY0MF19
+eyJoaXN0b3J5IjpbLTE0NjExMzc5ODAsMTM3NzU2MjU2LDExNj
+MxOTE2NDBdfQ==
 -->
