@@ -42,12 +42,10 @@ Lets Create an example Playbook that creates a linked clone of a VM:
       ignore_errors: true
 ...
 ```
-## Exercise
-* promt for "vm to clone name" when playbook starts
-* create snapshot of themplate with "cloned vm" name
-* create linked "cloned vm" from snapshot of template
-* move vars away from module definition
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzU2MjU2LDExNjMxOTE2NDBdfQ==
+eyJoaXN0b3J5IjpbLTg0OTgxMjk2MywxMzc3NTYyNTYsMTE2Mz
+E5MTY0MF19
 -->
