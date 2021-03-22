@@ -107,8 +107,8 @@ remote_user = root
 log_path = ./ansible.log
 vault_password_file = ./vault_unlock
 ```
-
+### Replace the vault password with a script
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODAyNzEwOV19
+eyJoaXN0b3J5IjpbLTkxOTkwNzcyMl19
 -->
