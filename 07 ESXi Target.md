@@ -99,7 +99,7 @@ log_path = ./ansible.log
 ...
 ```
 
-##### <code>$PDIR/esxi_vm_snapshot_list.yml</code>
+##### <code>$PDIR/esxi_vm_snapshot_revert.yml</code>
 ```yaml
 ---
 - name: Revert into VM snapshot on ESXi host
@@ -109,9 +109,49 @@ log_path = ./ansible.log
     vmname: vm1
     snapname: snap1
   tasks:
+  - name: Revert Snapshot
+    vmware_guest_snapshot:
+      hostname: "{{ esxi_host }}"
+      username: "{{ esxi_user }}"
+      password: "{{ esxi_password }}"
+      datacenter: ""
+      folder: ""
+      validate_certs: no
+      name: "{{ vmname }}"
+      state: revert
+      snapshot_name: "{{ snapname }}"
+      quiesce: yes
+      memory_dump: yes
+    delegate_to: localhost
+...
+```
+
+##### <code>$PDIR/esxi_vm_power_on.yml</code>
+```yaml
+---
+- name: PowerOn VM on ESXi host
+  hosts: localhost
+  vars:
+    esxi_host: esxi1
+    vmname: vm1
+  tasks:
+  - name: Revert Snapshot
+    vmware_guest_snapshot:
+      hostname: "{{ esxi_host }}"
+      username: "{{ esxi_user }}"
+      password: "{{ esxi_password }}"
+      datacenter: ""
+      folder: ""
+      validate_certs: no
+      name: "{{ vmname }}"
+      state: revert
+      snapshot_name: "{{ snapname }}"
+      quiesce: yes
+      memory_dump: yes
+    delegate_to: localhost
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTczNjUzNzEsMjExOTAxMjI5Niw1OT
-k1NDgyODgsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTA3MTM4MzgzLDIxMTkwMTIyOTYsNTk5NT
+Q4Mjg4LDczMDk5ODExNl19
 -->
