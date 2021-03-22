@@ -98,7 +98,20 @@ log_path = ./ansible.log
       var: snapshot_info.guest_snapshots.snapshots
 ...
 ```
+
+##### <code>$PDIR/esxi_vm_snapshot_list.yml</code>
+```yaml
+---
+- name: Revert into VM snapshot on ESXi host
+  hosts: localhost
+  vars:
+    esxi_host: esxi1
+    vmname: vm1
+    snapname: snap1
+  tasks:
+...
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDg2Mzk1NzUsMjExOTAxMjI5Niw1OT
+eyJoaXN0b3J5IjpbLTEyMTczNjUzNzEsMjExOTAxMjI5Niw1OT
 k1NDgyODgsNzMwOTk4MTE2XX0=
 -->
