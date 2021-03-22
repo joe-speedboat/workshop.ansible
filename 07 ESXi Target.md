@@ -39,34 +39,18 @@ remote_user = root
 log_path = ./ansible.log
 ```
 #### Playbooks
-* <code>$PDIR/win_update.yml</code>
+* <code>$PDIR/esxi_vm_list.yml</code>
 ```yaml
 ---
-- name: Update with Important Windows Patches
-  hosts: vm12
+- name: List VMs on ESXi
+  hosts: esxiX
   tasks:
-  - name: Apply Patches
-    win_updates:
-      category_name:
-      - SecurityUpdates
-      - CriticalUpdates
-      blacklist:
-      - Windows Malicious Software Removal Tool for Windows
-      - \d{4}-\d{2} Cumulative Update for Windows Server 2016
-      reboot: yes
-      reboot_timeout: 1800
+
 ...
 ```
 
-#### Run the Update
-Just do it and look what happens on the Windows Hosts Console.
 
-### Hints
-* Shell Ping?
-* WinRM?
-* Ansible Ping?
-* Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNDg5MDQzLDU5OTU0ODI4OCw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MDY0MjU1OTksNTk5NTQ4Mjg4LDczMD
+k5ODExNl19
 -->
