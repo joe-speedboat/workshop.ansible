@@ -18,15 +18,15 @@ Lets Create an example Playbook that creates a linked clone of a VM:
     - name: Create a linked VM from snapshot
       vmware_guest:
         hostname: vcenter1
-        username: "{{ vcenter_user }}"
-        password: "{{ vcenter_password }}"
+        username: administrator@vsphere.local
+        password: ChangeMe...
         validate_certs: no
-        datacenter: "{{ datacenter }}"
-        cluster: "{{ cluster }}"
-        folder: "{{ vmfolder }}"
-        name: "{{ item.key }}"
+        datacenter: BITBULL
+        cluster: LNX
+        folder: /Ansible
+        name: clone1
         state: poweredoff
-        template: "{{ template }}""
+        template: LNX_TEMPLATE
         linked_clone: true
         snapshot_src: "{{ item.key }}"
         hardware:
@@ -43,5 +43,5 @@ Lets Create an example Playbook that creates a linked clone of a VM:
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODE1Mzc2MzksMTE2MzE5MTY0MF19
+eyJoaXN0b3J5IjpbLTE5OTExNTA0NDYsMTE2MzE5MTY0MF19
 -->
