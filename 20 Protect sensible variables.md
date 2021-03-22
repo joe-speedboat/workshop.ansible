@@ -127,7 +127,9 @@ chmod 700 $PDIR/vault_unlock
 ```
 Now call it and feed the password
 
+    ./vault_unlock
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzM4ODMzMCwxNzI4NjQxOTY3LDIzMj
-Y0MzgyN119
+eyJoaXN0b3J5IjpbLTE5MDk4OTc2NjQsMTcyODY0MTk2NywyMz
+I2NDM4MjddfQ==
 -->
