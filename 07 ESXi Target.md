@@ -3,21 +3,15 @@
 This is an example on how to execute tasks on esxi targets directly.
 
 ## Minimal Playbook Setup
-### Prepare Windows VM
-* Setup a current Windows OS
-* Create a Snapshot of the VM
-* Create local admin user
-* Configure WinRM
-	* https://docs.ansible.com/ansible/latest/user_guide/windows_setup.html 
-
-### Prepare Control Node
-* https://www.ansible.com/blog/connecting-to-a-windows-host
+### Prepare ESXi VM
+* Setup a ESXi
+* Setup a VM in the new ESXi
 
 ### Create Ansible Project Files
 
 #### Project
 ```bash
-PNAME="Windows_WinRM"
+PNAME="VMware_ESXi"
 PDIR="/etc/ansible/projects/win_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
@@ -75,5 +69,5 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODkxNDA2Miw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTg3MDU3MjQwNyw3MzA5OTgxMTZdfQ==
 -->
