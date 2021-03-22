@@ -126,10 +126,14 @@ Make it executeable
 chmod 700 $PDIR/vault_unlock
 ```
 Now call it and feed the password
-
+```
     ./vault_unlock
-
+```
+#### Explore how it works
+* Call it again, what happens?
+* LogOut, LogIn again, call it, what happens?
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDk4OTc2NjQsMTcyODY0MTk2NywyMz
-I2NDM4MjddfQ==
+eyJoaXN0b3J5IjpbMTAwMDgxMzEwMSwxNzI4NjQxOTY3LDIzMj
+Y0MzgyN119
 -->
