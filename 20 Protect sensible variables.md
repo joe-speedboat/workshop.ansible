@@ -127,7 +127,7 @@ chmod 700 $PDIR/vault_unlock
 ```
 Now call it and feed the password
 ```
-    ./vault_unlock
+./vault_unlock
 ```
 #### Explore how it works
 * Call it again, what happens?
@@ -161,12 +161,12 @@ chmod 700 $PDIR/vault_unlock
 ```
 Now call it and feed the password
 ```
-    ./vault_unlock
+./vault_unlock
 ```
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDIwODA4MiwtMTg5NjMxMjYwOSwxNz
-I4NjQxOTY3LDIzMjY0MzgyN119
+eyJoaXN0b3J5IjpbOTU5NjIyOTU4LC0zOTQyMDgwODIsLTE4OT
+YzMTI2MDksMTcyODY0MTk2NywyMzI2NDM4MjddfQ==
 -->
