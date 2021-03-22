@@ -8,7 +8,7 @@ The only tricky thing is to get a working example config, but lets create one.
 #### Project
 ```bash
 PNAME="Cisco_Switch"
-PDIR="/etc/ansible/projects/cisco_switch/backup"
+PDIR="/etc/ansible/projects/cisco_switch"
 mkdir -p $PDIR
 chmod 700 $PDIR
 ```
@@ -38,7 +38,9 @@ log_path = ./ansible.log
   gather_facts: no
   connection: local
   vars:
-    backup_dir: /opt/cisco_backup/backup
+    backup_dir: /etc/ansible/projects/cisco_switch/backup
+    creds:
+      
   tasks:
   - name: save running config to device
     ios_config:
@@ -52,7 +54,7 @@ log_path = ./ansible.log
     register: config
   - name: ensure backup folder is created
     file:
-      path: "{{ backup_root }}/"
+      path: "{{ backup_dir }}/"
       state: directory
     run_once: yes
   - name: get timestamp
@@ -90,5 +92,5 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MTM4MzI5N119
+eyJoaXN0b3J5IjpbMTEyMTY5Mjc2NV19
 -->
