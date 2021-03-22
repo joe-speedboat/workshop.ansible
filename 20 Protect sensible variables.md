@@ -109,6 +109,8 @@ vault_password_file = ./vault_unlock
 ```
 ### Replace the vault password with a script
 
+    $PDIR/vault_unlock
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTkwNzcyMl19
+eyJoaXN0b3J5IjpbMjMyNjQzODI3XX0=
 -->
