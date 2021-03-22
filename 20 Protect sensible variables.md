@@ -113,10 +113,14 @@ If you are root, you can access a system service that can store your passwords t
 This is used too for harddisk decryption during boot-up.
 
 ### Replace the vault password with a script
-<code>$PDIR/vault_unlock
+```
+$PDIR/vault_unlock
+```
+```bash
 #!/bin/bash
+# with keyname as absolute script
 systemd-ask-password --keyname=$(realpath $0) --accept-cached
-
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2MTkyNDUsMjMyNjQzODI3XX0=
+eyJoaXN0b3J5IjpbLTkyNTYxNDM3MSwyMzI2NDM4MjddfQ==
 -->
