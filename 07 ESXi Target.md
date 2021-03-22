@@ -38,7 +38,7 @@ remote_user = root
 log_path = ./ansible.log
 ```
 ### Playbooks
-##### <code>$PDIR/esxi_vm_list.yml</code>
+##### <code>$PDIR/esxi_vm_list_human.yml</code>
 ```yaml
 ---
 - name: List VMs on ESXi
@@ -74,6 +74,6 @@ log_path = ./ansible.log
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA2MDYzOTkwLDU5OTU0ODI4OCw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbMjExOTAxMjI5Niw1OTk1NDgyODgsNzMwOT
+k4MTE2XX0=
 -->
