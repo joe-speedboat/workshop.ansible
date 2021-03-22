@@ -26,7 +26,7 @@ host1
 
 ## The ugly way
 ### Ansible Config
-* <code>$PDIR/ansible.cfg</code>
+<code>$PDIR/ansible.cfg</code>
 ```ini
 # custom ansible $PNAME configuration
 [defaults]
@@ -64,7 +64,8 @@ Do you understand why I call it the ugly way?
 Explain it to me!
 
 ## The uncomfortable way
-* <code>$PDIR/ansible.cfg</code>
+### Ansible Config
+<code>$PDIR/ansible.cfg</code>
 ```ini
 # custom ansible $PNAME configuration
 [defaults]
@@ -77,9 +78,11 @@ log_path = ./ansible.log
 ```
 
 ## Try it out
+```bash
 ansible-inventory --vars --list
-ERROR! Attempting to decrypt but no vault secrets found
-
+	ERROR! Attempting to decrypt but no vault secrets found
+```
+Oka
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTc4NjE4NF19
+eyJoaXN0b3J5IjpbMTYxNTM2MTgyMl19
 -->
