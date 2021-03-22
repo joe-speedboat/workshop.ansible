@@ -52,7 +52,7 @@ creds:
 * <code>$PDIR/cisco_switch_backup.yml</code>
 ```yaml
 ---
-- hosts: as-a-225-02.mybuehl.local
+- hosts: cisco_switch
   gather_facts: no
   connection: local
   vars:
@@ -77,11 +77,11 @@ creds:
     command: date +%Y%m%d
     register: timestamp
     run_once: yes
-  - name: save output to {{ backup_root }} 
+  - name: save device config to {{ backup_root }} 
     copy: 
       content: "{{ config.stdout[0] }}"
       dest: "{{ backup_dir }}/show_run_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
-  - name: get device config
+  - name: get device information
     ios_command:
       commands:
       - show vlan brief
@@ -91,7 +91,7 @@ creds:
       - show version
       provider: "{{ creds }}"
     register: config
-  - name: save output to {{ backup_root }}
+  - name: save device information to {{ backup_root }}
     copy:
       content: |
         {{ config.stdout[0] }}
@@ -108,6 +108,5 @@ creds:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTY1MTMyMjEsLTE3OTExNTI3MjNdfQ
-==
+eyJoaXN0b3J5IjpbMTg3NjQ4NjE5OSwtMTc5MTE1MjcyM119
 -->
