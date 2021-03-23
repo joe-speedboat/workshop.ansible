@@ -29,7 +29,7 @@ chmod 700 $PDIR
 ```ini
 # ansible demo inventory for $PNAME
 [win_hosts]
-vm12
+win1
 
 [win_hosts:vars]
 ansible_user=loc_adm
@@ -77,7 +77,7 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDcwNTM5NiwtNzg2MzM1MzI5LDI1Mz
-U2MTczNSw5ODIxOTMyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFd
-fQ==
+eyJoaXN0b3J5IjpbLTExMzgyNTY4MjMsLTIxNDcwNTM5NiwtNz
+g2MzM1MzI5LDI1MzU2MTczNSw5ODIxOTMyMzUsNjEzMjM1NTQ5
+LDE3NTIwMTE1NzFdfQ==
 -->
