@@ -10,7 +10,11 @@ https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_
 VMware modules mostly work with pyVim.
 Install it with:
 
-    pip3 install pyVim pyVmomi
+```bash
+pip3 install --upgrade pip setuptools
+pip3 install --upgrade git+https://github.com/vmware/vsphere-automation-sdk-python.git
+pip3 install --upgrade pyVim pyVmomi
+```
 
 ### Project
 ```bash
@@ -36,7 +40,7 @@ with_tags: True
 ```ini
 # custom ansible $PNAME configuration
 [defaults]
-inventory      = ./inventory
+inventory      = ./inventory.yml
 roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
@@ -47,5 +51,5 @@ enable_plugins = vmware_vm_inventory
 ### Query the new Inventory
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MTUwMzEyOF19
+eyJoaXN0b3J5IjpbMTAwNDU1OTY0MCwtMjYxNTAzMTI4XX0=
 -->
