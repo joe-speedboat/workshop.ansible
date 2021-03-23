@@ -50,6 +50,8 @@ enable_plugins = vmware_vm_inventory
 ```
 ### Query the new Inventory
 
+    ansible-inventory --list --vars
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDk2NDk4NiwtMjYxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbLTIwODU3MjYwNDMsLTI2MTUwMzEyOF19
 -->
