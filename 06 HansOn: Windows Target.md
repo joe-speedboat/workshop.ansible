@@ -67,6 +67,10 @@ log_path = ./ansible.log
       - \d{4}-\d{2} Cumulative Update for Windows Server 2016
       reboot: yes
       reboot_timeout: 1800
+      register: result
+      until: not result.changed
+      retries: 10
+      delay: 5
 ...
 ```
 
@@ -79,7 +83,7 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA1NTE0MjQ2LC0xMTM4MjU2ODIzLC0yMT
-Q3MDUzOTYsLTc4NjMzNTMyOSwyNTM1NjE3MzUsOTgyMTkzMjM1
-LDYxMzIzNTU0OSwxNzUyMDExNTcxXX0=
+eyJoaXN0b3J5IjpbMTU2MDgzMTI4Myw3MDU1MTQyNDYsLTExMz
+gyNTY4MjMsLTIxNDcwNTM5NiwtNzg2MzM1MzI5LDI1MzU2MTcz
+NSw5ODIxOTMyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
 -->
