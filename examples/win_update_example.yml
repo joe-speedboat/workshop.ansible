@@ -1,0 +1,80 @@
+---
+# DESCRIPTION
+# Apply windows updates
+#
+# check
+# ansible-playbook win_update_example.yml --tags check
+#
+# install without reboot
+# ansible-playbook win_update_example.yml --tags install
+#
+# install with reboot
+# ansible-playbook win_update_example.yml --tags install,reboot
+
+- name: Apply windows updates
+  hosts: win_hosts
+  gather_facts: yes
+  vars:
+    initial_reboot: |-
+      {{ 86400 <
+          (( ((ansible_date_time.date+" "+ansible_date_time.time)|to_datetime('%Y-%m-%d %H:%M:%S')) -
+              ansible_facts.lastboot|to_datetime('%Y-%m-%d %H:%M:%SZ')).total_seconds())|abs }}
+
+  tasks:
+
+  # Reboot systems with if up longer then day
+  # this way we know that the system was able to come back
+  # up before updates were applied
+  - name: Reboot if system has a large uptime
+    win_reboot:
+    when: initial_reboot and not ansible_check_mode
+    tags:
+    - never
+    - reboot
+
+  - block:
+    - name: >
+        {{ 'Install' if 'install' in ansible_run_tags else 'Search' }} updates
+        {{ 'will automatically reboot' if 'reboot' in ansible_run_tags else 'no reboot' }}
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+          - DefinitionUpdates
+          - Updates
+        reboot: "{{ 'yes' if 'reboot' in ansible_run_tags else 'no' }}"
+        state: "{{ 'installed' if 'install' in ansible_run_tags else 'searched' }}"
+      become: yes
+      become_method: runas
+      become_user: SYSTEM
+      register: update_results
+      tags:
+      - never
+      - install
+      - check
+
+    rescue:
+    - name: Windows update failed?
+      debug:
+        msg: "error: {{ update_results.msg }}"
+      when: update_results is failed and update_results.msg is defined
+      tags:
+      - always
+    - name: Server had pending reboots?
+      win_reboot:
+      when:  not ansible_check_mode and
+            update_results is failed and
+            update_results.msg is search('A reboot is required')
+      tags:
+      - never
+      - reboot
+
+    always:
+    - name: Report results
+      debug:
+        var: update_results
+      tags:
+      - never
+      - install
+      - check
