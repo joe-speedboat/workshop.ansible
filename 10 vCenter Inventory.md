@@ -18,6 +18,7 @@ PNAME="VMware_vCenter_inventory"
 PDIR="/etc/ansible/projects/vcenter_inventory"
 mkdir -p $PDIR
 chmod 700 $PDIR
+cd $PDIR
 ```
 ### Inventory
 * <code>$PDIR/inventory</code>
@@ -46,5 +47,5 @@ enable_plugins = vmware_vm_inventory
 ### Query the new Inventory
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDkwNDM2XX0=
+eyJoaXN0b3J5IjpbLTI2MTUwMzEyOF19
 -->
