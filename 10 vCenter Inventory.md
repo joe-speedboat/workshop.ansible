@@ -22,13 +22,13 @@ chmod 700 $PDIR
 ### Inventory
 * <code>$PDIR/inventory</code>
 ```ini
-# ansible demo inventory for $PNAME
-[vcvms]
-esxi1
-
-[esxi_hosts:vars]
-esxi_user=root
-esxi_password=ChangeMe...
+plugin: vmware_vm_inventory
+strict: False
+hostname: 10.65.223.31
+username: administrator@vsphere.local
+password: Esxi@123$%
+validate_certs: False
+with_tags: True
 ```
 ### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -40,8 +40,11 @@ roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
+[inventory]
+enable_plugins = vmware_vm_inventory
 ```
-### Playbooks
+### Query the new Inventory
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjgyNjIxMzhdfQ==
+eyJoaXN0b3J5IjpbLTEyMDkwNDM2XX0=
 -->
