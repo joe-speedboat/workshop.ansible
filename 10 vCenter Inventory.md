@@ -25,7 +25,7 @@ chmod 700 $PDIR
 cd $PDIR
 ```
 ### Inventory
-* <code>$PDIR/inventory</code>
+* <code>$PDIR/inventory.vmware.yml</code>
 ```ini
 plugin: vmware_vm_inventory
 strict: False
@@ -40,7 +40,7 @@ with_tags: True
 ```ini
 # custom ansible $PNAME configuration
 [defaults]
-inventory      = ./inventory.yml
+inventory      = ./inventory.vmware.yml
 roles_path    = ./roles
 collections_paths = ./collections
 remote_user = root
@@ -51,5 +51,5 @@ enable_plugins = vmware_vm_inventory
 ### Query the new Inventory
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDU1OTY0MCwtMjYxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbMjE0NDk2NDk4NiwtMjYxNTAzMTI4XX0=
 -->
