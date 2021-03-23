@@ -6,6 +6,42 @@ https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_
 
 ## Setup vCenter Ansible Inventory
 
+### Install Python Libs
+VMware modules mostly work with pyVim.
+Install it with:
+
+    pip3 install pyVim pyVmomi
+
+### Project
+```bash
+PNAME="VMware_vCenter_inventory"
+PDIR="/etc/ansible/projects/vcenter_inventory"
+mkdir -p $PDIR
+chmod 700 $PDIR
+```
+### Inventory
+* <code>$PDIR/inventory</code>
+```ini
+# ansible demo inventory for $PNAME
+[vcvms]
+esxi1
+
+[esxi_hosts:vars]
+esxi_user=root
+esxi_password=ChangeMe...
+```
+### Ansible Config
+* <code>$PDIR/ansible.cfg</code>
+```ini
+# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+```
+### Playbooks
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTUzOTE2MTNdfQ==
+eyJoaXN0b3J5IjpbLTEzNjgyNjIxMzhdfQ==
 -->
