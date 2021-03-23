@@ -14,7 +14,9 @@ For sure you can reach Windows Systems as well.
 
 ### Prepare Control Node
 * https://www.ansible.com/blog/connecting-to-a-windows-host
-
+```bash
+pip3 install pywinrm
+```
 ### Create Ansible Project Files
 
 #### Project
@@ -77,7 +79,7 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzgyNTY4MjMsLTIxNDcwNTM5NiwtNz
-g2MzM1MzI5LDI1MzU2MTczNSw5ODIxOTMyMzUsNjEzMjM1NTQ5
-LDE3NTIwMTE1NzFdfQ==
+eyJoaXN0b3J5IjpbNzA1NTE0MjQ2LC0xMTM4MjU2ODIzLC0yMT
+Q3MDUzOTYsLTc4NjMzNTMyOSwyNTM1NjE3MzUsOTgyMTkzMjM1
+LDYxMzIzNTU0OSwxNzUyMDExNTcxXX0=
 -->
