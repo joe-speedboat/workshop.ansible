@@ -59,13 +59,13 @@ ansible -m win_ping windows
 cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
+cd ..
 ```
+Explore the role elements with the
+
 * <code>
 
-
-
-
-ansible-galaxy install sbaerlocher.update_management
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0MDU0NjksLTE1Mjk0ODI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTIwOTcxNzc5MzksMzY0MDU0NjksLTE1Mj
+k0ODI2NzRdfQ==
 -->
