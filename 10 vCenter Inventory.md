@@ -2,7 +2,10 @@
 Since Inventory brings the Ansible targets to the playbooks, Inventory should always be up to date.
 Ansible would not be that popular if it would not bring a solution that brings ZEN to the inventory by calling the vCenter API.
 
-https://docs.ansible.com/ansible/latest/scenario_guides/vmware_scenarios/vmware_inventory.html
+https://galaxy.ansible.com/community/vmware
+https://cloudautomation.pharriso.co.uk/post/vmware_filter_tags/
+
+
 
 ## Setup vCenter Ansible Inventory
 
@@ -61,6 +64,6 @@ enable_plugins = community.vmware.vmware_vm_inventory
     ansible-inventory --list --vars
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNjg4NTIxNCwtMjA4NTcyNjA0MywtMj
-YxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbLTEwMzM4NjgxNTcsLTIwODU3MjYwNDMsLT
+I2MTUwMzEyOF19
 -->
