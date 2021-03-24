@@ -30,13 +30,17 @@ vm04
 * Enable and Configure WinRM
 * Provide Credentials on Control node
 ```bash
-mkdir group_vars/win_hosts.yml
+mkdir group_vars/windows.yml
 ansible-vault create group_vars/windows.yml
+```
 ```
 ansible_user: Administrator
 ansible_password: changeMe...
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
+```
+
+### prepair 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDU2NTgyOV19
+eyJoaXN0b3J5IjpbLTEyNDIzMjk0NDZdfQ==
 -->
