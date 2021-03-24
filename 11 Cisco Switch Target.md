@@ -8,9 +8,10 @@ The only tricky thing is to get a working example config, but lets create one.
 ### Project
 ```bash
 PNAME="Cisco_Switch"
-PDIR="/etc/ansible/projects/cisco_switch/group_vars"
+PDIR="/etc/ansible/projects/cisco_switch"
 mkdir -p $PDIR
 chmod 700 $PDIR
+cd $PDIR
 ```
 
 ### Inventory
@@ -108,5 +109,5 @@ creds:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NjQ4NjE5OV19
+eyJoaXN0b3J5IjpbLTE1NTIzMjk2MDYsMTg3NjQ4NjE5OV19
 -->
