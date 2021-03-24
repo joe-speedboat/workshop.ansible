@@ -54,7 +54,14 @@ ansible -m ping linux
 ansible -m win_ping windows
 ```
 
+### Install and explore roles
 
+
+
+
+
+
+ansible-galaxy install sbaerlocher.update_management
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzU3NTkwNl19
+eyJoaXN0b3J5IjpbLTY4MTAxMDE5Ml19
 -->
