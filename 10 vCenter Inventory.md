@@ -34,7 +34,10 @@ username: administrator@vsphere.local
 password: Esxi@123$%
 validate_certs: False
 with_tags: True
+hostnames:
+  - config.name
 ```
+
 ### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
 ```ini
@@ -46,8 +49,9 @@ collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
 [inventory]
-enable_plugins = vmware_vm_inventory
+enable_plugins = community.vmware.vmware_vm_inventory
 ```
+
 ### Install VMware Community Collections
 
     ansible-galaxy collection install community.vmware
@@ -57,6 +61,6 @@ enable_plugins = vmware_vm_inventory
     ansible-inventory --list --vars
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1NjYxMzI5LC0yMDg1NzI2MDQzLC0yNj
-E1MDMxMjhdfQ==
+eyJoaXN0b3J5IjpbMTEwNjg4NTIxNCwtMjA4NTcyNjA0MywtMj
+YxNTAzMTI4XX0=
 -->
