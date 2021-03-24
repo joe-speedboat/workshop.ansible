@@ -40,7 +40,10 @@ ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
 ```
 
-### prepair 
+### Prepare Linux Nodes
+* Create and
+test -f /root/.ssh/id_*.pub || ssh-keygen
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDIzMjk0NDZdfQ==
+eyJoaXN0b3J5IjpbMjA0MzY0NzAwM119
 -->
