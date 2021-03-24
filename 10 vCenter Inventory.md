@@ -27,7 +27,7 @@ cd $PDIR
 ### Inventory
 * <code>$PDIR/inventory.vmware.yml</code>
 ```ini
-plugin: vmware_vm_inventory
+plugin: community.vmware.vmware_vm_inventory
 strict: False
 hostname: 10.65.223.31
 username: administrator@vsphere.local
@@ -48,13 +48,15 @@ log_path = ./ansible.log
 [inventory]
 enable_plugins = vmware_vm_inventory
 ```
-### Install
+### Install VMware Community Collections
+
+    ansible-galaxy collection install community.vmware
 
 ### Query the new Inventory
 
     ansible-inventory --list --vars
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTUxNzI3MSwtMjA4NTcyNjA0MywtMj
-YxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbMjg1NjYxMzI5LC0yMDg1NzI2MDQzLC0yNj
+E1MDMxMjhdfQ==
 -->
