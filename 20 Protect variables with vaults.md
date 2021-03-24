@@ -108,7 +108,7 @@ log_path = ./ansible.log
 vault_password_file = ./vault_unlock
 ```
 
-### Solution1 (systemd-ask-password as root)
+### Solution1 (systemd-ask-password)
 If you are root, you can access a system service that can store your passwords temporarily until next reboot.
 This is used too for harddisk decryption during boot-up.
 
@@ -168,5 +168,5 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3OTAwNDIxXX0=
+eyJoaXN0b3J5IjpbMTIxMjQ0OTA0NSw3Njc5MDA0MjFdfQ==
 -->
