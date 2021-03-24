@@ -48,10 +48,13 @@ log_path = ./ansible.log
 [inventory]
 enable_plugins = vmware_vm_inventory
 ```
+### Install
+
 ### Query the new Inventory
 
     ansible-inventory --list --vars
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU3MjYwNDMsLTI2MTUwMzEyOF19
+eyJoaXN0b3J5IjpbMTA2OTUxNzI3MSwtMjA4NTcyNjA0MywtMj
+YxNTAzMTI4XX0=
 -->
