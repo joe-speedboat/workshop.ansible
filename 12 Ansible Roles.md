@@ -26,12 +26,12 @@ vm03
 vm04
 ```
 
-### Prepare Windows Nodes
+### Prepare Windows config
 * Enable and Configure WinRM
 * Provide Credentials on Control node
 ```bash
 mkdir group_vars/windows.yml
-ansible-vault create group_vars/windows.yml
+vim group_vars/windows.yml
 ```
 ```
 ansible_user: Administrator
@@ -50,7 +50,11 @@ ssh-copy-id vm01
 
 ### Test config & connectivity
 ```
-ansible 
+ansible -m ping linux
+ansible -m win_ping windows
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDY1OTMwNl19
+eyJoaXN0b3J5IjpbMTMwNzU3NTkwNl19
 -->
