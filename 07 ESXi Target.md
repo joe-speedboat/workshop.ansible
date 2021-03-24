@@ -21,6 +21,7 @@ PNAME="VMware_ESXi"
 PDIR="/etc/ansible/projects/esxi_demo"
 mkdir -p $PDIR
 chmod 700 $PDIR
+cd $PDIR
 ```
 ### Inventory
 * <code>$PDIR/inventory</code>
@@ -154,7 +155,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjI4NjY0NCwxMDA0MjM5MDE2LC02MD
-EyMTMzNjEsMjExOTAxMjI5Niw1OTk1NDgyODgsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbMTUxMjEzMzk4NCwxNjY2Mjg2NjQ0LDEwMD
+QyMzkwMTYsLTYwMTIxMzM2MSwyMTE5MDEyMjk2LDU5OTU0ODI4
+OCw3MzA5OTgxMTZdfQ==
 -->
