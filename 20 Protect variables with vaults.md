@@ -132,8 +132,7 @@ Now call it and feed the password
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
-* Reboot the host, LogIn again, call it, what happens?
-Great, but sadly this service is available only for the root user.
+* As
 
 ### Solution2 (simple var)
 This works for the session until you logout.
@@ -168,5 +167,5 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMjQ0OTA0NSw3Njc5MDA0MjFdfQ==
+eyJoaXN0b3J5IjpbLTc3ODA0NjEsNzY3OTAwNDIxXX0=
 -->
