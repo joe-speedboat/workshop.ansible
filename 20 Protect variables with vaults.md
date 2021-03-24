@@ -132,7 +132,7 @@ Now call it and feed the password
 #### Explore how it works
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
-* As
+* As root user, the password can be kept until reboot!
 
 ### Solution2 (simple var)
 This works for the session until you logout.
@@ -167,5 +167,5 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3ODA0NjEsNzY3OTAwNDIxXX0=
+eyJoaXN0b3J5IjpbMTAxMTQ3NDk0Myw3Njc5MDA0MjFdfQ==
 -->
