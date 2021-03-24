@@ -60,6 +60,7 @@ cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
 cd ..
+
 ```
 Explore the role elements with online documentation:
 
@@ -69,6 +70,6 @@ Can you explain what it is and what's the idea behind roles?
 * <code>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQ0MzcyNSwzNjQwNTQ2OSwtMTUyOT
+eyJoaXN0b3J5IjpbMTIxMzk0MzEzNywzNjQwNTQ2OSwtMTUyOT
 Q4MjY3NF19
 -->
