@@ -1,0 +1,12 @@
+---
+# tasks file for demo.ping
+
+- name: ping linux host
+  ping:
+  when: ansible_system == "Linux"
+
+- name: ping windows host
+  win_ping:
+  when: ansible_system == "Win32NT"
+
+...
