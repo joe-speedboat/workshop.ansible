@@ -60,7 +60,8 @@ cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
 cd ..
-
+cat roles/demo.ping/tests/test.yml
+ansible-playbook roles/demo.ping/tests/test.yml
 ```
 Explore the role elements with online documentation:
 
@@ -70,6 +71,6 @@ Can you explain what it is and what's the idea behind roles?
 * <code>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzk0MzEzNywzNjQwNTQ2OSwtMTUyOT
+eyJoaXN0b3J5IjpbLTQxMzY4NzU1MywzNjQwNTQ2OSwtMTUyOT
 Q4MjY3NF19
 -->
