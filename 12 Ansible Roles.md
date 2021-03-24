@@ -60,12 +60,12 @@ cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
 ```
-
+* <code>
 
 
 
 
 ansible-galaxy install sbaerlocher.update_management
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MjY4MTg0LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbMzY0MDU0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
