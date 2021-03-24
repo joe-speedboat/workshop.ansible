@@ -41,9 +41,16 @@ ansible_winrm_server_cert_validation: ignore
 ```
 
 ### Prepare Linux Nodes
-* Create and
+* Create and install ssh-key
+```bash
 test -f /root/.ssh/id_*.pub || ssh-keygen
+ssh-copy-id vm01
+ssh-copy-id vm01
+```
 
+### Test config & connectivity
+```
+ansible 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MzY0NzAwM119
+eyJoaXN0b3J5IjpbLTIwMDY1OTMwNl19
 -->
