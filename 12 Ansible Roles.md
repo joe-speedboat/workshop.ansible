@@ -55,7 +55,7 @@ ansible -m win_ping windows
 ```
 
 ### Install and explore roles
-```
+```bash
 cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
@@ -67,5 +67,5 @@ find demo.ping
 
 ansible-galaxy install sbaerlocher.update_management
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEzNTk3MDUyLC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbLTc1MjY4MTg0LC0xNTI5NDgyNjc0XX0=
 -->
