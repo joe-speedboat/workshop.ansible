@@ -17,9 +17,14 @@ cd $PDIR
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
-[cisco_switch]
-switch1
+[linux]
+vm01
+vm02
+
+[windows]
+vm03
+vm04
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NDc3MDY2Nl19
+eyJoaXN0b3J5IjpbMTQ4NjczMjY5NF19
 -->
