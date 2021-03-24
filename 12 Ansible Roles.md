@@ -25,6 +25,11 @@ vm02
 vm03
 vm04
 ```
+
+### Prepare Windows Nodes
+* Enable and Configure WinRM
+* Provide Credentials on Control node
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NjczMjY5NF19
+eyJoaXN0b3J5IjpbNTk4OTg3NTU0XX0=
 -->
