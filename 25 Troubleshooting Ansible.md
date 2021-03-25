@@ -7,9 +7,9 @@ cd /etc/ansible/projects/demo_role
 ```
  * <code>debug.yml</code>
 ```yaml
- * hosts: vm11
+- hosts: vm11
   tasks:
- * name: install webserver
+- name: install webserver
     dnf: 
       name: 
       - lighttpd
@@ -17,8 +17,11 @@ cd /etc/ansible/projects/demo_role
       state: latest
     register: install
 
- * lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
- * copy:
+- lineinfile: 
+     path=/etc/lighttpd/lighttpd.conf 
+     regexp='^server.use-ipv6' 
+     line='server.use-ipv6 = "disable"'
+ - copy:
       dest: /var/www/lighttpd/index.html
       content: |
         Managed by Ansible
@@ -58,5 +61,5 @@ cd /etc/ansible/projects/demo_role
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzM1MDAwNF19
+eyJoaXN0b3J5IjpbLTE4NTAzMjExNjhdfQ==
 -->
