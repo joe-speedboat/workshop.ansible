@@ -1,5 +1,6 @@
 # Ansible & Jinja2 
-Jinja is not widely known, but really valuable if you pair it with ansible
+Jinja is not widely known, but really valuable if you pair it with ansible, it gets even better!
+
 https://jinja.palletsprojects.com/en/2.11.x/templates/
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html
 
@@ -37,6 +38,6 @@ cd /etc/ansible/projects/demo_role
 * explain what happened
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUzODUxNDUsLTE2NjAzNTQ1NzZdfQ
-==
+eyJoaXN0b3J5IjpbNjI5ODMwNzI4LC0xNDY1Mzg1MTQ1LC0xNj
+YwMzU0NTc2XX0=
 -->
