@@ -63,6 +63,11 @@ enable_plugins = community.vmware.vmware_vm_inventory
 
     ansible-inventory --list --vars
 
+### Hands On: vCenter Inventory Internals
+Let's Explore how Ansible works with this new Inventory
+
+
+
 
 ### Review
 * What is the benefit of a vCenter API Ansible inventory?
@@ -74,6 +79,6 @@ enable_plugins = community.vmware.vmware_vm_inventory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NDYwOTMyNiwyMDUyNTUwNzQ1LC0xMD
+eyJoaXN0b3J5IjpbMTY5ODE3OTYxNSwyMDUyNTUwNzQ1LC0xMD
 MzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1MDMxMjhdfQ==
 -->
