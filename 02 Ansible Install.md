@@ -29,21 +29,22 @@ Now we do some basic configuration to suite our needs
 ### Review
 Now we look for the changes we made above:
 * To the directories
-```
+```bash
 ls -ld /etc/ansible/collections /etc/ansible/projects
   drwxr-xr-x. 2 root root 6 Mar 19 11:59 /etc/ansible/collections
   drwx------. 2 root root 6 Mar 19 11:59 /etc/ansible/projects
 ```
 * To the config file
-```
+```bash
 colordiff -yW"`tput cols`" $ansibleconfigfile ${ansibleconfigfile}.orig | less -r
 ```
 ### Finish
 Because we use vim for our exercises, we need to teach vim about the behavior we need to edit our yaml files:
-
-    echo 'autocmd Filetype yml setlocal sw=2 et' >$HOME/.vimrc
-    echo 'set ai' >>$HOME/.vimrc
+```bash
+echo 'autocmd Filetype yml setlocal sw=2 et' >$HOME/.vimrc
+echo 'set ai' >>$HOME/.vimrc
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTI0MzgxOTMsLTEzOTI0NjYwMjFdfQ
-==
+eyJoaXN0b3J5IjpbLTg5OTM2NDc5MSwtMTgxMjQzODE5MywtMT
+M5MjQ2NjAyMV19
 -->
