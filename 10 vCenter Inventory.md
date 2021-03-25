@@ -90,7 +90,14 @@ ansible-inventory --host gateway1
 Ha, not bad, so we do not only have the VM facts from now on.
 
 So lets look deeper into this VM, which is part of a nested LAB and completely unmanaged with a static IP.
+* Check DNS
+```bash
+host gateway1
+	Host gateway1 not found: 3(NXDOMAIN)
+```
+Okay, no DNS that we can use for connection!?
 
+* Check connectiv
 
 
 
@@ -106,7 +113,7 @@ So lets look deeper into this VM, which is part of a nested LAB and completely u
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk1MTY3NjYsMTY5ODE3OTYxNSwyMD
-UyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1
-MDMxMjhdfQ==
+eyJoaXN0b3J5IjpbMTM3NDIyODc5NiwxNjk4MTc5NjE1LDIwNT
+I1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3MjYwNDMsLTI2MTUw
+MzEyOF19
 -->
