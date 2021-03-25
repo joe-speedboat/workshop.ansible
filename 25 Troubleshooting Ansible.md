@@ -1,11 +1,13 @@
 ## Troubleshoot Ansible
-We just use an example that we created earlier, try to fix and run it
+
+Just create and try to fix the playbook and run it
+
 ```bash
 cd /etc/ansible/projects/demo_role
 ```
- * <code>install_upgrade_web.yml</code>
+ * <code>debug.yml</code>
 ```yaml
- * hosts: linux
+ * hosts: vm11
   tasks:
  * name: install webserver
     dnf: 
@@ -56,5 +58,5 @@ cd /etc/ansible/projects/demo_role
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Nzg4OTkyNV19
+eyJoaXN0b3J5IjpbMTA0NzM1MDAwNF19
 -->
