@@ -44,8 +44,12 @@ cd /etc/ansible/projects/demo_role/roles
 ansible-galaxy init demo.jinja2
 cd /etc/ansible/projects/demo_role
 ```
+Please create and try to understand this files carefully:
 
+* <code></code>
+```yaml
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTA2MjA3NTAsLTEyOTYxNTc0MTksNj
-I5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbLTE4NzkyMDY3MjMsLTE1NTA2MjA3NTAsLT
+EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
