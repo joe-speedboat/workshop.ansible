@@ -11,19 +11,17 @@ https://blog.tinned-software.net/restrict-ssh-logins-using-ssh-keys-to-a-particu
 # VMware Ansible Support
 https://docs.ansible.com/ansible/latest/collections/community/vmware/
 
-
 # Pure Storage Ansible Support
 https://www.ansible.com/integrations/infrastructure/pure-storage
 https://docs.ansible.com/ansible/latest/collections/purestorage/flasharray/
 https://docs.ansible.com/ansible/latest/collections/purestorage/flashblade/
-
 
 # Dell EMC Ansible Support
 https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyOTE1OTEwMCw5MTg5OTk3NjYsMTYzMT
-k1NjEyNCwtNzQwNzUwMTYxLC0yMDk2NDQ1OTk3LDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbODQ4MTUxNDAwLDkxODk5OTc2NiwxNjMxOT
+U2MTI0LC03NDA3NTAxNjEsLTIwOTY0NDU5OTcsNzMwOTk4MTE2
+XX0=
 -->
