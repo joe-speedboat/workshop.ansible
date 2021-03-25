@@ -88,7 +88,11 @@ ansible-inventory --host gateway1
 }
 ```
 Ha, not bad, so we do not only have the VM facts from now on.
-So lets look deeper into this VM, which is part of a nested LAB and com
+
+So lets look deeper into this VM, which is part of a nested LAB and completely unmanaged with a static IP.
+
+
+
 
 
 
@@ -102,7 +106,7 @@ So lets look deeper into this VM, which is part of a nested LAB and com
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA1NDAxMTEsMTY5ODE3OTYxNSwyMD
+eyJoaXN0b3J5IjpbLTE5OTk1MTY3NjYsMTY5ODE3OTYxNSwyMD
 UyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1
 MDMxMjhdfQ==
 -->
