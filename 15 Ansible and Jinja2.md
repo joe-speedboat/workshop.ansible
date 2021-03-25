@@ -96,16 +96,12 @@ galaxy_info:
   author: chris@bitbull.ch
   description: HA-Proxy demo role for teaching only
   company: uniQconsulting ag
-
   license: license (GPL-2.0-or-later, MIT, etc)
-
   min_ansible_version: 2.9
-
   platforms:
   - name: Centos
     versions:
     - 8
-
   galaxy_tags:
   - haproxy
   - teaching
@@ -114,6 +110,55 @@ dependencies: []
 ```
 * <code>roles/demo.jinja2/tasks/main.yml</code>
 ```yaml
+---
+# tasks file for demo.jinja2
+- name: avoid using of default variables
+  fail:
+    msg:
+      please look into defaults/main.yml, loadbalancer config cannot be a guess
+  when: item.name == "fail_xxx"
+  with_items: 
+  - "{{ lb_backend }}"
+
+- name: open firewall ports
+  firewalld:
+    port: "{{ item.lbport }}/tcp"
+    permanent: true 
+    immediate: true 
+    state: enabled
+  with_items:
+  - "{{ lb_backend }}"
+
+- name: open firewall ports
+  firewalld:
+    port: "{{ stats_port }}/tcp"
+    permanent: true 
+    immediate: true 
+    state: enabled
+
+- name: install haproxy
+  dnf:
+    name: "{{ packages }}"
+  notify:
+  - restart haproxy
+
+- name: create haproxy config
+  template: 
+    src: haproxy.cfg.j2 
+    dest: /etc/haproxy/haproxy.cfg 
+    owner: haproxy 
+    group: root 
+    mode: 0660
+  notify:
+  - restart haproxy
+
+- name: enable services
+  service:
+    name: "{{ item }}"
+    enabled: yes
+    state: started
+  with_items: "{{ services }}"
+...
 ```
 * <code>roles/demo.jinja2/templates/haproxy.cfg.j2</code>
 ```yaml
@@ -129,6 +174,6 @@ dependencies: []
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDY5Njg0MDksLTE1NTA2MjA3NTAsLT
+eyJoaXN0b3J5IjpbLTE5NDg1Mzc3ODcsLTE1NTA2MjA3NTAsLT
 EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
