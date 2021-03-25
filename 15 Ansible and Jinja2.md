@@ -41,10 +41,11 @@ cd /etc/ansible/projects/demo_role
 ### Let's just create one
 ```bash
 cd /etc/ansible/projects/demo_role/roles
-
+ansible-galaxy init demo.jinja2
+cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjY0MzQxMywtMTI5NjE1NzQxOSw2Mj
-k4MzA3MjhdfQ==
+eyJoaXN0b3J5IjpbLTE1NTA2MjA3NTAsLTEyOTYxNTc0MTksNj
+I5ODMwNzI4XX0=
 -->
