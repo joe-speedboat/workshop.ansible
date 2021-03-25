@@ -82,8 +82,8 @@ Can you explain what it is and what's the idea behind roles?
 
 ## Write a first Role
 Now we have created an empty role, so lets do something with it.
-
+* <code>$PDIR/inventory</code>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1Mjk2OTg4NiwtNDEzNjg3NTUzLDM2ND
-A1NDY5LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbOTczMTM3OTksLTQxMzY4NzU1MywzNjQwNT
+Q2OSwtMTUyOTQ4MjY3NF19
 -->
