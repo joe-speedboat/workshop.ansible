@@ -57,11 +57,11 @@ cd /etc/ansible/projects/demo_role
       service: http 
       permanent: true 
       immediate: true 
-      state=enabled
- ...
+      state: enabled
+...
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzY3Njg2LC01ODg0MDkyNDksLTE2NT
+eyJoaXN0b3J5IjpbNzMyODA4NzM5LC01ODg0MDkyNDksLTE2NT
 E1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
