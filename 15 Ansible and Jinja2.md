@@ -41,9 +41,9 @@ cd /etc/ansible/projects/demo_role
 ### Let's just create one
 ```bash
 cd /etc/ansible/projects/demo_role
-mkdir
+mkdir templates
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODA2ODgzODgsNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbLTEyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
