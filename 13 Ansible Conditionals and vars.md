@@ -31,7 +31,12 @@ cd /etc/ansible/projects/demo_role
         ARCH: {{ ansible_architecture }}
         MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }}
 
-  - name: start and enable webserver
+  - name: start and enable services
+    service:
+      name: "{{ item }}"
+      enabled: yes
+      permanent: yes
+      immediate: true
     service: 
       name: lighttpd yes state=started
   - service: name=firewalld enabled=yes state=started
@@ -41,6 +46,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzODY4ODI1LC0xNjUxNTE4MzM4LDk3Nz
+eyJoaXN0b3J5IjpbLTI0NDE5OTMxLC0xNjUxNTE4MzM4LDk3Nz
 c3MjA4MF19
 -->
