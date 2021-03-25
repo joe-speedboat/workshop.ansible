@@ -1,0 +1,42 @@
+global
+  log /dev/log  local0
+  log /dev/log  local1 notice
+  stats socket /var/run/haproxy.sock mode 0600 level admin
+  chroot /var/lib/haproxy
+  user haproxy
+  group haproxy
+  daemon
+
+defaults
+  log global
+  mode  http
+  option  httplog
+  option  dontlognull
+        timeout connect 5000
+        timeout client 50000
+        timeout server  5000
+
+{% for svc in lb_backend %}
+frontend {{ svc.name }}
+    bind *:{{ svc.lbport }}
+    mode http
+    default_backend {{ svc.name }}_backend
+
+backend {{ svc.name }}_backend
+    mode http
+    balance roundrobin
+    option forwardfor
+    option httpchk HEAD / HTTP/1.1\r\nHost:localhost
+    cookie SERVERID insert indirect
+    {% for srv in svc.lbback %}
+    server {{ srv.name }} {{ srv.host }}:{{ srv.port }} cookie {{ srv.name }} check inter 2000
+    {% endfor %}
+
+{% endfor %}
+
+listen stats *:{{ stats_port }}
+    stats enable
+    stats uri /
+    stats hide-version
+    stats auth {{ stats_usr }}:{{ stats_pw }}
+

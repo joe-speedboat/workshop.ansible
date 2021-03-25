@@ -1,0 +1,10 @@
+---
+# vars file for demo.jinja2
+
+packages:
+- haproxy
+- firewalld
+
+services:
+- haproxy
+- firewalld

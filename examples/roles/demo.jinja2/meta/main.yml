@@ -1,0 +1,20 @@
+galaxy_info:
+  author: chris@bitbull.ch
+  description: HA-Proxy demo role for teaching only
+  company: uniQconsulting ag
+
+  license: license (GPL-2.0-or-later, MIT, etc)
+
+  min_ansible_version: 2.9
+
+  platforms:
+  - name: Centos
+    versions:
+    - 8
+
+  galaxy_tags:
+  - haproxy
+  - teaching
+
+dependencies: []
+  

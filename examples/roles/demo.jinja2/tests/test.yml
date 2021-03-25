@@ -1,0 +1,30 @@
+---
+- hosts: localhost
+  remote_user: root
+  vars:
+    lb_backend:
+    - name: http1
+      lbport: 8080
+      lbback:
+      - name: web1
+        host: 127.0.0.1
+        port: 80
+      - name: web2
+        host: 1.2.3.5
+        port: 80
+    - name: http2
+      lbport: 8081
+      lbback:
+      - name: web3
+        host: 2.2.3.4
+        port: 80
+      - name: web4
+        host: 2.2.3.5
+        port: 80
+
+    stats_port: 10000
+    stats_usr: admin
+    stats_pw: ansible
+
+  roles:
+    - demo.jinja2

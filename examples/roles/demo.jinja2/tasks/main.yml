@@ -1,0 +1,51 @@
+---
+# tasks file for demo.jinja2
+
+- name: avoid using of default variables
+  fail:
+    msg:
+      please look into defaults/main.yml, loadbalancer config cannot be a guess
+  when: item.name == "fail_xxx"
+  with_items: 
+  - "{{ lb_backend }}"
+
+- name: open firewall ports
+  firewalld:
+    port: "{{ item.lbport }}/tcp"
+    permanent: true 
+    immediate: true 
+    state: enabled
+  with_items:
+  - "{{ lb_backend }}"
+
+- name: open firewall ports
+  firewalld:
+    port: "{{ stats_port }}/tcp"
+    permanent: true 
+    immediate: true 
+    state: enabled
+
+- name: install haproxy
+  dnf:
+    name: "{{ packages }}"
+  notify:
+  - restart haproxy
+
+
+- name: create haproxy config
+  template: 
+    src: haproxy.cfg.j2 
+    dest: /etc/haproxy/haproxy.cfg 
+    owner: haproxy 
+    group: root 
+    mode: 0660
+  notify:
+  - restart haproxy
+
+- name: enable services
+  service:
+    name: "{{ item }}"
+    enabled: yes
+    state: started
+  with_items: "{{ services }}"
+
