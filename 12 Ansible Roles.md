@@ -105,10 +105,31 @@ ansible -m setup linux | grep ansible_system
 cp roles/demo.ping/tests/test.yml ./ping_role_test.yml
 sed -i 's/localhost/all/' ping_role_test.yml
 cat ping_role_test.yml
-ansible-playbook 
 
+ansible-playbook  ping_role_test.yml
+# output
+PLAY [all] ********************************************************************************
+
+TASK [Gathering Facts] ********************************************************************************
+ok: [vm11]
+ok: [vm12]
+
+TASK [demo.ping : ping linux host] ********************************************************************************
+skipping: [vm12]
+ok: [vm11]
+
+TASK [demo.ping : ping windows host] ********************************************************************************
+skipping: [vm11]
+ok: [vm12]
+
+PLAY RECAP ********************************************************************************
+vm11                       : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+vm12                       : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+```
+* Do you understand how it works?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2Nzg3Nzk2LC00MTM2ODc1NTMsMzY0MD
+eyJoaXN0b3J5IjpbMjU3NzI5NjYyLC00MTM2ODc1NTMsMzY0MD
 U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
