@@ -87,12 +87,10 @@ Now we have created an empty role, so lets do something with it.
 ansible -m setup windows | grep ansible_system
 ansible -m setup linux | grep ansible_system
 
-
 * <code>$PDIR/roles/demo.ping/tasks/main.yml</code>
 ```yaml
 ---
 # tasks file for demo.ping
-
 - name: ping linux host
   ping:
   when: ansible_system == "Linux"
@@ -102,9 +100,12 @@ ansible -m setup linux | grep ansible_system
   when: ansible_system == "Win32NT"
 ...
 ```
+### Test the role
+```bash
+cp roles/demo.ping/tests/test.yml 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE3OTI2NzA2LC00MTM2ODc1NTMsMzY0MD
-U0NjksLTE1Mjk0ODI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTIzNDAzMDQyOSwtNDEzNjg3NTUzLDM2ND
+A1NDY5LC0xNTI5NDgyNjc0XX0=
 -->
