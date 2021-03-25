@@ -161,19 +161,100 @@ dependencies: []
 ...
 ```
 * <code>roles/demo.jinja2/templates/haproxy.cfg.j2</code>
-```yaml
+```jinja2
+global
+  log /dev/log  local0
+  log /dev/log  local1 notice
+  stats socket /var/run/haproxy.sock mode 0600 level admin
+  chroot /var/lib/haproxy
+  user haproxy
+  group haproxy
+  daemon
+
+defaults
+  log global
+  mode  http
+  option  httplog
+  option  dontlognull
+        timeout connect 5000
+        timeout client 50000
+        timeout server  5000
+
+{% for svc in lb_backend %}
+frontend {{ svc.name }}
+    bind *:{{ svc.lbport }}
+    mode http
+    default_backend {{ svc.name }}_backend
+
+backend {{ svc.name }}_backend
+    mode http
+    balance roundrobin
+    option forwardfor
+    option httpchk HEAD / HTTP/1.1\r\nHost:localhost
+    cookie SERVERID insert indirect
+    {% for srv in svc.lbback %}
+    server {{ srv.name }} {{ srv.host }}:{{ srv.port }} cookie {{ srv.name }} check inter 2000
+    {% endfor %}
+
+{% endfor %}
+
+listen stats *:{{ stats_port }}
+    stats enable
+    stats uri /
+    stats hide-version
+    stats auth {{ stats_usr }}:{{ stats_pw }}
 ```
 * <code>roles/demo.jinja2/tests/test.yml</code>
 ```yaml
+---
+- hosts: localhost
+  remote_user: root
+  vars:
+    lb_backend:
+    - name: http1
+      lbport: 8080
+      lbback:
+      - name: web1
+        host: 127.0.0.1
+        port: 80
+      - name: web2
+        host: 1.2.3.5
+        port: 80
+    - name: http2
+      lbport: 8081
+      lbback:
+      - name: web3
+        host: 2.2.3.4
+        port: 80
+      - name: web4
+        host: 2.2.3.5
+        port: 80
+
+    stats_port: 10000
+    stats_usr: admin
+    stats_pw: ansible
+
+  roles:
+    - demo.jinja2
+...
 ```
 * <code>roles/demo.jinja2/vars/main.yml</code>
 ```yaml
+---
+# vars file for demo.jinja2
+packages:
+- haproxy
+- firewalld
+
+services:
+- haproxy
+- firewalld
 ```
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDg1Mzc3ODcsLTE1NTA2MjA3NTAsLT
-EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbLTYyMzMxODI0OCwtMTU1MDYyMDc1MCwtMT
+I5NjE1NzQxOSw2Mjk4MzA3MjhdfQ==
 -->
