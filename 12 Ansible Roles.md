@@ -83,6 +83,11 @@ Can you explain what it is and what's the idea behind roles?
 
 ## Write a first Role
 Now we have created an empty role, so lets do something with it.
+```bash
+ansible -m setup windows | grep ansible_system
+ansible -m setup linux | grep ansible_system
+
+
 * <code>$PDIR/roles/demo.ping/tasks/main.yml</code>
 ```yaml
 ---
@@ -96,9 +101,10 @@ Now we have created an empty role, so lets do something with it.
   win_ping:
   when: ansible_system == "Win32NT"
 ...
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzY5OTM0NSwtNDEzNjg3NTUzLDM2ND
-A1NDY5LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbNTE3OTI2NzA2LC00MTM2ODc1NTMsMzY0MD
+U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
