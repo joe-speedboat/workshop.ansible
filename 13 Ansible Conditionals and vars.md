@@ -25,7 +25,9 @@ cd /etc/ansible/projects/demo_role
         IP: {{ ansible_default_ipv4.address|default(ansible_all_ipv4_addresses[0])}}
         Distribution: {{ ansible_distribution }}
         Distribution Version: {{ ansible_distribution_version }}
-        
+        CPU: {{ ansible_processor[1] }}
+        ARCH: {{ ansible_architecture }}
+        MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }}
 
   - service: name=lighttpd enabled=yes state=started
   - service: name=firewalld enabled=yes state=started
@@ -35,6 +37,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NDc0MTY4MSwtMTY1MTUxODMzOCw5Nz
+eyJoaXN0b3J5IjpbLTc0MzkzNzQxMiwtMTY1MTUxODMzOCw5Nz
 c3NzIwODBdfQ==
 -->
