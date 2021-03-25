@@ -31,7 +31,7 @@ cd /etc/ansible/projects/demo_role
         Distribution Version: {{ ansible_distribution_version }}
         CPU: {{ ansible_processor[1] }}
         ARCH: {{ ansible_architecture }}
-        MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }}
+        MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }} GB
 
   - name: enable and start services
     service:
@@ -62,6 +62,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMTczNjYxMSwtNTg4NDA5MjQ5LC0xNj
+eyJoaXN0b3J5IjpbLTI3NjgyMzM0MiwtNTg4NDA5MjQ5LC0xNj
 UxNTE4MzM4LDk3Nzc3MjA4MF19
 -->
