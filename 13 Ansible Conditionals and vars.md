@@ -7,7 +7,11 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
 For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
-vi install
+```
+* <code>install_install_upgrade_nginx.yml</code>
+```yaml
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Nzk1OTQxNiw5Nzc3NzIwODBdfQ==
+eyJoaXN0b3J5IjpbLTE3MjA4NzczMTMsOTc3NzcyMDgwXX0=
 -->
