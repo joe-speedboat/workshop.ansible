@@ -97,7 +97,8 @@ ok: [vm11] => (item=lighttpd)
 ```
 * Why did this happen?
 * In which case would this help to us if we run this playbook on a daily base?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDE3ODkxNzEsLTI3NjgyMzM0MiwtNT
-g4NDA5MjQ5LC0xNjUxNTE4MzM4LDk3Nzc3MjA4MF19
+eyJoaXN0b3J5IjpbMTM4NjAxMjY2NywtMjc2ODIzMzQyLC01OD
+g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
