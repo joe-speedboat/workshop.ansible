@@ -114,11 +114,6 @@ ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
 ```
 * Do you see the IP?
 * What does this mean?
-* What does it bring to us?
-* Linux Target?
-* vCenter Target?
-* Inventory?
-* Facts?
 
 ### Review
 * What is the benefit of a vCenter API Ansible inventory?
@@ -130,7 +125,7 @@ ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2ODAxMTIxLC04NTU3ODc5NTAsMTY5OD
+eyJoaXN0b3J5IjpbNjQ1MTYyMjU1LC04NTU3ODc5NTAsMTY5OD
 E3OTYxNSwyMDUyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2
 MDQzLC0yNjE1MDMxMjhdfQ==
 -->
