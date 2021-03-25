@@ -13,6 +13,18 @@ chmod 700 $PDIR
 cd $PDIR
 ```
 
+### Ansible Config
+* <code>$PDIR/ansible.cfg</code>
+```ini
+# custom ansible $PNAME configuration
+[defaults]
+inventory      = ./inventory
+roles_path    = ./roles
+collections_paths = ./collections
+remote_user = root
+log_path = ./ansible.log
+```
+
 ### Inventory
 * <code>$PDIR/inventory</code>
 ```ini
@@ -72,6 +84,6 @@ Can you explain what it is and what's the idea behind roles?
 Now we have created an empty role, so lets do something with it.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5MzAxMTY3LC00MTM2ODc1NTMsMzY0MD
-U0NjksLTE1Mjk0ODI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTQ1Mjk2OTg4NiwtNDEzNjg3NTUzLDM2ND
+A1NDY5LC0xNTI5NDgyNjc0XX0=
 -->
