@@ -18,7 +18,7 @@ cd /etc/ansible/projects/demo_role
       - lighttpd
       - firewalld
       state: latest
-      register: install
+    register: install
 
   - lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
   - copy:
@@ -62,6 +62,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyODA4NzM5LC01ODg0MDkyNDksLTE2NT
-E1MTgzMzgsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbMTIyMTczNjYxMSwtNTg4NDA5MjQ5LC0xNj
+UxNTE4MzM4LDk3Nzc3MjA4MF19
 -->
