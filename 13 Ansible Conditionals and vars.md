@@ -9,7 +9,7 @@ For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
 ```
- * <code>install_install_upgrade_web.yml</code>
+ * <code>install_upgrade_web.yml</code>
 ```yaml
  * hosts: linux
   tasks:
@@ -63,14 +63,14 @@ cd /etc/ansible/projects/demo_role
 ```
 ## Run the playbook
 ```bash
-ansible-playbook install_install_upgrade_web.yml
+ansible-playbook install_upgrade_web.yml
 ```
 
  * Notice the <code>changed=</code> value in the output
 
 ## Run the playbook again
 ```bash
-ansible-playbook install_install_upgrade_web.yml
+ansible-playbook install_upgrade_web.yml
 ```
 
  * Notice the <code>changed=</code> value in the output
@@ -99,6 +99,7 @@ ok: [vm11] => (item=lighttpd)
 * In which case would this help to us if we run this playbook on a daily base?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NjAxMjY2NywtMjc2ODIzMzQyLC01OD
-g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbLTExMTgxMDUyNTcsMTM4NjAxMjY2NywtMj
+c2ODIzMzQyLC01ODg0MDkyNDksLTE2NTE1MTgzMzgsOTc3Nzcy
+MDgwXX0=
 -->
