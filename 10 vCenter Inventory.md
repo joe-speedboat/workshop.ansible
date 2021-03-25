@@ -107,7 +107,13 @@ nc -z -v 192.168.223.77 22
 	Ncat: Connected to 192.168.223.77:22.
 	Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
 ```
-Seems so, so lets do a final check how Ansible wo
+Seems so, so lets do a final check how Ansible would try to reach this brand new linux?!
+```bash
+ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
+<192.168.223.77> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/39a2d87d88 192.168.223.77 '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
+```
+Do you see the IP?
+What does this mean
 
 
 
@@ -122,7 +128,7 @@ Seems so, so lets do a final check how Ansible wo
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTkwMjA0MDksLTg1NTc4Nzk1MCwxNj
+eyJoaXN0b3J5IjpbLTE2OTU0MDgzNzAsLTg1NTc4Nzk1MCwxNj
 k4MTc5NjE1LDIwNTI1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3
 MjYwNDMsLTI2MTUwMzEyOF19
 -->
