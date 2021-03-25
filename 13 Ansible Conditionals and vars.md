@@ -14,7 +14,9 @@ cd /etc/ansible/projects/demo_role
   tasks:
   - name: install webserver
     yum: 
-      name: lighttpd
+      name: 
+      - lighttpd
+      - firewalld
 
   - lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
   - copy:
@@ -29,14 +31,16 @@ cd /etc/ansible/projects/demo_role
         ARCH: {{ ansible_architecture }}
         MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }}
 
-  - service: name=lighttpd enabled=yes state=started
+  - name: start and enable webserver
+    service: 
+      name: lighttpd yes state=started
   - service: name=firewalld enabled=yes state=started
 
   - firewalld: service=http permanent=true immediate=true state=enabled
-
+ ...
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MzkzNzQxMiwtMTY1MTUxODMzOCw5Nz
-c3NzIwODBdfQ==
+eyJoaXN0b3J5IjpbOTgzODY4ODI1LC0xNjUxNTE4MzM4LDk3Nz
+c3MjA4MF19
 -->
