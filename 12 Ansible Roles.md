@@ -128,8 +128,9 @@ vm12                       : ok=2    changed=0    unreachable=0    failed=0    s
 
 ```
 * Do you understand how it works?
+* Explain it to me
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU3NzI5NjYyLC00MTM2ODc1NTMsMzY0MD
+eyJoaXN0b3J5IjpbLTczOTU0ODc1LC00MTM2ODc1NTMsMzY0MD
 U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
