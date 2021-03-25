@@ -45,7 +45,7 @@ ansible_winrm_server_cert_validation: ignore
 ```bash
 test -f /root/.ssh/id_*.pub || ssh-keygen
 ssh-copy-id vm01
-ssh-copy-id vm01
+ssh-copy-id vm02
 ```
 
 ### Test config & connectivity
@@ -68,9 +68,8 @@ Explore the role elements with online documentation:
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 Can you explain what it is and what's the idea behind roles?
 
-* <code>
-
+## Write a first role
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzY4NzU1MywzNjQwNTQ2OSwtMTUyOT
-Q4MjY3NF19
+eyJoaXN0b3J5IjpbLTcxOTQ3NTUzMywtNDEzNjg3NTUzLDM2ND
+A1NDY5LC0xNTI5NDgyNjc0XX0=
 -->
