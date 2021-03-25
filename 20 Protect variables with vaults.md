@@ -1,6 +1,6 @@
 # Protect variables with vaults
 You can imagine that some of the variables may need some protection.
-There is a built-in mechanic to protect variable called <code>ansible-vault<code>
+There is a built-in mechanic to protect variable called <code>ansible-vault</code>
 You can use it in two ways by default
 
 ## ansible-vault
@@ -167,5 +167,6 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMTQ3NDk0Myw3Njc5MDA0MjFdfQ==
+eyJoaXN0b3J5IjpbLTY4MDQzNDI1OCwxMDExNDc0OTQzLDc2Nz
+kwMDQyMV19
 -->
