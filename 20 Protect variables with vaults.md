@@ -90,7 +90,7 @@ ansible-inventory --vars --list --ask-vault-pass
 ```
 Can you imagine why I don't like this way either?
 
-## Solutions 
+## Final Solutions 
 If you read the documentation carefully, you will find out that inventory and group_vars may be executeables as well.
 Hmm, maybe this is the way it can get nicer!?
 
@@ -167,6 +167,6 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDQzNDI1OCwxMDExNDc0OTQzLDc2Nz
-kwMDQyMV19
+eyJoaXN0b3J5IjpbMTUzMTA4NzQ2MCwtNjgwNDM0MjU4LDEwMT
+E0NzQ5NDMsNzY3OTAwNDIxXX0=
 -->
