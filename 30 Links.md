@@ -6,7 +6,7 @@ https://www.ansible.com/products/tower
 
 # Protect SSH Keys
 https://www.ssh.com/ssh/passphrase
-
+https://blog.tinned-software.net/restrict-ssh-logins-using-ssh-keys-to-a-particular-ip-address/
 
 
 # VMware Ansible Support
@@ -24,6 +24,6 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTk1NjEyNCwtNzQwNzUwMTYxLC0yMD
-k2NDQ1OTk3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbOTE4OTk5NzY2LDE2MzE5NTYxMjQsLTc0MD
+c1MDE2MSwtMjA5NjQ0NTk5Nyw3MzA5OTgxMTZdfQ==
 -->
