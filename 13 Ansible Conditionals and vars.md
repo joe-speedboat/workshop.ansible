@@ -22,6 +22,8 @@ cd /etc/ansible/projects/demo_role
       content: |
         Managed by Ansible
         Hostname: {{ ansible_hostname }}
+        IP: {{ ansible_default_ipv4.address|default(ansible_all_ipv4_addresses[0])}}
+        
 
   - service: name=lighttpd enabled=yes state=started
   - service: name=firewalld enabled=yes state=started
@@ -31,5 +33,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbMTQ4NzQzMTM0NCwtMTY1MTUxODMzOCw5Nz
+c3NzIwODBdfQ==
 -->
