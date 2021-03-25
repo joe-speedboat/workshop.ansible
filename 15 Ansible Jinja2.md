@@ -18,13 +18,18 @@ cd /etc/ansible/projects/demo_role
         HOSTNAME;IPADDRESS;FQDN;OSNAME;OSVERSION;PROCESSOR;ARCHITECTURE;MEMORY;
         {% for host in hostvars %}
         {%   set vars = hostvars[host|string] %}
-        {{ vars.ansible_hostname }};{{ vars.remote_host }};{{ vars.ansible_fqdn }};{{ vars.ansible_distribution }};{{ vars.ansible_distribution_version }};{{ vars.ansible_processor[1] }};{{ vars.ansible_architecture }};{{ (vars.ansible_memtotal_mb/1024)|round|int }};  # NOQA
+        {% if vars.ansible_system == "Win32NT" %}
+        {{ vars.ansible_hostname }};{{ vars.ansible_ip_addresses[0] }};{{ vars.ansible_fqdn }};{{ vars.ansible_distribution }};{{ vars.ansible_distribution_version }};{{ vars.ansible_processor[1] }};{{ vars.ansible_architecture }};{{ (vars.ansible_memtotal_mb/1024)|round|int }};  
+        {% elif vars.ansible_system == "Linux" %}
+        {{ vars.ansible_hostname }};{{ vars.ansible_default_ipv4.address }};{{ vars.ansible_fqdn }};{{ vars.ansible_distribution }};{{ vars.ansible_distribution_version }};{{ vars.ansible_processor[1] }};{{ vars.ansible_architecture }};{{ (vars.ansible_memtotal_mb/1024)|round|int }};  
+        {% endif %}
         {% endfor %}
       dest: systems.csv
       backup: yes
     run_once: yes
     delegate_to: localhost
 ...
+
 ```
 * call the playbook
 * examine the results
@@ -32,5 +37,6 @@ cd /etc/ansible/projects/demo_role
 * explain what happened
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjAzNTQ1NzZdfQ==
+eyJoaXN0b3J5IjpbLTE0NjUzODUxNDUsLTE2NjAzNTQ1NzZdfQ
+==
 -->
