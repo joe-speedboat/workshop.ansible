@@ -30,7 +30,7 @@ vm04
 * Enable and Configure WinRM
 * Provide Credentials on Control node
 ```bash
-mkdir group_vars/windows.yml
+mkdir group_vars
 vim group_vars/windows.yml
 ```
 ```
@@ -72,6 +72,6 @@ Can you explain what it is and what's the idea behind roles?
 Now we have created an empty role, so lets do something with it.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjEwMzQ3MzUsLTQxMzY4NzU1MywzNj
-QwNTQ2OSwtMTUyOTQ4MjY3NF19
+eyJoaXN0b3J5IjpbOTU5MzAxMTY3LC00MTM2ODc1NTMsMzY0MD
+U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
