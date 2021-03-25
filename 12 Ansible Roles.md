@@ -68,6 +68,7 @@ ansible -m win_ping windows
 
 ### Install and explore roles
 ```bash
+mkdir $PDIR/roles
 cd $PDIR/roles
 ansible-galaxy init demo.ping
 find demo.ping
@@ -82,8 +83,9 @@ Can you explain what it is and what's the idea behind roles?
 
 ## Write a first Role
 Now we have created an empty role, so lets do something with it.
-* <code>$PDIR/inventory</code>
+* <code>$PDIR/roles/demo.ping/tasks/main.yml</code>
+* 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTczMTM3OTksLTQxMzY4NzU1MywzNjQwNT
-Q2OSwtMTUyOTQ4MjY3NF19
+eyJoaXN0b3J5IjpbOTQ3Njk3NTc1LC00MTM2ODc1NTMsMzY0MD
+U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
