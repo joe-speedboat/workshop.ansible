@@ -112,11 +112,13 @@ Seems so, so lets do a final check how Ansible would try to reach this brand new
 ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
 <192.168.223.77> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="root"' -o ConnectTimeout=10 -o ControlPath=/root/.ansible/cp/39a2d87d88 192.168.223.77 '/bin/sh -c '"'"'echo ~root && sleep 0'"'"''
 ```
-Do you see the IP?
-What does this mean
-
-
-
+* Do you see the IP?
+* What does this mean?
+* What does it bring to us?
+* Linux Target?
+* vCenter Target?
+* Inventory?
+* Facts?
 
 ### Review
 * What is the benefit of a vCenter API Ansible inventory?
@@ -128,7 +130,7 @@ What does this mean
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTU0MDgzNzAsLTg1NTc4Nzk1MCwxNj
-k4MTc5NjE1LDIwNTI1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3
-MjYwNDMsLTI2MTUwMzEyOF19
+eyJoaXN0b3J5IjpbNTc2ODAxMTIxLC04NTU3ODc5NTAsMTY5OD
+E3OTYxNSwyMDUyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2
+MDQzLC0yNjE1MDMxMjhdfQ==
 -->
