@@ -31,21 +31,22 @@ cd /etc/ansible/projects/demo_role
         ARCH: {{ ansible_architecture }}
         MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }}
 
-  - name: start and enable services
+  - name: enable services
     service:
       name: "{{ item }}"
       enabled: yes
-      permanent: yes
-      immediate: true
-    service: 
-      name: lighttpd yes state=started
-  - service: name=firewalld enabled=yes state=started
+      state: started
+    with_items:
+    - haproxy
+    - keepalived
+    - firewalld
+
 
   - firewalld: service=http permanent=true immediate=true state=enabled
  ...
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NDE5OTMxLC0xNjUxNTE4MzM4LDk3Nz
+eyJoaXN0b3J5IjpbNzc0MDM4NTYzLC0xNjUxNTE4MzM4LDk3Nz
 c3MjA4MF19
 -->
