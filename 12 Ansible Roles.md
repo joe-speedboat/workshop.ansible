@@ -7,7 +7,7 @@ Can you Explain to me how it works?
 ### Project
 ```bash
 PNAME="os_update_role"
-PDIR="/etc/ansible/projects/cisco_switch"
+PDIR="/etc/ansible/projects/demo_role"
 mkdir -p $PDIR
 chmod 700 $PDIR
 cd $PDIR
@@ -68,8 +68,10 @@ Explore the role elements with online documentation:
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html
 Can you explain what it is and what's the idea behind roles?
 
-## Write a first role
+## Write a first Role
+Now we have created an empty role, so lets do something with it.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxOTQ3NTUzMywtNDEzNjg3NTUzLDM2ND
-A1NDY5LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbLTEzNjEwMzQ3MzUsLTQxMzY4NzU1MywzNj
+QwNTQ2OSwtMTUyOTQ4MjY3NF19
 -->
