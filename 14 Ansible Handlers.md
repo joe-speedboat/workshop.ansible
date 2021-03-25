@@ -8,6 +8,9 @@ cp install_upgrade_web.yml install_upgrade_web_handler.yml
 ```
 
 Now we change the playbook slightly
+* <code>install_upgrade_web_handler.yml</code>
+```yaml
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2ODQ2NDEzMl19
+eyJoaXN0b3J5IjpbMTk1OTM3NDMzOF19
 -->
