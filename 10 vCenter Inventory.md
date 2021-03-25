@@ -87,7 +87,8 @@ ansible-inventory --host gateway1
     "summary.runtime.powerState": "poweredOn"
 }
 ```
-
+Ha, not bad, so we do not only have the VM facts from now on.
+So lets look deeper into this VM, which is part of a nested LAB and com
 
 
 
@@ -101,7 +102,7 @@ ansible-inventory --host gateway1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODE3MjI1LDE2OTgxNzk2MTUsMjA1Mj
-U1MDc0NSwtMTAzMzg2ODE1NywtMjA4NTcyNjA0MywtMjYxNTAz
-MTI4XX0=
+eyJoaXN0b3J5IjpbLTE5NzA1NDAxMTEsMTY5ODE3OTYxNSwyMD
+UyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1
+MDMxMjhdfQ==
 -->
