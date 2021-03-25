@@ -102,10 +102,13 @@ ansible -m setup linux | grep ansible_system
 ```
 ### Test the role
 ```bash
-cp roles/demo.ping/tests/test.yml 
+cp roles/demo.ping/tests/test.yml ./ping_role_test.yml
+sed -i 's/localhost/all/' ping_role_test.yml
+cat ping_role_test.yml
+ansible-playbook 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDAzMDQyOSwtNDEzNjg3NTUzLDM2ND
-A1NDY5LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbNDA2Nzg3Nzk2LC00MTM2ODc1NTMsMzY0MD
+U0NjksLTE1Mjk0ODI2NzRdfQ==
 -->
