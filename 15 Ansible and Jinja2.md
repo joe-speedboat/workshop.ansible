@@ -252,11 +252,17 @@ services:
 ...
 ```
 * Step back, do you understand what happened in this role?
-* Explai
+* Explain it to me!
+
+### Let's kick the tires and light the fires
+```bash
+cp roles/demo.jinja2/tests/test.yml haproxy.yml
+vi
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTY1MzIzNiwtMTU1MDYyMDc1MCwtMT
-I5NjE1NzQxOSw2Mjk4MzA3MjhdfQ==
+eyJoaXN0b3J5IjpbLTEyNTAzNjk2MTksLTE1NTA2MjA3NTAsLT
+EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
