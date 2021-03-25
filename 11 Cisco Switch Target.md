@@ -1,7 +1,7 @@
 
 # Cisco Switch Targets
 Since Ansible can configure lot of target types, we look at Cisco devices now.
-The only tricky thing is to get a working example config, but lets create one.
+The only tricky thing is to get a working example config, so lets create one.
 
 ## Create Ansible Project Files
 
@@ -109,5 +109,6 @@ creds:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTIzMjk2MDYsMTg3NjQ4NjE5OV19
+eyJoaXN0b3J5IjpbMTcwMjAzMDU3NSwtMTU1MjMyOTYwNiwxOD
+c2NDg2MTk5XX0=
 -->
