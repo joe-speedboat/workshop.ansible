@@ -76,9 +76,15 @@ ansible-playbook install_install_upgrade_nginx.yml
  * Notice the <code>changed=</code> value in the output
  * Why did this happen? Explain it to me!
  
- ###
+ ## Explore the <code>restart services</code> task
+ * From the output above, review the output of the service restart task
+ ```
+ TASK [restart services if needed by software installation] ***************************************************************************
+skipping: [vm11] => (item=firewalld) 
+skipping: [vm11] => (item=lighttpd) 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTI2ODM3LC0yNzY4MjMzNDIsLTU4OD
-QwOTI0OSwtMTY1MTUxODMzOCw5Nzc3NzIwODBdfQ==
+eyJoaXN0b3J5IjpbLTE2MTE1MzY3ODksLTI3NjgyMzM0MiwtNT
+g4NDA5MjQ5LC0xNjUxNTE4MzM4LDk3Nzc3MjA4MF19
 -->
