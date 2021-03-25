@@ -267,9 +267,13 @@ ansible-playbook haproxy.yml
 ```bash
 ssh -lroot vm11
 cat /etc/haproxy/haproxy.cfg
+iptables-save
+```
+* Test the status portal
+http://vm11:10000
 
-
+* Review this role with the class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4ODUwNTkwLC0xNTUwNjIwNzUwLC0xMj
-k2MTU3NDE5LDYyOTgzMDcyOF19
+eyJoaXN0b3J5IjpbLTg4MTYxOTkzMiwtMTU1MDYyMDc1MCwtMT
+I5NjE1NzQxOSw2Mjk4MzA3MjhdfQ==
 -->
