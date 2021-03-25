@@ -23,6 +23,8 @@ cd /etc/ansible/projects/demo_role
         Managed by Ansible
         Hostname: {{ ansible_hostname }}
         IP: {{ ansible_default_ipv4.address|default(ansible_all_ipv4_addresses[0])}}
+        Distribution: {{ ansible_distribution }}
+        Distribution Version: {{ ansible_distribution_version }}
         
 
   - service: name=lighttpd enabled=yes state=started
@@ -33,6 +35,6 @@ cd /etc/ansible/projects/demo_role
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NzQzMTM0NCwtMTY1MTUxODMzOCw5Nz
+eyJoaXN0b3J5IjpbMTY1NDc0MTY4MSwtMTY1MTUxODMzOCw5Nz
 c3NzIwODBdfQ==
 -->
