@@ -79,12 +79,18 @@ ansible-playbook install_install_upgrade_nginx.yml
  ## Explore the <code>restart services</code> task
  * From the output above, review the output of the service restart task
  ```
- TASK [restart services if needed by software installation] ***************************************************************************
+ TASK [restart services if needed by software installation] ******************
 skipping: [vm11] => (item=firewalld) 
 skipping: [vm11] => (item=lighttpd) 
+```
 
+ * Now lets change something
+```bash
+ansible -m dnf -a "state=absent name=lighttpd" linux
+```
+ * What did we do?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE1MzY3ODksLTI3NjgyMzM0MiwtNT
-g4NDA5MjQ5LC0xNjUxNTE4MzM4LDk3Nzc3MjA4MF19
+eyJoaXN0b3J5IjpbMjAyMjM5MzQ5OSwtMjc2ODIzMzQyLC01OD
+g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
