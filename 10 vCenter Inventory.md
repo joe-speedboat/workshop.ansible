@@ -98,6 +98,10 @@ host gateway1
 Okay, no DNS that we can use for connection!?
 
 * Check connectivity
+```bash
+ping -c1 -w1 192.168.223.77 >/dev/null && echo ok || echo fail
+	ok
+
 
 
 
@@ -114,7 +118,7 @@ Okay, no DNS that we can use for connection!?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTc4Nzk1MCwxNjk4MTc5NjE1LDIwNT
-I1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3MjYwNDMsLTI2MTUw
-MzEyOF19
+eyJoaXN0b3J5IjpbNzk0ODUzNzkwLC04NTU3ODc5NTAsMTY5OD
+E3OTYxNSwyMDUyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2
+MDQzLC0yNjE1MDMxMjhdfQ==
 -->
