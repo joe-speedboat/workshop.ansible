@@ -84,8 +84,21 @@ Can you explain what it is and what's the idea behind roles?
 ## Write a first Role
 Now we have created an empty role, so lets do something with it.
 * <code>$PDIR/roles/demo.ping/tasks/main.yml</code>
-* 
+```yaml
+---
+# tasks file for demo.ping
+
+- name: ping linux host
+  ping:
+  when: ansible_system == "Linux"
+
+- name: ping windows host
+  win_ping:
+  when: ansible_system == "Win32NT"
+...
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3Njk3NTc1LC00MTM2ODc1NTMsMzY0MD
-U0NjksLTE1Mjk0ODI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTMyNzY5OTM0NSwtNDEzNjg3NTUzLDM2ND
+A1NDY5LC0xNTI5NDgyNjc0XX0=
 -->
