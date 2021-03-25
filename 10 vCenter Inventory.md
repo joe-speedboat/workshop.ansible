@@ -102,8 +102,12 @@ Okay, no DNS that we can use for connection!?
 ping -c1 -w1 192.168.223.77 >/dev/null && echo ok || echo fail
 	ok
 
-
-
+nc -z -v 192.168.223.77 22
+	Ncat: Version 7.70 ( https://nmap.org/ncat )
+	Ncat: Connected to 192.168.223.77:22.
+	Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
+```
+Seems so, so lets do a final check how Ansible wo
 
 
 
@@ -118,7 +122,7 @@ ping -c1 -w1 192.168.223.77 >/dev/null && echo ok || echo fail
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk0ODUzNzkwLC04NTU3ODc5NTAsMTY5OD
-E3OTYxNSwyMDUyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2
-MDQzLC0yNjE1MDMxMjhdfQ==
+eyJoaXN0b3J5IjpbLTE4NTkwMjA0MDksLTg1NTc4Nzk1MCwxNj
+k4MTc5NjE1LDIwNTI1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3
+MjYwNDMsLTI2MTUwMzEyOF19
 -->
