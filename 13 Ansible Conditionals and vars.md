@@ -4,6 +4,7 @@ Since Ansible is able to use facs and vars, we do a short review of how you can 
 Here you can find a brief overview about conditions you can use out of the box
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
 
+## Setup 
 For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
@@ -61,7 +62,8 @@ cd /etc/ansible/projects/demo_role
 ...
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NjgyMzM0MiwtNTg4NDA5MjQ5LC0xNj
-UxNTE4MzM4LDk3Nzc3MjA4MF19
+eyJoaXN0b3J5IjpbMTA3MTYzMzAxMSwtMjc2ODIzMzQyLC01OD
+g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
