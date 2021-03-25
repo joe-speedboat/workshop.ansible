@@ -97,7 +97,8 @@ host gateway1
 ```
 Okay, no DNS that we can use for connection!?
 
-* Check connectiv
+* Check connectivity
+
 
 
 
@@ -113,7 +114,7 @@ Okay, no DNS that we can use for connection!?
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDIyODc5NiwxNjk4MTc5NjE1LDIwNT
+eyJoaXN0b3J5IjpbLTg1NTc4Nzk1MCwxNjk4MTc5NjE1LDIwNT
 I1NTA3NDUsLTEwMzM4NjgxNTcsLTIwODU3MjYwNDMsLTI2MTUw
 MzEyOF19
 -->
