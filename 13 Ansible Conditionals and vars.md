@@ -9,11 +9,11 @@ For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
 ```
-* <code>install_install_upgrade_nginx.yml</code>
+ * <code>install_install_upgrade_nginx.yml</code>
 ```yaml
-- hosts: linux
+ * hosts: linux
   tasks:
-  - name: install webserver
+ * name: install webserver
     dnf: 
       name: 
       - lighttpd
@@ -21,8 +21,8 @@ cd /etc/ansible/projects/demo_role
       state: latest
     register: install
 
-  - lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
-  - copy:
+ * lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
+ * copy:
       dest: /var/www/lighttpd/index.html
       content: |
         Managed by Ansible
@@ -34,7 +34,7 @@ cd /etc/ansible/projects/demo_role
         ARCH: {{ ansible_architecture }}
         MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }} GB
 
-  - name: enable and start services
+ * name: enable and start services
     service:
       name: "{{ item }}"
       enabled: yes
@@ -43,7 +43,7 @@ cd /etc/ansible/projects/demo_role
     - firewalld
     - lighttpd
 
-  - name: restart services if needed by software installation
+ * name: restart services if needed by software installation
     service:
       name: "{{ item }}"
       enabled: yes
@@ -53,7 +53,7 @@ cd /etc/ansible/projects/demo_role
     - lighttpd
     when: install.changed
 
-  - name: open firewall port 80
+ * name: open firewall port 80
     firewalld: 
       service: http 
       permanent: true 
@@ -65,10 +65,20 @@ cd /etc/ansible/projects/demo_role
 ```bash
 ansible-playbook install_install_upgrade_nginx.yml
 ```
-Notice the <code>changed=</code> value in the output
-* Run the playbook again
+
+ * Notice the <code>changed=</code> value in the output
+
+## Run the playbook again
+```bash
+ansible-playbook install_install_upgrade_nginx.yml
+```
+
+ * Notice the <code>changed=</code> value in the output
+ * Why did this happen? Explain it to me!
+ 
+ ###
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTk4MTU0MywtMjc2ODIzMzQyLC01OD
-g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbMTQ2OTI2ODM3LC0yNzY4MjMzNDIsLTU4OD
+QwOTI0OSwtMTY1MTUxODMzOCw5Nzc3NzIwODBdfQ==
 -->
