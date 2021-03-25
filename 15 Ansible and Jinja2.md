@@ -46,10 +46,34 @@ cd /etc/ansible/projects/demo_role
 ```
 Please create and try to understand this files carefully:
 
-* <code></code>
+
+
+* <code>roles/demo.jinja2/defaults/main.yml</code>
 ```yaml
 ```
+* <code>roles/demo.jinja2/handlers/main.yml</code>
+```yaml
+```
+* <code>roles/demo.jinja2/meta/main.yml</code>
+```yaml
+```
+* <code>roles/demo.jinja2/tasks/main.yml</code>
+```yaml
+```
+* <code>roles/demo.jinja2/templates/haproxy.cfg.j2</code>
+```yaml
+```
+* <code>roles/demo.jinja2/tests/test.yml</code>
+```yaml
+```
+* <code>roles/demo.jinja2/vars/main.yml</code>
+```yaml
+```
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzkyMDY3MjMsLTE1NTA2MjA3NTAsLT
+eyJoaXN0b3J5IjpbLTEwODk0NTQ1MzIsLTE1NTA2MjA3NTAsLT
 EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
