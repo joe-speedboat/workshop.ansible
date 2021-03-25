@@ -10,8 +10,26 @@ cd /etc/ansible/projects/demo_role
 ```
 * <code>install_install_upgrade_nginx.yml</code>
 ```yaml
+- hosts: linux
+  tasks:
+  - name: install webserver
+    yum: 
+      name: lighttpd
 
+  - lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
+  - copy:
+      dest: /var/www/lighttpd/index.html
+      content: |
+        Managed by Ansible
+        Hostname: {{ ansible_hostname }}
+
+  - service: name=lighttpd enabled=yes state=started
+  - service: name=firewalld enabled=yes state=started
+
+  - firewalld: service=http permanent=true immediate=true state=enabled
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjA4NzczMTMsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
