@@ -257,12 +257,19 @@ services:
 ### Let's kick the tires and light the fires
 ```bash
 cp roles/demo.jinja2/tests/test.yml haproxy.yml
-vi
 
-
+vim haproxy.yml
+# change the hostname to your working target (vm11)
+ansible -m ping vm11
+ansible-playbook haproxy.yml
+```
+* Check the results
+```bash
+ssh -lroot vm11
+cat /etc/haproxy/haproxy.cfg
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTAzNjk2MTksLTE1NTA2MjA3NTAsLT
-EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbMzM4ODUwNTkwLC0xNTUwNjIwNzUwLC0xMj
+k2MTU3NDE5LDYyOTgzMDcyOF19
 -->
