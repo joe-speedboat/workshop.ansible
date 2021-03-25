@@ -63,7 +63,17 @@ enable_plugins = community.vmware.vmware_vm_inventory
 
     ansible-inventory --list --vars
 
+
+### Review
+* What is the benefit of a vCenter API Ansible inventory?
+* What can you do with the new facts?
+	* Power State
+	* Operating System
+	* Tags
+	* ...
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjU1MDc0NSwtMTAzMzg2ODE1NywtMj
-A4NTcyNjA0MywtMjYxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbMTY0NDYwOTMyNiwyMDUyNTUwNzQ1LC0xMD
+MzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1MDMxMjhdfQ==
 -->
