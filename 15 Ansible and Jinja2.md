@@ -40,10 +40,11 @@ cd /etc/ansible/projects/demo_role
 ## Jinja2 in Templates
 ### Let's just create one
 ```bash
-cd /etc/ansible/projects/demo_role
-mkdir templates
+cd /etc/ansible/projects/demo_role/roles
+
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTYxNTc0MTksNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbMTczNjY0MzQxMywtMTI5NjE1NzQxOSw2Mj
+k4MzA3MjhdfQ==
 -->
