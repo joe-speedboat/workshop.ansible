@@ -24,16 +24,9 @@ cd /etc/ansible/projects/demo_role
  - copy:
       dest: /var/www/lighttpd/index.html
       content: |
-        Managed by Ansible
-        Hostname: {{ ansible_hostname }}
-        IP: {{ ansible_default_ipv4.address|default(ansible_all_ipv4_addresses[0])}}
-        Distribution: {{ ansible_distribution }}
-        Distribution Version: {{ ansible_distribution_version }}
-        CPU: {{ ansible_processor[1] }}
-        ARCH: {{ ansible_architecture }}
-        MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }} GB
-
- * name: enable and start services
+        Hostname: "{{ansible_hostname}}"
+        
+- name: enable and start services
     service:
       name: "{{ item }}"
       enabled: yes
@@ -42,7 +35,7 @@ cd /etc/ansible/projects/demo_role
     - firewalld
     - lighttpd
 
- * name: restart services if needed by software installation
+ - name: restart services if needed by software installation
     service:
       name: "{{ item }}"
       enabled: yes
@@ -52,7 +45,7 @@ cd /etc/ansible/projects/demo_role
     - lighttpd
     when: install.changed
 
- * name: open firewall port 80
+ - name: open firewall port 80
     firewalld: 
       service: http 
       permanent: true 
@@ -61,5 +54,5 @@ cd /etc/ansible/projects/demo_role
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTAzMjExNjhdfQ==
+eyJoaXN0b3J5IjpbNDU1MDYyMDYwXX0=
 -->
