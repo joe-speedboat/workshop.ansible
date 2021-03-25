@@ -62,10 +62,13 @@ cd /etc/ansible/projects/demo_role
 ...
 ```
 ## Run the playbook
-
-
+```bash
+ansible-playbook install_install_upgrade_nginx.yml
+```
+Notice the <code>changed=</code> value in the output
+* Run the playbook again
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NDYxNzM2MiwtMjc2ODIzMzQyLC01OD
+eyJoaXN0b3J5IjpbMTQyNTk4MTU0MywtMjc2ODIzMzQyLC01OD
 g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
