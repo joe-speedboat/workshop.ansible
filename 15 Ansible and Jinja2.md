@@ -37,6 +37,13 @@ cd /etc/ansible/projects/demo_role
 * review the playbook and try to understand what happened
 * explain what happened
 
+## Jinja2 in Templates
+### Let's just create one
+```bash
+cd /etc/ansible/projects/demo_role
+mkdir
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbLTE1ODA2ODgzODgsNjI5ODMwNzI4XX0=
 -->
