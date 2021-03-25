@@ -9,7 +9,7 @@ For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
 ```
- * <code>install_install_upgrade_nginx.yml</code>
+ * <code>install_install_upgrade_w.yml</code>
 ```yaml
  * hosts: linux
   tasks:
@@ -63,14 +63,14 @@ cd /etc/ansible/projects/demo_role
 ```
 ## Run the playbook
 ```bash
-ansible-playbook install_install_upgrade_nginx.yml
+ansible-playbook install_install_upgrade_web.yml
 ```
 
  * Notice the <code>changed=</code> value in the output
 
 ## Run the playbook again
 ```bash
-ansible-playbook install_install_upgrade_nginx.yml
+ansible-playbook install_install_upgrade_web.yml
 ```
 
  * Notice the <code>changed=</code> value in the output
@@ -89,8 +89,13 @@ skipping: [vm11] => (item=lighttpd)
 ansible -m dnf -a "state=absent name=lighttpd" linux
 ```
  * What did we do?
-
+* Call the playbook again and review the output of the service restart tasks
+ ```
+ TASK [restart services if needed by software installation] ******************
+skipping: [vm11] => (item=firewalld) 
+skipping: [vm11] => (item=lighttpd) 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjM5MzQ5OSwtMjc2ODIzMzQyLC01OD
-g0MDkyNDksLTE2NTE1MTgzMzgsOTc3NzcyMDgwXX0=
+eyJoaXN0b3J5IjpbNTU5NTkyMTcxLC0yNzY4MjMzNDIsLTU4OD
+QwOTI0OSwtMTY1MTUxODMzOCw5Nzc3NzIwODBdfQ==
 -->
