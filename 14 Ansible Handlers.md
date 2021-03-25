@@ -65,8 +65,9 @@ Now we change the playbook slightly
 
     ansible -m dnf -a "state=absent name=lighttpd" linux
 * Run the playbook again
-* Can you see, the handlers got fired!?
+* Can you see -- the handlers got fired!?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzczNDgyMzcsMTk1OTM3NDMzOF19
+eyJoaXN0b3J5IjpbLTE2MzMwNDAzMTMsLTE0MzczNDgyMzcsMT
+k1OTM3NDMzOF19
 -->
