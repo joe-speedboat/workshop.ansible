@@ -42,7 +42,7 @@ cd /etc/ansible/projects/demo_role
     - firewalld
     - lighttpd
 
-  - name: restart services if needed
+  - name: restart services if needed by software installation
     service:
       name: "{{ item }}"
       enabled: yes
@@ -52,11 +52,16 @@ cd /etc/ansible/projects/demo_role
     - lighttpd
     when: install.changed
 
-  - firewalld: service=http permanent=true immediate=true state=enabled
+  - name: open firewall port 80
+    firewalld: 
+      service: http 
+      permanent: true 
+      immediate: true 
+      state=enabled
  ...
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4ODQwOTI0OSwtMTY1MTUxODMzOCw5Nz
-c3NzIwODBdfQ==
+eyJoaXN0b3J5IjpbMTE0MzY3Njg2LC01ODg0MDkyNDksLTE2NT
+E1MTgzMzgsOTc3NzcyMDgwXX0=
 -->
