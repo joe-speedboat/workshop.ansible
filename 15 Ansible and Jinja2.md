@@ -38,7 +38,7 @@ cd /etc/ansible/projects/demo_role
 * explain what happened
 
 ## Jinja2 in Templates
-### Let's just create one
+### OK, we just create one
 ```bash
 cd /etc/ansible/projects/demo_role/roles
 ansible-galaxy init demo.jinja2
@@ -249,12 +249,14 @@ packages:
 services:
 - haproxy
 - firewalld
+...
 ```
-
+* Step back, do you understand what happened in this role?
+* Explai
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMzMxODI0OCwtMTU1MDYyMDc1MCwtMT
+eyJoaXN0b3J5IjpbMjA4OTY1MzIzNiwtMTU1MDYyMDc1MCwtMT
 I5NjE1NzQxOSw2Mjk4MzA3MjhdfQ==
 -->
