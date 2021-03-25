@@ -9,7 +9,7 @@ For that we use a project we created before:
 ```bash
 cd /etc/ansible/projects/demo_role
 ```
- * <code>install_install_upgrade_w.yml</code>
+ * <code>install_install_upgrade_web.yml</code>
 ```yaml
  * hosts: linux
   tasks:
@@ -91,11 +91,13 @@ ansible -m dnf -a "state=absent name=lighttpd" linux
  * What did we do?
 * Call the playbook again and review the output of the service restart tasks
  ```
- TASK [restart services if needed by software installation] ******************
-skipping: [vm11] => (item=firewalld) 
-skipping: [vm11] => (item=lighttpd) 
+TASK [restart services if needed by software installation] ****************
+ok: [vm11] => (item=firewalld)
+ok: [vm11] => (item=lighttpd)
 ```
+* Why did this happen?
+* In which case would this help to us if we run this playbook on a daily base?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5NTkyMTcxLC0yNzY4MjMzNDIsLTU4OD
-QwOTI0OSwtMTY1MTUxODMzOCw5Nzc3NzIwODBdfQ==
+eyJoaXN0b3J5IjpbLTE4MDE3ODkxNzEsLTI3NjgyMzM0MiwtNT
+g4NDA5MjQ5LC0xNjUxNTE4MzM4LDk3Nzc3MjA4MF19
 -->
