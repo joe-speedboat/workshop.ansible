@@ -65,6 +65,28 @@ enable_plugins = community.vmware.vmware_vm_inventory
 
 ### Hands On: vCenter Inventory Internals
 Let's Explore how Ansible works with this new Inventory
+```bash
+ansible-inventory --host gateway1
+{
+    "ansible_host": "192.168.223.77",
+    "config.cpuHotAddEnabled": false,
+    "config.cpuHotRemoveEnabled": false,
+    "config.guestId": "other3xLinux64Guest",
+    "config.hardware.numCPU": 1,
+    "config.instanceUuid": "52a30a58-a281-3ec4-06a6-42228caf25d1",
+    "config.name": "gateway1",
+    "config.template": false,
+    "config.uuid": "564da15e-e7ff-6cc9-b3ad-c75164aa7c90",
+    "guest.guestId": "other3xLinux64Guest",
+    "guest.guestState": "running",
+    "guest.hostName": "gateway1",
+    "guest.ipAddress": "192.168.223.77",
+    "name": "gateway1",
+    "runtime.connectionState": "connected",
+    "runtime.maxMemoryUsage": 128,
+    "summary.runtime.powerState": "poweredOn"
+}
+```
 
 
 
@@ -79,6 +101,7 @@ Let's Explore how Ansible works with this new Inventory
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5ODE3OTYxNSwyMDUyNTUwNzQ1LC0xMD
-MzODY4MTU3LC0yMDg1NzI2MDQzLC0yNjE1MDMxMjhdfQ==
+eyJoaXN0b3J5IjpbMTExODE3MjI1LDE2OTgxNzk2MTUsMjA1Mj
+U1MDc0NSwtMTAzMzg2ODE1NywtMjA4NTcyNjA0MywtMjYxNTAz
+MTI4XX0=
 -->
