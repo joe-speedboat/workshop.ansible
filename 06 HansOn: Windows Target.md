@@ -56,7 +56,6 @@ log_path = ./ansible.log
 ---
 - name: Update with Important Windows Patches
   hosts: win_hosts
-  seri
   tasks:
   - name: Apply Patches
     win_updates:
@@ -88,8 +87,8 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjIwODEyNzUsLTYyMTUwOTE3NiwxNT
-YwODMxMjgzLDcwNTUxNDI0NiwtMTEzODI1NjgyMywtMjE0NzA1
-Mzk2LC03ODYzMzUzMjksMjUzNTYxNzM1LDk4MjE5MzIzNSw2MT
-MyMzU1NDksMTc1MjAxMTU3MV19
+eyJoaXN0b3J5IjpbLTQ4Nzg4MDgzMiwtNjIxNTA5MTc2LDE1Nj
+A4MzEyODMsNzA1NTE0MjQ2LC0xMTM4MjU2ODIzLC0yMTQ3MDUz
+OTYsLTc4NjMzNTMyOSwyNTM1NjE3MzUsOTgyMTkzMjM1LDYxMz
+IzNTU0OSwxNzUyMDExNTcxXX0=
 -->
