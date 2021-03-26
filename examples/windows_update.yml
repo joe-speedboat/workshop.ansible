@@ -20,5 +20,5 @@
   
   - name: print update results
     debug:
-      vars: update_results
+      var: update_results
 ...
