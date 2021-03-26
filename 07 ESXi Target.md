@@ -28,11 +28,13 @@ cd $PDIR
 ```ini
 # ansible demo inventory for $PNAME
 [esxi_hosts]
-esxi1
+clue3
 
-[esxi_hosts:vars]
+[control_nodes]
+localhost
+[control_nodes:vars]
 esxi_user=root
-esxi_password=ChangeMe...
+esxi_password=changeME...
 ```
 ### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
@@ -155,7 +157,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMjEzMzk4NCwxNjY2Mjg2NjQ0LDEwMD
-QyMzkwMTYsLTYwMTIxMzM2MSwyMTE5MDEyMjk2LDU5OTU0ODI4
-OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MDMwNjIzMzQsMTUxMjEzMzk4NCwxNj
+Y2Mjg2NjQ0LDEwMDQyMzkwMTYsLTYwMTIxMzM2MSwyMTE5MDEy
+Mjk2LDU5OTU0ODI4OCw3MzA5OTgxMTZdfQ==
 -->
