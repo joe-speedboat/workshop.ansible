@@ -19,7 +19,7 @@ With Ansible one should be able to create consistent environments.
 * **Secure**
 Ansible does not deploy agents to nodes. 
 Only OpenSSH and Python are required on the managed nodes.
-Windows systems use WinRM ans PowerShell.
+Windows systems use WinRM and PowerShell.
 
 * **Highly Reliable**
 When carefully written, an Ansible playbook can be idempotent, to prevent unexpected sideeffects on the managed systems.
@@ -55,5 +55,6 @@ Ansible Playbooks offer a repeatable, re-usable, simple configuration management
 ### [Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
 Roles let you automatically load related vars_files, tasks, handlers, and other Ansible artifacts based on a known file structure. Once you group your content in roles, you can easily reuse them and share them with other users.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyNjU3MDAxLC02OTQ2NTIxODFdfQ==
+eyJoaXN0b3J5IjpbLTgwODkyMjYwMCw5NDI2NTcwMDEsLTY5ND
+Y1MjE4MV19
 -->
