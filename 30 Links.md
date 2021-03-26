@@ -7,7 +7,7 @@ https://www.ansible.com/products/tower
 ## Ansible language help
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
-
+https://docs.ansible.com/ansible/latest/user_guide/index.html#writing-tasks-plays-and-playbooks
 
 ## Ansible best practice
 * uniQconsulting ag has one! 
@@ -38,8 +38,8 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDUxOTQ0MjEsMTU1NTEzMzQxMSwxMj
-QxMzk1MDI3LDIwMjgzNDM4MDEsODQ4MTUxNDAwLDkxODk5OTc2
-NiwxNjMxOTU2MTI0LC03NDA3NTAxNjEsLTIwOTY0NDU5OTcsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTQ5NjEwMDQyMSwxNTU1MTMzNDExLDEyND
+EzOTUwMjcsMjAyODM0MzgwMSw4NDgxNTE0MDAsOTE4OTk5NzY2
+LDE2MzE5NTYxMjQsLTc0MDc1MDE2MSwtMjA5NjQ0NTk5Nyw3Mz
+A5OTgxMTZdfQ==
 -->
