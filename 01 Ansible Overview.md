@@ -35,6 +35,8 @@ Playbooks use an easy and descriptive language based on YAML and Jinja templates
 
 ![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_architecture.png)
 
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_topo1.png)
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_topo2.png)
 
 ### [Inventory](https://docs.ansible.com/ansible/latest/user_guide/intro_inventory.html)
 Ansible works against multiple managed nodes or “hosts” in your infrastructure at the same time, using a list or group of lists known as inventory. Once your inventory is defined, you use [patterns](https://docs.ansible.com/ansible/latest/user_guide/intro_patterns.html#intro-patterns) to select the hosts or groups you want Ansible to run against.
@@ -55,6 +57,6 @@ Ansible Playbooks offer a repeatable, re-usable, simple configuration management
 ### [Roles](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html)
 Roles let you automatically load related vars_files, tasks, handlers, and other Ansible artifacts based on a known file structure. Once you group your content in roles, you can easily reuse them and share them with other users.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwODkyMjYwMCw5NDI2NTcwMDEsLTY5ND
-Y1MjE4MV19
+eyJoaXN0b3J5IjpbNDgyODc1NjYxLC04MDg5MjI2MDAsOTQyNj
+U3MDAxLC02OTQ2NTIxODFdfQ==
 -->
