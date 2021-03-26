@@ -10,7 +10,7 @@ https://github.com/ansible/workshops/blob/devel/decks/ansible_best_practices.pdf
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
 
 ## Ansible Inventories and vars grouping
-
+https://github.com/joe-speedboat/workshop.ansible/blob/master/presentation/ansible-multienv-2016.pdf
 
 # Ansible presentations
 https://github.com/ansible/workshops/tree/devel/decks
@@ -33,7 +33,7 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTM5NTAyNywyMDI4MzQzODAxLDg0OD
-E1MTQwMCw5MTg5OTk3NjYsMTYzMTk1NjEyNCwtNzQwNzUwMTYx
-LC0yMDk2NDQ1OTk3LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTU1NTEzMzQxMSwxMjQxMzk1MDI3LDIwMj
+gzNDM4MDEsODQ4MTUxNDAwLDkxODk5OTc2NiwxNjMxOTU2MTI0
+LC03NDA3NTAxNjEsLTIwOTY0NDU5OTcsNzMwOTk4MTE2XX0=
 -->
