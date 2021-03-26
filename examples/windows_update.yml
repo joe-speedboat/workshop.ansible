@@ -16,4 +16,9 @@
       until: not result.changed
       retries: 10
       delay: 5
+  register: update_results
+  
+- name: print update results
+  debug:
+    vars: update_results
 ...
