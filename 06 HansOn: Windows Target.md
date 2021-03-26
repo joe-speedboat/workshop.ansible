@@ -73,7 +73,9 @@ log_path = ./ansible.log
       delay: 5
       register: update_results
   
-  - name: pr
+  - name: print update results
+    debug:
+      var: update_results
 ...
 ```
 
@@ -86,8 +88,8 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzQzNTcyNTYsMTU2MDgzMTI4Myw3MD
-U1MTQyNDYsLTExMzgyNTY4MjMsLTIxNDcwNTM5NiwtNzg2MzM1
-MzI5LDI1MzU2MTczNSw5ODIxOTMyMzUsNjEzMjM1NTQ5LDE3NT
-IwMTE1NzFdfQ==
+eyJoaXN0b3J5IjpbLTYyMTUwOTE3NiwxNTYwODMxMjgzLDcwNT
+UxNDI0NiwtMTEzODI1NjgyMywtMjE0NzA1Mzk2LC03ODYzMzUz
+MjksMjUzNTYxNzM1LDk4MjE5MzIzNSw2MTMyMzU1NDksMTc1Mj
+AxMTU3MV19
 -->
