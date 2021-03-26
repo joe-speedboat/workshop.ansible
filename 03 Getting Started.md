@@ -44,16 +44,22 @@ ansible-doc dnf
 
 * Now we just update the software with an ad-hoc ansible command:
 First let us check if Ansible can connect the target server
-```
+```bash
 ansible -m ping localhost
+```
+Output:
+```
 
 	localhost | SUCCESS => {
 	    "changed": false,
 	    "ping": "pong"
 	}
 ```
-```
+```bash
 ansible -m dnf -e state=latest -e name='*' -e update_cache=true localhost
+```
+Output:
+```
 
 	localhost | SUCCESS => {
 	    "changed": false,
@@ -68,8 +74,11 @@ ansible -m dnf -e state=latest -e name='*' -e update_cache=true localhost
 Is a command to manage Ansible roles in shared repositories, the default of which is Ansible Galaxy _https://galaxy.ansible.com_.
 
 Lets see if we can find some content from [uniQconsulting ag](https://www.uniqconsulting.ch)?
-```
+```bash
 ansible-galaxy search uniqconsulting
+```
+Output:
+```
 
 	Found 20 roles matching your search:
 	 Name                            Description
@@ -185,9 +194,9 @@ Done, that's safe for now!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjU0MDQzMywtMTUwNjE1Mjc2MiwtMT
-I0Njc2MzY3NSwtMTUwNjQ0MjE0MCwxNDIwNzk3OTk0LC0yMDA2
-OTMwMDE5LC0xMzA0NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQzND
-A1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF19
-
+eyJoaXN0b3J5IjpbLTE4MzUzNTkzOTQsLTE1MDYxNTI3NjIsLT
+EyNDY3NjM2NzUsLTE1MDY0NDIxNDAsMTQyMDc5Nzk5NCwtMjAw
+NjkzMDAxOSwtMTMwNDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0Mz
+QwNTEsLTIxMTU2NjAzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3Mzhd
+fQ==
 -->
