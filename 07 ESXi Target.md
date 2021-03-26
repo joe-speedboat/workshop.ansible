@@ -54,7 +54,7 @@ log_path = ./ansible.log
 - name: list all VMs on ESXi host
   hosts: localhost
   vars:
-    esxi_host: esxi1
+    esxi_host: esxi_hosts
   tasks:
   - name: loop virtual machines
     block:
@@ -157,7 +157,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDMwNjIzMzQsMTUxMjEzMzk4NCwxNj
-Y2Mjg2NjQ0LDEwMDQyMzkwMTYsLTYwMTIxMzM2MSwyMTE5MDEy
-Mjk2LDU5OTU0ODI4OCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI3OTQyMTYwNywxNTEyMTMzOTg0LDE2Nj
+YyODY2NDQsMTAwNDIzOTAxNiwtNjAxMjEzMzYxLDIxMTkwMTIy
+OTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
 -->
