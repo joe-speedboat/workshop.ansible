@@ -11,6 +11,7 @@ PDIR="/etc/ansible/projects/demo_role"
 mkdir -p $PDIR
 chmod 700 $PDIR
 cd $PDIR
+mkdir group_vars
 ```
 
 ### Ansible Config
@@ -133,6 +134,6 @@ vm12                       : ok=2    changed=0    unreachable=0    failed=0    s
 * Explain it to me
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM1NzEzMjA1LC03Mzk1NDg3NSwtNDEzNj
-g3NTUzLDM2NDA1NDY5LC0xNTI5NDgyNjc0XX0=
+eyJoaXN0b3J5IjpbMTk5NDQwMDM5MCwtNzM5NTQ4NzUsLTQxMz
+Y4NzU1MywzNjQwNTQ2OSwtMTUyOTQ4MjY3NF19
 -->
