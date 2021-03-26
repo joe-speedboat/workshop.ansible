@@ -1,8 +1,8 @@
 ---
-- name: Update Windows
-  hosts: win1
+- name: Update with Important Windows Patches
+  hosts: win_hosts
   tasks:
-  - name: Exclude updates based on the update title
+  - name: Apply Patches
     win_updates:
       category_name:
       - SecurityUpdates
@@ -11,13 +11,12 @@
       - Windows Malicious Software Removal Tool for Windows
       - \d{4}-\d{2} Cumulative Update for Windows Server 2016
       reboot: yes
-      reboot_timeout: 3600
-      register: result
-      until: not result.changed
-      retries: 10
-      delay: 5
+      reboot_timeout: 1800
+    until: not result.changed
+    retries: 10
+    delay: 5
     register: update_results
-  
+
   - name: print update results
     debug:
       var: update_results
