@@ -42,49 +42,29 @@ In short, this is it:
 
 
 1.  command line values (for example, `-u my_user`, these are not variables)
-    
 2.  role defaults (defined in role/defaults/main.yml) [1](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id13)
-    
 3.  inventory file or script group vars [2](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id14)
-    
 4.  inventory group_vars/all [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 5.  playbook group_vars/all [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 6.  inventory group_vars/* [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 7.  playbook group_vars/* [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 8.  inventory file or script host vars [2](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id14)
-    
 9.  inventory host_vars/* [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 10.  playbook host_vars/* [3](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id15)
-    
 11.  host facts / cached set_facts [4](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id16)
-    
 12.  play vars
-    
 13.  play vars_prompt
-    
 14.  play vars_files
-    
 15.  role vars (defined in role/vars/main.yml)
-    
 16.  block vars (only for tasks in block)
-    
 17.  task vars (only for the task)
-    
 18.  include_vars
->     
-> 19.  set_facts / registered vars
->     
-> 20.  role (and include_role) params
->     
-> 21.  include params
->     
-> 22.  extra vars (for example, `-e "user=my_user"`)(always win precedence)
->
+19.  set_facts / registered vars
+20.  role (and include_role) params
+21.  include params
+22.  extra vars (for example, `-e "user=my_user"`)(always win precedence
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTY1Njc4NiwtMjM0MDAzMTA5XX0=
+eyJoaXN0b3J5IjpbLTE3MzE1OTU2MDksLTIzNDAwMzEwOV19
 -->
