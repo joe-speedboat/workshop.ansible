@@ -6,7 +6,7 @@ Can you Explain to me how it works?
 
 ### Project
 ```bash
-PNAME="os_update_role"
+PNAME="demo_role"
 PDIR="/etc/ansible/projects/demo_role"
 mkdir -p $PDIR
 chmod 700 $PDIR
@@ -131,6 +131,6 @@ vm12                       : ok=2    changed=0    unreachable=0    failed=0    s
 * Explain it to me
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTU0ODc1LC00MTM2ODc1NTMsMzY0MD
-U0NjksLTE1Mjk0ODI2NzRdfQ==
+eyJoaXN0b3J5IjpbLTYzNjIwOTU2NiwtNzM5NTQ4NzUsLTQxMz
+Y4NzU1MywzNjQwNTQ2OSwtMTUyOTQ4MjY3NF19
 -->
