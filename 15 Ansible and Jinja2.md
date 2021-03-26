@@ -30,7 +30,6 @@ cd /etc/ansible/projects/demo_role
     run_once: yes
     delegate_to: localhost
 ...
-
 ```
 * call the playbook
 * examine the results
@@ -274,6 +273,6 @@ http://vm11:10000
 
 * Review this role with the class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTYxOTkzMiwtMTU1MDYyMDc1MCwtMT
-I5NjE1NzQxOSw2Mjk4MzA3MjhdfQ==
+eyJoaXN0b3J5IjpbLTE5OTk0MTk4ODYsLTE1NTA2MjA3NTAsLT
+EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
 -->
