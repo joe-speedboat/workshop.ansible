@@ -39,6 +39,7 @@ ansible_password=ChangeMe...
 ansible_connection=winrm
 # ansible_winrm_server_cert_validation=ignore
 ```
+
 #### Ansible Config
 * <code>$PDIR/ansible.cfg</code>
 ```ini
@@ -50,6 +51,7 @@ collections_paths = ./collections
 remote_user = root
 log_path = ./ansible.log
 ```
+
 #### Playbook
 * <code>$PDIR/win_update.yml</code>
 ```yaml
@@ -87,8 +89,8 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzg4MDgzMiwtNjIxNTA5MTc2LDE1Nj
-A4MzEyODMsNzA1NTE0MjQ2LC0xMTM4MjU2ODIzLC0yMTQ3MDUz
-OTYsLTc4NjMzNTMyOSwyNTM1NjE3MzUsOTgyMTkzMjM1LDYxMz
-IzNTU0OSwxNzUyMDExNTcxXX0=
+eyJoaXN0b3J5IjpbMTU0NjI2NjA0OCwtNDg3ODgwODMyLC02Mj
+E1MDkxNzYsMTU2MDgzMTI4Myw3MDU1MTQyNDYsLTExMzgyNTY4
+MjMsLTIxNDcwNTM5NiwtNzg2MzM1MzI5LDI1MzU2MTczNSw5OD
+IxOTMyMzUsNjEzMjM1NTQ5LDE3NTIwMTE1NzFdfQ==
 -->
