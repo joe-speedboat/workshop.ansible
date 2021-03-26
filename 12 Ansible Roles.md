@@ -46,10 +46,12 @@ mkdir group_vars
 vim group_vars/windows.yml
 ```
 ```
+---
 ansible_user: Administrator
 ansible_password: changeMe...
 ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
+...
 ```
 
 ### Prepare Linux Nodes
@@ -131,6 +133,6 @@ vm12                       : ok=2    changed=0    unreachable=0    failed=0    s
 * Explain it to me
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjIwOTU2NiwtNzM5NTQ4NzUsLTQxMz
-Y4NzU1MywzNjQwNTQ2OSwtMTUyOTQ4MjY3NF19
+eyJoaXN0b3J5IjpbNDM1NzEzMjA1LC03Mzk1NDg3NSwtNDEzNj
+g3NTUzLDM2NDA1NDY5LC0xNTI5NDgyNjc0XX0=
 -->
