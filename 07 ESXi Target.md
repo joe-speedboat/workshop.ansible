@@ -89,7 +89,7 @@ log_path = ./ansible.log
 - name: list all VM snapshots on ESXi host
   hosts: localhost
   vars:
-    esxi_host: esxi1
+    esxi_host: esx1
     vmname: vm1
   tasks:
   - name: Get VM Snapshots
@@ -115,7 +115,7 @@ log_path = ./ansible.log
 - name: Revert into VM snapshot on ESXi host
   hosts: localhost
   vars:
-    esxi_host: esxi1
+    esxi_host: esx1
     vmname: vm1
     snapname: snap1
   tasks:
@@ -142,7 +142,7 @@ log_path = ./ansible.log
 - name: PowerOn VM on ESXi host
   hosts: localhost
   vars:
-    esxi_host: esxi1
+    esxi_host: esx1
     vmname: vm1
   tasks:
   - name: Power on VM
@@ -157,7 +157,7 @@ log_path = ./ansible.log
 ...
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTQyMTYwNywxNTEyMTMzOTg0LDE2Nj
-YyODY2NDQsMTAwNDIzOTAxNiwtNjAxMjEzMzYxLDIxMTkwMTIy
-OTYsNTk5NTQ4Mjg4LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTYxODg5NjY0LDE1MTIxMzM5ODQsMTY2Nj
+I4NjY0NCwxMDA0MjM5MDE2LC02MDEyMTMzNjEsMjExOTAxMjI5
+Niw1OTk1NDgyODgsNzMwOTk4MTE2XX0=
 -->
