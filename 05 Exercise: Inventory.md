@@ -1,6 +1,3 @@
-
-
-
 # Ansible Inventory Exercise
 Okay, enough theory for now, lets check if we understood how inventories, configs and projects fit together.
 
@@ -37,10 +34,7 @@ Here you can find how variable definitions get voted/handled:
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
 
 In short, this is it:
-
-
-
-
+![enter image description here](https://github.com/joe-speedboat/workshop.ansible/raw/master/images/ansible_vars2.png)
 1.  command line values (for example, `-u my_user`, these are not variables)
 2.  role defaults (defined in role/defaults/main.yml) [1](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id13)
 3.  inventory file or script group vars [2](https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#id14)
@@ -63,8 +57,7 @@ In short, this is it:
 20.  role (and include_role) params
 21.  include params
 22.  extra vars (for example, `-e "user=my_user"`)(always win precedence
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzE1OTU2MDksLTIzNDAwMzEwOV19
+eyJoaXN0b3J5IjpbMTkxOTYzOTE3MiwtMTczMTU5NTYwOSwtMj
+M0MDAzMTA5XX0=
 -->
