@@ -3,6 +3,7 @@ Since Inventory brings the Ansible targets to the playbooks, Inventory should al
 Ansible would not be that popular if it would not bring ZEN to the inventory by calling the vCenter API.
 
 https://galaxy.ansible.com/community/vmware
+
 https://cloudautomation.pharriso.co.uk/post/vmware_filter_tags/
 
 
@@ -125,7 +126,7 @@ ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1MTYyMjU1LC04NTU3ODc5NTAsMTY5OD
-E3OTYxNSwyMDUyNTUwNzQ1LC0xMDMzODY4MTU3LC0yMDg1NzI2
-MDQzLC0yNjE1MDMxMjhdfQ==
+eyJoaXN0b3J5IjpbMzk1MDE0NjUzLDY0NTE2MjI1NSwtODU1Nz
+g3OTUwLDE2OTgxNzk2MTUsMjA1MjU1MDc0NSwtMTAzMzg2ODE1
+NywtMjA4NTcyNjA0MywtMjYxNTAzMTI4XX0=
 -->
