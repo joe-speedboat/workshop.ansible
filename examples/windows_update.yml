@@ -12,7 +12,7 @@
       - \d{4}-\d{2} Cumulative Update for Windows Server 2016
       reboot: yes
       reboot_timeout: 1800
-    until: not result.changed
+    until: not update_results.changed
     retries: 10
     delay: 5
     register: update_results
