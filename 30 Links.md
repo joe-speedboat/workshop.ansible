@@ -14,7 +14,7 @@ https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
 
 # Ansible presentations
 https://github.com/ansible/workshops/tree/devel/decks
-
+https://ansible.github.io/workshops/
 
 # Protect SSH Keys
 https://www.ssh.com/ssh/passphrase
@@ -33,7 +33,7 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyODM0MzgwMSw4NDgxNTE0MDAsOTE4OT
-k5NzY2LDE2MzE5NTYxMjQsLTc0MDc1MDE2MSwtMjA5NjQ0NTk5
-Nyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTI0MTM5NTAyNywyMDI4MzQzODAxLDg0OD
+E1MTQwMCw5MTg5OTk3NjYsMTYzMTk1NjEyNCwtNzQwNzUwMTYx
+LC0yMDk2NDQ1OTk3LDczMDk5ODExNl19
 -->
