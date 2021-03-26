@@ -45,12 +45,12 @@ log_path = ./ansible.log
 ```
 
 ### Playbooks
-##### <code>$PDIR/esxi_vm_list.yml</code>
+##### <code>$PDIR/vcenter_create_linked_clone.yml</code>
 ```yaml
 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MzczOTEyLC0xMTYwNDQzNjc2LDE0Nj
-M5NzU2OTBdfQ==
+eyJoaXN0b3J5IjpbMTg2NzgwMTc3NCwtMTE2MDQ0MzY3NiwxND
+YzOTc1NjkwXX0=
 -->
