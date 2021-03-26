@@ -3,7 +3,7 @@
   remote_user: root
   vars:
     lb_backend:
-    - name: http1
+    - name: fail_xxx
       lbport: 8080
       lbback:
       - name: web1
