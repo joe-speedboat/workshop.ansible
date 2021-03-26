@@ -1,18 +1,21 @@
 # Getting Started
 Now we have installed Ansible on the Linux VM, lets see which commands we can use
-```
+```bash
 rpm -ql ansible | grep bin/
-	/usr/bin/ansible
-	/usr/bin/ansible-config
-	/usr/bin/ansible-connection
-	/usr/bin/ansible-console
-	/usr/bin/ansible-doc
-	/usr/bin/ansible-galaxy
-	/usr/bin/ansible-inventory
-	/usr/bin/ansible-playbook
-	/usr/bin/ansible-pull
-	/usr/bin/ansible-test
-	/usr/bin/ansible-vault
+```
+Output:
+```bash
+/usr/bin/ansible
+/usr/bin/ansible-config
+/usr/bin/ansible-connection
+/usr/bin/ansible-console
+/usr/bin/ansible-doc
+/usr/bin/ansible-galaxy
+/usr/bin/ansible-inventory
+/usr/bin/ansible-playbook
+/usr/bin/ansible-pull
+/usr/bin/ansible-test
+/usr/bin/ansible-vault
 ```
 
 ## Ansible commands
@@ -182,8 +185,9 @@ Done, that's safe for now!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDYxNTI3NjIsLTEyNDY3NjM2NzUsLT
-E1MDY0NDIxNDAsMTQyMDc5Nzk5NCwtMjAwNjkzMDAxOSwtMTMw
-NDQ5MTMyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2Nj
-AzMzcsNjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
+eyJoaXN0b3J5IjpbLTUxMjU0MDQzMywtMTUwNjE1Mjc2MiwtMT
+I0Njc2MzY3NSwtMTUwNjQ0MjE0MCwxNDIwNzk3OTk0LC0yMDA2
+OTMwMDE5LC0xMzA0NDkxMzI4LC0xNjYzNzAyMzE3LDkyNzQzND
+A1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAsMjAzNTk2NTczOF19
+
 -->
