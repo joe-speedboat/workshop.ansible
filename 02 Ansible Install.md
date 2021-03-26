@@ -34,6 +34,9 @@ Now we look for the changes we made above:
 * To the directories
 ```bash
 ls -ld /etc/ansible/collections /etc/ansible/projects
+```
+Output of <code>ls</code>:
+```bash
   drwxr-xr-x. 2 root root 6 Mar 19 11:59 /etc/ansible/collections
   drwx------. 2 root root 6 Mar 19 11:59 /etc/ansible/projects
 ```
@@ -48,6 +51,6 @@ echo 'autocmd Filetype yml setlocal sw=2 et' >$HOME/.vimrc
 echo 'set ai' >>$HOME/.vimrc
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjQyNjQ2OSwtMTgxMjQzODE5MywtMT
-M5MjQ2NjAyMV19
+eyJoaXN0b3J5IjpbMzUwMTI1MTcsLTE4MTI0MzgxOTMsLTEzOT
+I0NjYwMjFdfQ==
 -->
