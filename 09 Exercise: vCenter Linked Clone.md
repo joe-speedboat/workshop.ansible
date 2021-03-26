@@ -75,9 +75,9 @@ log_path = ./ansible.log
         folder: "{{ vmfolder }}"
         state: poweredoff
         template: "{{ template }}"
-        linked_clone: true
+        ### linked_clone: true
         name: "{{ clone_name }}"
-        snapshot_src: "{{ snapname }}"
+        ###snapshot_src: "{{ snapname }}"
         hardware:
           memory_mb: "{{ clone_mem }}"
           num_cpus: "{{ clone_cpu }}"
@@ -91,6 +91,6 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4MjI3OTY3LC0xMTYwNDQzNjc2LDE0Nj
+eyJoaXN0b3J5IjpbNzU2MzY1OTI1LC0xMTYwNDQzNjc2LDE0Nj
 M5NzU2OTBdfQ==
 -->
