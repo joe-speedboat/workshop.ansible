@@ -56,7 +56,7 @@ Output:
 	}
 ```
 ```bash
-ansible -m dnf -e state=latest -e name='*' -e update_cache=true localhost
+ansible -m dnf -a "state=latest name='*' update_cache=true" linux
 ```
 Output:
 ```
@@ -193,9 +193,9 @@ Done, that's safe for now!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzQyMjg3NiwtMTgzNTM1OTM5NCwtMT
-UwNjE1Mjc2MiwtMTI0Njc2MzY3NSwtMTUwNjQ0MjE0MCwxNDIw
-Nzk3OTk0LC0yMDA2OTMwMDE5LC0xMzA0NDkxMzI4LC0xNjYzNz
-AyMzE3LDkyNzQzNDA1MSwtMjExNTY2MDMzNyw2ODEzNDc0MjAs
-MjAzNTk2NTczOF19
+eyJoaXN0b3J5IjpbOTA2MzEzNDYxLC0zNjc0MjI4NzYsLTE4Mz
+UzNTkzOTQsLTE1MDYxNTI3NjIsLTEyNDY3NjM2NzUsLTE1MDY0
+NDIxNDAsMTQyMDc5Nzk5NCwtMjAwNjkzMDAxOSwtMTMwNDQ5MT
+MyOCwtMTY2MzcwMjMxNyw5Mjc0MzQwNTEsLTIxMTU2NjAzMzcs
+NjgxMzQ3NDIwLDIwMzU5NjU3MzhdfQ==
 -->
