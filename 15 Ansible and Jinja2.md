@@ -210,7 +210,7 @@ listen stats *:{{ stats_port }}
   remote_user: root
   vars:
     lb_backend:
-    - name: http1
+    - name: fail_xxx
       lbport: 8080
       lbback:
       - name: web1
@@ -273,6 +273,6 @@ http://vm11:10000
 
 * Review this role with the class
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTk0MTk4ODYsLTE1NTA2MjA3NTAsLT
-EyOTYxNTc0MTksNjI5ODMwNzI4XX0=
+eyJoaXN0b3J5IjpbNzU1MTUzOTg0LC0xOTk5NDE5ODg2LC0xNT
+UwNjIwNzUwLC0xMjk2MTU3NDE5LDYyOTgzMDcyOF19
 -->
