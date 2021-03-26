@@ -18,17 +18,18 @@ mkdir -p $PDIR
 chmod 700 $PDIR
 cd $PDIR
 ```
+
 ### Inventory
 * <code>$PDIR/inventory</code>
 ```ini
 # ansible demo inventory for $PNAME
-[esxi_hosts]
-clue3
+[vcenter_hosts]
+vcenter01
 
 [control_nodes]
 localhost
 [control_nodes:vars]
-esxi_user=root
+esxi_user=ansible@vsphere.local
 esxi_password=changeME...
 ```
 ### Ansible Config
@@ -153,6 +154,6 @@ log_path = ./ansible.log
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2Mjg0MzEsLTExNjA0NDM2NzYsMTQ2Mz
-k3NTY5MF19
+eyJoaXN0b3J5IjpbLTE2NjMzNjg4NDksLTExNjA0NDM2NzYsMT
+Q2Mzk3NTY5MF19
 -->
