@@ -4,7 +4,12 @@ https://galaxy.ansible.com/home
 https://github.com/ansible/awx
 https://www.ansible.com/products/tower
 
-# Ansible best practice
+## Ansible language help
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
+
+
+## Ansible best practice
 * uniQconsulting ag has one! 
 https://github.com/ansible/workshops/blob/devel/decks/ansible_best_practices.pdf
 https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
@@ -33,7 +38,8 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NTEzMzQxMSwxMjQxMzk1MDI3LDIwMj
-gzNDM4MDEsODQ4MTUxNDAwLDkxODk5OTc2NiwxNjMxOTU2MTI0
-LC03NDA3NTAxNjEsLTIwOTY0NDU5OTcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE2MDUxOTQ0MjEsMTU1NTEzMzQxMSwxMj
+QxMzk1MDI3LDIwMjgzNDM4MDEsODQ4MTUxNDAwLDkxODk5OTc2
+NiwxNjMxOTU2MTI0LC03NDA3NTAxNjEsLTIwOTY0NDU5OTcsNz
+MwOTk4MTE2XX0=
 -->
