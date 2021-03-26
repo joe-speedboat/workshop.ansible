@@ -7,6 +7,9 @@ https://www.ansible.com/products/tower
 # Ansible best practice
 * uniQconsulting ag has one! 
 https://github.com/ansible/workshops/blob/devel/decks/ansible_best_practices.pdf
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html
+
+## Ansible Inventories and vars grouping
 
 
 # Ansible presentations
@@ -30,7 +33,7 @@ https://www.ansible.com/integrations/infrastructure/dell-emc-storage
 https://galaxy.ansible.com/dellemc
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDczNTg3NDgsODQ4MTUxNDAwLDkxOD
-k5OTc2NiwxNjMxOTU2MTI0LC03NDA3NTAxNjEsLTIwOTY0NDU5
-OTcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjAyODM0MzgwMSw4NDgxNTE0MDAsOTE4OT
+k5NzY2LDE2MzE5NTYxMjQsLTc0MDc1MDE2MSwtMjA5NjQ0NTk5
+Nyw3MzA5OTgxMTZdfQ==
 -->
