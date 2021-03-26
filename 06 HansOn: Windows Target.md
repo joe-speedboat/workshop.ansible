@@ -56,6 +56,7 @@ log_path = ./ansible.log
 ---
 - name: Update with Important Windows Patches
   hosts: win_hosts
+  seri
   tasks:
   - name: Apply Patches
     win_updates:
@@ -67,12 +68,11 @@ log_path = ./ansible.log
       - \d{4}-\d{2} Cumulative Update for Windows Server 2016
       reboot: yes
       reboot_timeout: 1800
-      register: result
-      until: not result.changed
-      retries: 10
-      delay: 5
-      register: update_results
-  
+    until: not result.changed
+    retries: 10
+    delay: 5
+    register: update_results
+
   - name: print update results
     debug:
       var: update_results
@@ -88,8 +88,8 @@ Just do it and look what happens on the Windows Hosts Console.
 * Ansible Ping?
 * Vars?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTUwOTE3NiwxNTYwODMxMjgzLDcwNT
-UxNDI0NiwtMTEzODI1NjgyMywtMjE0NzA1Mzk2LC03ODYzMzUz
-MjksMjUzNTYxNzM1LDk4MjE5MzIzNSw2MTMyMzU1NDksMTc1Mj
-AxMTU3MV19
+eyJoaXN0b3J5IjpbLTEzNjIwODEyNzUsLTYyMTUwOTE3NiwxNT
+YwODMxMjgzLDcwNTUxNDI0NiwtMTEzODI1NjgyMywtMjE0NzA1
+Mzk2LC03ODYzMzUzMjksMjUzNTYxNzM1LDk4MjE5MzIzNSw2MT
+MyMzU1NDksMTc1MjAxMTU3MV19
 -->
