@@ -27,6 +27,7 @@ PDIR="/etc/ansible/projects/vcenter_inventory"
 mkdir -p $PDIR
 chmod 700 $PDIR
 cd $PDIR
+mkdir collections roles
 ```
 ### Inventory
 * <code>$PDIR/inventory.vmware.yml</code>
@@ -126,7 +127,7 @@ ansible -m ping gateway1 -vvv 2>&1 |  grep EXEC
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk1MDE0NjUzLDY0NTE2MjI1NSwtODU1Nz
-g3OTUwLDE2OTgxNzk2MTUsMjA1MjU1MDc0NSwtMTAzMzg2ODE1
-NywtMjA4NTcyNjA0MywtMjYxNTAzMTI4XX0=
+eyJoaXN0b3J5IjpbNTc1NjQzMzY0LDM5NTAxNDY1Myw2NDUxNj
+IyNTUsLTg1NTc4Nzk1MCwxNjk4MTc5NjE1LDIwNTI1NTA3NDUs
+LTEwMzM4NjgxNTcsLTIwODU3MjYwNDMsLTI2MTUwMzEyOF19
 -->
