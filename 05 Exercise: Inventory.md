@@ -31,7 +31,9 @@ If all of you have finished the lab, do a review in class and explain each other
 * Nested Groups
 
 ##Background
-Variables can be defined on multiple places and multiple times
+Variables can be defined on multiple places and multiple times, try to avoid that.
+To not end up in a mess, test carefully which is the best place for an information, before defining it.
+Here you can find how variable
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyNDc5MjM1MiwtMjM0MDAzMTA5XX0=
+eyJoaXN0b3J5IjpbLTE0NDI1MTcxMTAsLTIzNDAwMzEwOV19
 -->
