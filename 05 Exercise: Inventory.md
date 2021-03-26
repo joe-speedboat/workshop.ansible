@@ -30,6 +30,8 @@ If all of you have finished the lab, do a review in class and explain each other
 * Group Vars
 * Nested Groups
 
+##Background
+Variables can be defined on multiple places and multiple times
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDAwMzEwOV19
+eyJoaXN0b3J5IjpbLTUyNDc5MjM1MiwtMjM0MDAzMTA5XX0=
 -->
