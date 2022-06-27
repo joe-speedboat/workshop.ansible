@@ -108,11 +108,45 @@ log_path = ./ansible.log
 vault_password_file = ./vault_unlock
 ```
 
-### Solution1 (systemd-ask-password)
-If you are root, you can access a system service that can store your passwords temporarily until next reboot.
-This is used too for harddisk decryption during boot-up.
+### Solution1 (keyctl)
+This program is used to control the key management facility in various ways using a variety of subcommands.
 
-### Replace the vault password with a script
+#### Replace the vault password with a script
+```
+$PDIR/vault_unlock
+```
+```bash
+#!/bin/bash
+NAME=vault
+PW_CNT=$(keyctl search @u user $NAME 2>/dev/null | wc -l)
+if [ $PW_CNT -lt 1 ]
+then
+   read -s -p 'Feed vault password: ' PASS
+   keyctl add user $NAME  "$PASS" @u
+else
+   keyctl print $(keyctl search @u user $NAME 2>/dev/null)
+fi
+```
+Make it executeable
+```
+chmod 700 $PDIR/vault_unlock
+```
+Now call it and feed the password
+```
+./vault_unlock
+```
+#### Explore how it works
+* Call it again, what happens?
+* LogOut, LogIn again, call it, what happens?
+* Where is it stored?
+
+
+### Solution2 (systemd-ask-password)
+If you are root, you can access a system service that can store your passwords temporarily until next reboot.
+This is used too for harddisk decryption during boot-up.   
+Problem is here, that newer FIPS enabled systems remove this password 5min after creation.   
+
+#### Replace the vault password with a script
 ```
 $PDIR/vault_unlock
 ```
@@ -134,11 +168,11 @@ Now call it and feed the password
 * LogOut, LogIn again, call it, what happens?
 * As root user, the password can be kept until reboot!
 
-### Solution2 (simple var)
+### Solution3 (simple var)
 This works for the session until you logout.
 But it is super simple and works with all users, not only root on any system.
 
-### Replace the vault password with a script
+#### Replace the vault password with a script
 ```
 $PDIR/vault_unlock
 ```
@@ -166,7 +200,3 @@ Now call it and feed the password
 * Call it again, what happens?
 * LogOut, LogIn again, call it, what happens?
 * Where is it stored?
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMTA4NzQ2MCwtNjgwNDM0MjU4LDEwMT
-E0NzQ5NDMsNzY3OTAwNDIxXX0=
--->
