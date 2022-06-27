@@ -121,8 +121,9 @@ NAME=vault
 PW_CNT=$(keyctl search @u user $NAME 2>/dev/null | wc -l)
 if [ $PW_CNT -lt 1 ]
 then
-   read -s -p 'Feed vault password: ' PASS
-   keyctl add user $NAME  "$PASS" @u
+   read -s -p "Feed vault password: " PASS
+   keyctl add user $NAME  "$PASS" @u >/dev/null 2>&1
+   echo
 else
    keyctl print $(keyctl search @u user $NAME 2>/dev/null)
 fi
