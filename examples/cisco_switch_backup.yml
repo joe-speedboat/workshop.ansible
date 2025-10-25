@@ -2,45 +2,46 @@
 - name: backup cisco switch configuration into daily file
   hosts: cisco_switch
   gather_facts: no
-  connection: local
+  connection: network_cli
+  become: yes
   vars:
     backup_dir: ./backup
   tasks:
   - name: save running config to device
-    ios_config:
+    cisco.ios.ios_config:
       save_when: always
-      provider: "{{ creds }}"
   - name: get cisco switch config
-    ios_command:
+    cisco.ios.ios_command:
       commands: 
       - show running-config
-      provider: "{{ creds }}"
     register: config
   - name: ensure backup folder is created
-    file:
+    ansible.builtin.file:
       path: "{{ backup_dir }}/"
       state: directory
     run_once: yes
+    delegate_to: localhost
   - name: get timestamp
-    command: date +%Y%m%d
+    ansible.builtin.command: date +%Y%m%d
     register: timestamp
     run_once: yes
+    delegate_to: localhost
   - name: save output to {{ backup_root }} 
-    copy: 
+    ansible.builtin.copy: 
       content: "{{ config.stdout[0] }}"
       dest: "{{ backup_dir }}/show_run_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
+    delegate_to: localhost
   - name: get device config
-    ios_command:
+    cisco.ios.ios_command:
       commands:
       - show vlan brief
       - show interface status
       - show ip arp
       - show cdp neighbors
       - show version
-      provider: "{{ creds }}"
     register: config
   - name: save output to {{ backup_root }}
-    copy:
+    ansible.builtin.copy:
       content: |
         {{ config.stdout[0] }}
         ----------------------
@@ -52,4 +53,5 @@
         ----------------------
         {{ config.stdout[4] }}
       dest: "{{ backup_dir }}/doku_{{ inventory_hostname }}_{{ timestamp.stdout }}.txt"
+    delegate_to: localhost
 ...

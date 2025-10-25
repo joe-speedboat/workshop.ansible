@@ -15,7 +15,7 @@
     
   tasks:
     - name: Create a VM from Template
-      vmware_guest:
+      community.vmware.vmware_guest:
         hostname: "{{ vcenter_host }}"
         username: "{{ vcenter_user }}"
         password: "{{ vcenter_password }}"

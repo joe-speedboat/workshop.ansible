@@ -26,7 +26,7 @@
   # this way we know that the system was able to come back
   # up before updates were applied
   - name: Reboot if system has a large uptime
-    win_reboot:
+    ansible.windows.win_reboot:
     when: initial_reboot and not ansible_check_mode
     tags:
     - never
@@ -36,7 +36,7 @@
     - name: >
         {{ 'Install' if 'install' in ansible_run_tags else 'Search' }} updates
         {{ 'will automatically reboot' if 'reboot' in ansible_run_tags else 'no reboot' }}
-      win_updates:
+      ansible.windows.win_updates:
         category_names:
           - SecurityUpdates
           - CriticalUpdates
@@ -56,13 +56,13 @@
 
     rescue:
     - name: Windows update failed?
-      debug:
+      ansible.builtin.debug:
         msg: "error: {{ update_results.msg }}"
       when: update_results is failed and update_results.msg is defined
       tags:
       - always
     - name: Server had pending reboots?
-      win_reboot:
+      ansible.windows.win_reboot:
       when:  not ansible_check_mode and
             update_results is failed and
             update_results.msg is search('A reboot is required')
@@ -72,7 +72,7 @@
 
     always:
     - name: Report results
-      debug:
+      ansible.builtin.debug:
         var: update_results
       tags:
       - never

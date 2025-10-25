@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-  - copy:
+  - ansible.builtin.copy:
       content: |
         HOSTNAME;IPADDRESS;FQDN;OSNAME;OSVERSION;PROCESSOR;ARCHITECTURE;MEMORY;
         {% for host in hostvars %}
