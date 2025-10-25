@@ -20,7 +20,7 @@
     
   tasks:
     - name: Create a VM from Template
-      vmware_guest:
+      community.vmware.vmware_guest:
         hostname: "{{ vcenter_host }}"
         username: "{{ vcenter_user }}"
         password: "{{ vcenter_password }}"
@@ -42,5 +42,5 @@
         wait_for_ip_address: no
       delegate_to: localhost
       ignore_errors: true
-      with_dict: "{{ machines }}"
+      loop: "{{ machines | dict2items }}"
 ...

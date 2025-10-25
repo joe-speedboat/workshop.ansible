@@ -1,7 +1,7 @@
 - hosts: linux
   tasks:
   - name: install webserver
-    dnf: 
+    ansible.builtin.dnf: 
       name:
       - lighttpd
       - firewalld
@@ -9,8 +9,11 @@
     notify:
     - restart services
 
-  - lineinfile: path=/etc/lighttpd/lighttpd.conf regexp='^server.use-ipv6' line='server.use-ipv6 = "disable"'
-  - copy:
+  - ansible.builtin.lineinfile: 
+      path: /etc/lighttpd/lighttpd.conf 
+      regexp: '^server.use-ipv6' 
+      line: 'server.use-ipv6 = "disable"'
+  - ansible.builtin.copy:
       dest: /var/www/lighttpd/index.html
       content: |
         Managed by Ansible
@@ -23,16 +26,16 @@
         MEM: {{ (vars.ansible_memtotal_mb/1024)|round|int }} GB
 
   - name: enable and start services
-    service:
+    ansible.builtin.service:
       name: "{{ item }}"
       enabled: yes
       state: started
-    with_items:
+    loop:
     - firewalld
     - lighttpd
 
   - name: open firewall port 80
-    firewalld: 
+    ansible.posix.firewalld: 
       service: http 
       permanent: true 
       immediate: true 
@@ -40,10 +43,10 @@
 
   handlers:
   - name: restart services
-    service:
+    ansible.builtin.service:
       name: "{{ item }}"
       state: restarted
-    with_items:
+    loop:
     - lighttpd
     - firewalld
 ...

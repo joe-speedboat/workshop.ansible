@@ -1,6 +1,6 @@
 ---
 # handlers file for demo.jinja2
 - name: restart haproxy
-  service:
+  ansible.builtin.service:
     name: haproxy
     state: restarted

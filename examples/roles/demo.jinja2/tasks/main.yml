@@ -2,38 +2,36 @@
 # tasks file for demo.jinja2
 
 - name: avoid using of default variables
-  fail:
+  ansible.builtin.fail:
     msg:
       please look into defaults/main.yml, loadbalancer config cannot be a guess
   when: item.name == "fail_xxx"
-  with_items: 
-  - "{{ lb_backend }}"
+  loop: "{{ lb_backend }}"
 
 - name: open firewall ports
-  firewalld:
+  ansible.posix.firewalld:
     port: "{{ item.lbport }}/tcp"
     permanent: true 
     immediate: true 
     state: enabled
-  with_items:
-  - "{{ lb_backend }}"
+  loop: "{{ lb_backend }}"
 
 - name: open firewall ports
-  firewalld:
+  ansible.posix.firewalld:
     port: "{{ stats_port }}/tcp"
     permanent: true 
     immediate: true 
     state: enabled
 
 - name: install haproxy
-  dnf:
+  ansible.builtin.dnf:
     name: "{{ packages }}"
   notify:
   - restart haproxy
 
 
 - name: create haproxy config
-  template: 
+  ansible.builtin.template: 
     src: haproxy.cfg.j2 
     dest: /etc/haproxy/haproxy.cfg 
     owner: haproxy 
@@ -43,9 +41,9 @@
   - restart haproxy
 
 - name: enable services
-  service:
+  ansible.builtin.service:
     name: "{{ item }}"
     enabled: yes
     state: started
-  with_items: "{{ services }}"
+  loop: "{{ services }}"
 
